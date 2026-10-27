@@ -7,7 +7,7 @@
 .interior-page>.tf-global-background .tf-global-glint{position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(242,178,77,.015) 44%,rgba(246,197,109,.10) 50%,rgba(242,178,77,.015) 56%,transparent 70%);background-size:240% 100%;mix-blend-mode:screen;animation:tfGlobalSweep 18s ease-in-out infinite;opacity:.58}
 @keyframes tfGlobalSweep{0%,14%{background-position:160% 0}76%,100%{background-position:-140% 0}}
 .interior-page>.header,.interior-page>main,.interior-page>.footer{position:relative;z-index:1}
-.interior-page>.header{background:rgba(2,2,2,.93);border-bottom:1px solid rgba(230,180,93,.55);box-shadow:0 2px 18px rgba(209,144,48,.15)}
+.interior-page>.header{background:rgba(2,2,2,.70);backdrop-filter:blur(10px);border-bottom:1px solid rgba(230,180,93,.55);box-shadow:0 2px 18px rgba(209,144,48,.15)}
 .interior-page .header .logo{filter:drop-shadow(0 0 7px rgba(232,170,65,.26))}
 .interior-page .nav a{position:relative;transition:color .25s,text-shadow .25s}
 .interior-page .nav a:hover,.interior-page .nav a.active{color:#f5cd7d;text-shadow:0 0 15px rgba(237,176,66,.45)}
@@ -22,3 +22,31 @@
 .interior-page .service,.interior-page .studio-card,.interior-page .link-tiles a,.interior-page .contact-note{box-shadow:0 12px 38px rgba(0,0,0,.38)}
 @media(max-width:780px){.interior-page .nav{background:rgba(4,4,4,.97)}}
 @media(prefers-reduced-motion:reduce){.interior-page .tf-global-glint{animation:none}}
+
+/* Erweiterte Premium-Lichtkanten in Bronze-Gold, ohne flächige Verdunkelung */
+.interior-page .subhero:before{content:"";position:absolute;top:0;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,rgba(236,179,87,.62),transparent);box-shadow:0 0 20px rgba(235,166,65,.22);pointer-events:none}
+.interior-page .btn,.interior-page .filter.active{transition:box-shadow .3s,transform .3s,background .3s}
+.interior-page .btn:hover,.interior-page .filter.active:hover{box-shadow:0 0 25px rgba(213,156,67,.30);transform:translateY(-2px)}
+.interior-page .subhero:after{content:"";position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(231,171,75,.32),transparent);pointer-events:none}
+/* video in every viewport, even as page scrolls */
+.interior-page>.tf-global-background{position:fixed!important;inset:0!important;z-index:-1!important}
+.interior-page .finder,.interior-page .studio-teaser{background:transparent!important}
+
+/* EINHEITLICHES DESIGN: gleiche Navigations-Sprache wie die Startseite. */
+.interior-page { --tf-gold:#d9aa5c; --tf-gold-light:#f4d696; --tf-black:#030303; color:#f7f1e6; }
+.interior-page>.header {min-height:96px; padding:12px clamp(18px,3.1vw,56px); display:flex; align-items:center; gap:clamp(16px,1.8vw,30px); background:linear-gradient(180deg,rgba(0,0,0,.97),rgba(0,0,0,.83))!important; border-bottom:1px solid #c69546; box-shadow:0 5px 25px #0009, 0 1px 14px #9f6d2730;}
+.interior-page .header>a:first-child {flex:0 0 auto;display:inline-flex;align-items:center}
+.interior-page .header .logo {width:clamp(150px,16.5vw,230px);height:76px;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 6px rgba(225,168,66,.28));}
+.interior-page .header .nav {margin-left:auto;display:flex;align-items:center;gap:clamp(8px,1.55vw,27px)}
+.interior-page .header .nav a {color:var(--tf-gold-light);font-size:clamp(10px,.78vw,13px);letter-spacing:.075em;font-weight:750;white-space:nowrap;text-transform:uppercase}
+.interior-page .header .nav a.active {color:#ffdf9a}
+.interior-page .header .tf-top-cta {flex:0 0 auto;display:inline-flex;align-items:center;gap:14px;padding:17px 18px;border:1px solid #d3a15c;color:#f6d79c;font-size:11px;letter-spacing:.09em;font-weight:800;text-decoration:none;box-shadow:inset 0 0 9px #ffd88c12, 0 0 10px #ac712a28;transition:transform .3s,box-shadow .3s;background:rgba(0,0,0,.24)}
+.interior-page .header .tf-top-cta:hover,.interior-page .header .tf-top-cta:focus-visible {transform:translateY(-2px);box-shadow:0 0 21px #e7ae5666}
+.interior-page .inner-page-hero,.interior-page .subhero {padding-top:90px;padding-bottom:90px;}
+.interior-page .subhero h1 {text-shadow:0 5px 24px #000a;}
+.interior-page .gold {color:#e9bb6a}
+.interior-page>.tf-global-background video{filter:brightness(1.28) contrast(1.045) saturate(.78)!important}
+.interior-page .tf-global-tint{background:transparent!important}
+@media(max-width:1150px) {.interior-page .header .tf-top-cta{display:none}}
+@media(max-width:860px) {.interior-page>.header{min-height:80px}.interior-page .header .logo{height:64px;width:180px}.interior-page .header .nav{margin-left:0}.interior-page .nav:not(.open){display:none}.interior-page .header .menu-btn{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.interior-page .tf-top-cta{transition:none}}
