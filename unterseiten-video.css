@@ -90,3 +90,43 @@
   .interior-page > main{padding-top:158px!important}
 }
 @media(max-width:480px){.interior-page .tf-nav{gap:5px 9px!important}.interior-page .tf-nav a{font-size:9px!important}.interior-page > main{padding-top:169px!important}}
+
+
+/* V5: Keine dunklen Abschnitts-Balken und keine dekorativen goldenen Trennlinien.
+   Ausschliesslich Unterseiten, NICHT Startseite. */
+.interior-page > main,
+.interior-page > main > section,
+.interior-page > main .subhero,
+.interior-page > main .inner-page-hero,
+.interior-page > main .section,
+.interior-page > main .overview-grid,
+.interior-page > main .story-grid,
+.interior-page > main .finder,
+.interior-page > main .studio-teaser,
+.interior-page > main .service-section {
+  background:transparent!important;
+  background-image:none!important;
+  border-top:0!important;
+  border-bottom:0!important;
+  box-shadow:none!important;
+}
+.interior-page > main .subhero::before,
+.interior-page > main .subhero::after,
+.interior-page > main .inner-page-hero::before,
+.interior-page > main .inner-page-hero::after,
+.interior-page .eyebrow::before,
+.interior-page .ribbon,
+.interior-page .service-bottom::before,
+.interior-page .service-bottom::after {
+  display:none!important;
+  content:none!important;
+}
+.interior-page .service-bottom,
+.interior-page .results-head,
+.interior-page .tip,
+.interior-page > .footer {
+  border-top:0!important;
+  border-bottom:0!important;
+}
+.interior-page > .footer {background:transparent!important; background-image:none!important;box-shadow:none!important}
+/* Schwebenden Header, aktive Goldnavigation, Karten und Buttons bewusst beibehalten. */
