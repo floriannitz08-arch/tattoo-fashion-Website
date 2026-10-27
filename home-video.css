@@ -36,7 +36,7 @@
 .home-page .tf-film-cta:hover{transform:translateY(-3px);box-shadow:0 0 24px #dea44a80}
 /* Hintergrund bleibt auch UNTERHALB des Hero transparent */
 .home-page .section,.home-page .overview-grid{background:transparent!important}
-.home-page .story-grid,.home-page .overview-grid{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.20))!important}
+.home-page .story-grid,.home-page .overview-grid{background:transparent!important}
 .home-page .link-tiles a{background:rgba(9,8,7,.67)!important;backdrop-filter:blur(5px)}
 .home-page .footer{background:rgba(0,0,0,.55)!important}
 .home-page .ribbon{display:none!important}
