@@ -60,3 +60,47 @@ body.interior-page main .tf-partner-join > h2 {
 body.interior-page main .service-heading {
   align-items: center !important;
 }
+
+
+/* =============================================================
+   TATTOO FASHION — EINHEITLICHES, KRAEFTIGES GOLD (2026-10-27)
+   Nur Schriftfarben; keine Video-, Flaechen- oder Layoutaenderung.
+   ============================================================= */
+:root {
+  --gold: #D7A746;
+  --light: #F0C96B;
+  --gold-text: #E9BD5D;
+  --gold-bright: #FFE0A0;
+  --grad: linear-gradient(115deg, #C89434 0%, #EDC16B 32%, #FFDE95 49%, #D6A045 73%, #F0C56F 100%);
+}
+/* Einheitlicher Gold-Metallic-Schimmer NUR an hervorgehobener Schrift */
+.gold, em.gold, .gold-text, .text-gold,
+.hero-gold, .hero__gold, .golden-text,
+.tf-gold, .cinema-gold {
+  color: var(--gold-text) !important;
+  background-image: var(--grad) !important;
+  background-size: 220% 100% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.35));
+}
+/* Weitere goldene Beschriftungen: identischer Grundfarbton */
+.eyebrow, .service-overline, .service-num, .service-corner,
+.service-period, .count, .film-tag, .service-icon,
+.tip, .service-bottom > span, .link-tiles span,
+.nav a, .header .nav a, .nav .nav-cta,
+.service-content summary, .service-more a,
+.card-links a, .card-links button,
+.footer a, .scroll-link,
+.tf-partner-intro .eyebrow,
+.tf-partner-group > h2, .tf-partner-join > h2 {
+  color: var(--gold-text) !important;
+}
+/* Hover: heller, ohne Farbtonwechsel ins Braun */
+.nav a:hover, .header .nav a:hover, .nav a.active,
+.card-links a:hover, .footer a:hover,
+.service-content summary:hover {
+  color: var(--gold-bright) !important;
+}
+/* Text in ausgefuellten Gold-Buttons bleibt absichtlich dunkel/lesbar. */
