@@ -1,49 +1,47 @@
-/* Tattoo Fashion — Cinematic Luxury. Nur STARTSEITE. */
-:root{--tf-gold:#d4a34d;--tf-glow:#f6cb76;--tf-cream:#fff7e9}
-.home-page{background:#020202!important;min-height:100vh}
-/* FIX: Live-MP4 laeuft hinter ALLEN Startseitenabschnitten */
-.home-page .tf-sitewide-video{position:fixed!important;inset:0!important;width:100%;height:100vh;height:100dvh;z-index:0;overflow:hidden;pointer-events:none;background:#050505 url('assets/hero.webp') center / cover no-repeat}
-.home-page .tf-sitewide-video video{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;opacity:1!important;filter:brightness(1.3) contrast(1.05) saturate(.8)!important;z-index:0!important}
-.home-page .tf-sitewide-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.23),rgba(0,0,0,.20) 45%,rgba(0,0,0,.27))}
-.home-page .tf-sitewide-flare{position:absolute;inset:0;z-index:2;opacity:.7;mix-blend-mode:screen;background:linear-gradient(108deg,transparent 20%,rgba(239,176,70,.02) 44%,rgba(255,205,111,.13) 49%,rgba(239,176,70,.015) 55%,transparent 80%);background-size:240% 100%;animation:tfLightSweep 17s ease-in-out infinite}
-@keyframes tfLightSweep{0%,16%{background-position:180% 0}76%,100%{background-position:-140% 0}}
-/* ORIGINAL LOGO + sieben goldene Menuepunkte */
-.home-page>.header{display:flex!important;position:relative!important;z-index:50!important;height:106px;min-height:106px;margin-bottom:-106px;padding:0 clamp(20px,3.2vw,56px);background:linear-gradient(180deg,rgba(0,0,0,.97),rgba(0,0,0,.91));border-bottom:1px solid rgba(246,199,101,.70);box-shadow:0 1px 9px rgba(226,160,58,.18)}
-.home-page>.header .logo{width:clamp(160px,17vw,235px);max-height:94px;filter:drop-shadow(0 0 7px rgba(233,175,66,.34))}
-.home-page .nav{gap:clamp(8px,1.25vw,22px)}
-.home-page .nav a{position:relative;color:#e2ba65!important;font-size:clamp(9px,.77vw,12px);text-shadow:0 0 9px #edab4038;transition:color .25s,text-shadow .25s}
-.home-page .nav a::after{content:'';position:absolute;bottom:-12px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#f9d990,transparent);transform:scaleX(.55);opacity:.36;transition:transform .3s,opacity .3s}
-.home-page .nav a:hover,.home-page .nav a.active{color:#ffe5a7!important;text-shadow:0 0 16px rgba(255,191,78,.72)}
-.home-page .nav a:hover::after,.home-page .nav a.active::after{transform:scaleX(1);opacity:1}
-.home-page .nav a.active::before{content:'';position:absolute;bottom:-14px;left:47%;width:6px;height:5px;border-radius:50%;background:#ffe5a7;box-shadow:0 0 5px 2px #ffe0a4,0 0 23px 5px #eaa445;pointer-events:none}
-/* Aktionsschaltflaeche rechts wie freigegeben */
-.home-page .header::after{content:'';display:none}
-.home-page .tf-film-hero{min-height:100vh;min-height:100svh;position:relative;display:flex;justify-content:center;align-items:center;background:transparent!important;overflow:hidden;isolation:auto;padding:160px 18px 85px}
-.home-page .tf-film-hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 49% 46% at 50% 47%,rgba(0,0,0,.42),rgba(0,0,0,.08) 78%,transparent);z-index:1}
-.home-page main,.home-page>.footer{position:relative;z-index:2}
-.home-page .tf-film-content{position:relative;z-index:3;width:min(1130px,100%);text-align:center;transform:translateY(-8px)}
-/* GOLDENE 3D-LICHTREFLEXE am Slogan statt einfacher HTML-Schrift */
-.home-page .tf-film-title{font-family:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;font-size:clamp(67px,10.4vw,157px);font-weight:900;line-height:.80;letter-spacing:-.019em;margin:0;filter:drop-shadow(0 9px 20px #000)}
-.home-page .tf-film-title span,.home-page .tf-film-title em{display:block;font-style:normal;position:relative;white-space:nowrap}
-.home-page .tf-film-title span{color:#f8efe0;background:linear-gradient(176deg,#fff 8%,#fffaf3 34%,#d0b48a 53%,#fff8e8 71%,#aa9273 94%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.home-page .tf-film-title em{margin-top:.055em;color:#e9b65a;background:linear-gradient(170deg,#fff0c5 0%,#d4a050 23%,#fce3a1 38%,#ae782d 64%,#f6c46b 83%,#80551e 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 4px 10px rgba(230,158,36,.25))}
-.home-page .tf-film-title em::after{content:'';position:absolute;pointer-events:none;width:90%;height:2px;left:5%;bottom:6%;background:linear-gradient(90deg,transparent,rgba(255,185,77,.18),#ffda8e,rgba(255,185,77,.23),transparent);box-shadow:0 0 8px #f4af47,0 0 23px rgba(248,176,70,.5);opacity:.8;animation:tfGlint 9s ease-in-out infinite}
-@keyframes tfGlint{50%{opacity:.38;transform:scaleX(.76)}}
-.home-page .tf-film-buttons{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;margin-top:70px}
-.home-page .tf-film-cta{position:relative;display:inline-flex;align-items:center;justify-content:space-between;min-width:255px;padding:20px 25px;border:1px solid #d1a352;background:rgba(0,0,0,.78);color:#f8d997;font-size:12px;font-weight:800;letter-spacing:.1em;box-shadow:inset 0 1px rgba(255,236,170,.20),0 0 17px rgba(230,159,48,.12);transition:transform .3s,box-shadow .3s}
-.home-page .tf-film-cta.primary{color:#1a1106;background:linear-gradient(112deg,#aa772e,#fbe3a3 42%,#d7a75c 76%,#b98238);border-color:#f2c775;box-shadow:0 0 13px rgba(243,174,61,.5),0 0 37px rgba(211,138,43,.18),inset 0 1px #fff1c0}
-.home-page .tf-film-cta::after{content:'';position:absolute;left:35%;bottom:-2px;height:2px;width:30%;background:#f8d592;box-shadow:0 0 8px 2px #eca842,0 0 20px 6px #d990265c;opacity:.8}
-.home-page .tf-film-cta:hover{transform:translateY(-3px);box-shadow:0 0 24px #dea44a80}
-/* Hintergrund bleibt auch UNTERHALB des Hero transparent */
-.home-page .section,.home-page .overview-grid{background:transparent!important}
-.home-page .story-grid,.home-page .overview-grid{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.20))!important}
-.home-page .link-tiles a{background:rgba(9,8,7,.67)!important;backdrop-filter:blur(5px)}
-.home-page .footer{background:rgba(0,0,0,.55)!important}
-.home-page .ribbon{display:none!important}
-@media(max-width:780px){.home-page>.header{height:78px;min-height:78px;margin-bottom:-78px}.home-page .nav{position:absolute;top:78px;left:0;right:0;display:none;background:#080705f5;padding:20px;flex-direction:column}.home-page .nav.open{display:flex}.home-page .menu-btn{display:block}.home-page .tf-film-hero{padding-top:130px}.home-page .tf-film-title{font-size:clamp(50px,12.3vw,90px)}.home-page .tf-film-buttons{margin-top:48px}}
-@media(max-width:520px){.home-page .tf-film-title{font-size:clamp(46px,12.2vw,66px)}.home-page .tf-film-buttons{flex-direction:column;gap:12px}.home-page .tf-film-cta{width:min(100%,330px)}.home-page .tf-sitewide-video video{object-position:60% center}}
-@media(prefers-reduced-motion:reduce){.home-page .tf-sitewide-flare,.home-page .tf-film-title em::after{animation:none}}
+/* Tattoo Fashion – nur Startseite. Original-Logo, Lichtreflexe & echtes MP4-Video. */
+.home-page.tf-relaunch-home{background:#030303;color:#f8f4eb;min-height:100vh;isolation:isolate}
+.home-page.tf-relaunch-home .tf-background{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:#060504 url('assets/hero.webp') center/cover no-repeat}
+.home-page.tf-relaunch-home .tf-background video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;filter:brightness(1.22) contrast(1.08) saturate(.82)}
+.home-page .tf-video-color{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.15),transparent 33%,rgba(0,0,0,.1)),linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.1) 30%,rgba(0,0,0,.21));}
+.home-page .tf-video-vignette{position:absolute;inset:0;box-shadow:inset 0 0 130px 48px rgba(0,0,0,.3);background:radial-gradient(ellipse at 51% 47%,rgba(0,0,0,.24) 2%,rgba(0,0,0,.1) 45%,rgba(0,0,0,.24) 100%)}
+.home-page .tf-ambient-gold{position:absolute;inset:-30%;background:linear-gradient(112deg,transparent 35%,rgba(244,185,86,.018) 45%,rgba(255,218,140,.08) 50%,rgba(244,185,86,.018) 55%,transparent 65%);background-size:210% 100%;animation:tf-light-sweep 16s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes tf-light-sweep{0%,16%{background-position:170% 0}78%,100%{background-position:-140% 0}}
+.home-page.tf-relaunch-home>.tf-header{display:flex!important;position:relative!important;z-index:20;margin-bottom:-106px;min-height:106px;height:auto;padding:10px 3.2vw;gap:clamp(12px,2vw,36px);background:linear-gradient(180deg,rgba(0,0,0,.98),rgba(0,0,0,.89));border-bottom:1px solid #c69546;box-shadow:0 6px 22px #0007;align-items:center}
+.home-page .tf-brand{flex:0 0 auto;display:block}.home-page .tf-brand .logo{width:clamp(195px,18vw,254px);max-height:85px;object-fit:contain;filter:drop-shadow(0 0 8px #d69e4066)}
+.home-page .tf-nav{margin-left:auto;gap:clamp(11px,1.6vw,29px)}
+.home-page .tf-nav a{color:#efd092!important;font-size:clamp(9px,.79vw,12px);font-weight:800;letter-spacing:.09em;position:relative;text-shadow:0 0 8px #b17b2830;transition:color .25s,text-shadow .25s}
+.home-page .tf-nav a:after{content:"";display:block;position:absolute;left:0;right:0;bottom:-12px;height:1px;background:linear-gradient(90deg,transparent,#ffe2a1,transparent);transform:scaleX(.65);opacity:.52;transition:.3s}
+.home-page .tf-nav a:hover,.home-page .tf-nav a.active{color:#ffe3a2!important;text-shadow:0 0 15px #e7aa5aa0}.home-page .tf-nav a:hover:after,.home-page .tf-nav a.active:after{transform:scaleX(1);opacity:1}
+.home-page .tf-header-cta{margin-left:clamp(10px,2vw,35px);min-width:160px;padding:19px 16px;border:1px solid #e2b363;display:inline-flex;justify-content:space-between;gap:16px;align-items:center;color:#f7db9f;font-size:11px;font-weight:800;letter-spacing:.11em;box-shadow:inset 0 0 10px #f8cc4e19,0 0 7px #d9a45143;transition:background .3s,box-shadow .3s}
+.home-page .tf-header-cta:hover{background:#b88a3822;box-shadow:0 0 22px #f3c36b75}
+.home-page main,.home-page .footer{position:relative;z-index:1}.home-page .tf-hero{min-height:100svh;padding:155px 20px 100px;display:flex;justify-content:center;align-items:center;position:relative;text-align:center;background:transparent!important}
+.home-page .tf-hero-inner{width:min(1100px,100%);margin:auto;position:relative;animation:tf-rise 1.2s ease-out both}
+@keyframes tf-rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.home-page .tf-headline{font-family:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;font-size:clamp(80px,10vw,154px);font-weight:900;letter-spacing:-.012em;line-height:.84;margin:0 auto 38px;text-align:center;max-width:1020px;text-shadow:0 7px 22px #000b;white-space:nowrap}
+.home-page .tf-headline>span{display:block;position:relative}.home-page .tf-headline .tf-silver{color:#f3efe6;background:linear-gradient(115deg,#e7dfce 4%,#fffefa 34%,#e6d4af 47%,#ffffff 57%,#e1d5bf 82%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 5px 4px #0008)}
+.home-page .tf-headline .tf-gold{font-style:italic;letter-spacing:-.02em;margin-top:.04em;background:linear-gradient(105deg,#b27e31 4%,#ebc47a 24%,#fff0bc 39%,#d59943 51%,#ffe69e 72%,#bb7d35 95%);background-size:150% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 4px 5px #2e1700);animation:tf-gold-shine 12s linear infinite}
+@keyframes tf-gold-shine{0%,16%{background-position:120% center}80%,100%{background-position:-40% center}}
+.home-page .tf-headline .tf-gold:after{content:"";position:absolute;width:63%;height:1px;left:18.5%;bottom:2px;background:linear-gradient(90deg,transparent,#df9d3a 32%,#ffe2a0 50%,#df9d3a 68%,transparent);filter:drop-shadow(0 0 8px #f9b95a);opacity:.75}
+.home-page .tf-hero-text{font-size:clamp(14px,1.27vw,18px);font-weight:500;line-height:1.63;letter-spacing:0;color:#f2f0ea;text-shadow:0 2px 12px #000,0 0 3px #000;margin:40px auto 30px}
+.home-page .tf-actions{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-top:31px}
+.home-page .tf-action{min-width:265px;padding:19px 25px;text-align:left;display:inline-flex;justify-content:space-between;align-items:center;gap:18px;color:#f4dca1;font-size:12px;font-weight:900;letter-spacing:.12em;border:1px solid #d2a558;background:rgba(0,0,0,.78);box-shadow:inset 0 1px #ffdfa23b;transition:transform .3s,box-shadow .3s,background .3s}
+.home-page .tf-action:hover{transform:translateY(-3px);box-shadow:0 0 30px #d1a05180}.home-page .tf-primary{background:linear-gradient(115deg,#c38e40,#ffe4a2 43%,#c99446);color:#160f06;border-color:#f4ce80;box-shadow:0 0 14px #f7b85077,inset 0 1px #ffecc4}
+.home-page .tf-secondary:hover{background:#31210eae}.home-page .tf-action span{font-size:18px}
+/* Der Rest der Startseite laesst das Video durchscheinen. Nur Karten bekommen einen zarten Lesbarkeits-Hintergrund. */
+.home-page main>.section,.home-page .section.story-grid,.home-page .section.overview-grid{background:transparent!important;background-image:none!important;background-color:transparent!important}
+.home-page .link-tiles a{background:rgba(6,5,4,.52)!important;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.home-page .story-pic{box-shadow:0 8px 40px #0009}.home-page .footer{background:rgba(0,0,0,.5)!important}
+@media(max-width:1200px){.home-page .tf-nav{gap:10px}.home-page .tf-header-cta{min-width:138px;padding:15px 10px;margin-left:5px}.home-page .tf-brand .logo{width:195px}}
+@media(max-width:980px){.home-page.tf-relaunch-home>.tf-header{min-height:80px;margin-bottom:-80px;padding:8px 5vw}.home-page .menu-btn{display:block}.home-page .tf-header-cta{display:none}.home-page .tf-nav{gap:15px}.home-page .tf-headline{font-size:clamp(64px,12vw,112px)}}
+@media(max-width:600px){.home-page .tf-hero{padding:130px 16px 70px}.home-page .tf-headline{font-size:clamp(50px,12.8vw,78px);margin-bottom:28px}.home-page .tf-desktop-break{display:none}.home-page .tf-hero-text{margin:30px auto 22px}.home-page .tf-actions{flex-direction:column;gap:12px}.home-page .tf-action{width:min(320px,100%);min-width:0}.home-page .tf-background video{object-position:center}}
+@media(prefers-reduced-motion:reduce){.home-page .tf-ambient-gold,.home-page .tf-headline .tf-gold,.home-page .tf-hero-inner{animation:none!important}}
 
-.home-page .nav a.nav-cta{padding:16px 20px;border:1px solid #c9984b;background:rgba(0,0,0,.55);box-shadow:inset 0 1px #ffe3a421,0 0 12px #c9903827;white-space:nowrap;margin-left:8px}
-.home-page .nav a.nav-cta::after,.home-page .nav a.nav-cta::before{display:none!important}
-.home-page .nav a.nav-cta:hover{box-shadow:0 0 20px #e4b46077}
+/* FIX 2026-10-27: Keine schwarze Filterschicht ueber dem Video. */
+.home-page.tf-relaunch-home .tf-video-color,
+.home-page.tf-relaunch-home .tf-video-vignette{display:none!important;background:none!important;box-shadow:none!important;}
+.home-page.tf-relaunch-home .tf-background video{opacity:1!important;filter:brightness(1.3) contrast(1.06) saturate(.88)!important;}
+/* Die unteren Bereiche bleiben durchsichtig, damit die Videoflaeche sichtbar ist. */
+.home-page.tf-relaunch-home main>.section,
+.home-page.tf-relaunch-home main>.story-grid,
+.home-page.tf-relaunch-home main>.overview-grid{background:none!important;background-color:transparent!important;background-image:none!important;box-shadow:none!important;}
+.home-page.tf-relaunch-home .story-grid>div{background:transparent!important;}
