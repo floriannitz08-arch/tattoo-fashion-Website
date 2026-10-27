@@ -1,0 +1,8 @@
+/* Nur die Kartenkacheln dunkel einfärben. Goldmarker und Bedienelemente bleiben unverändert. */
+#map .leaflet-tile-pane {filter: grayscale(1) invert(1) hue-rotate(180deg) brightness(.72) contrast(.9);}
+#map .leaflet-container {background:#101010;}
+#map .leaflet-control-attribution {background:rgba(0,0,0,.62)!important;color:#ddd!important;}
+#map .leaflet-control-attribution a {color:#e3c58b!important;}
+#map .leaflet-control-zoom a {background:#141414;color:#dfb66e;border-color:#5f5037;}
+#map .leaflet-control-zoom a:hover {background:#252525;}
+#map-fallback[hidden]{display:none!important;}
