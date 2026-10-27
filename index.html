@@ -1,14 +1,46 @@
-<!DOCTYPE html>
-
-<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Tattoo Fashion | Startseite – Cinematic Luxury</title><link href="style.css" rel="stylesheet"/><link href="home-video.css" rel="stylesheet"/></head><body class="home-page">
-<header class="header"><a aria-label="Tattoo Fashion Startseite" href="index.html"><img alt="Tattoo Fashion Original-Logo" class="logo" src="assets/logo.png"/></a><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menü</button><nav class="nav" id="navigation"><a class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a><a class="nav-cta" href="studios.html">Studio finden ↗</a></nav></header>
-<div class="tf-sitewide-video" aria-hidden="true">
-<video autoplay="" class="tf-film-video" id="tfHeroVideo" loop="" muted="" playsinline="" poster="assets/hero.webp" preload="auto"><source src="assets/tattoo-fashion-hintergrundvideo.mp4" type="video/mp4"/>Dein Browser unterstützt HTML5-Video nicht.</video>
-<div class="tf-sitewide-shade"></div><div class="tf-sitewide-flare"></div>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030303">
+<title>Tattoo Fashion | Whatever you think, we ink.</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home-video.css?v=20261027-2">
+</head>
+<body class="home-page tf-relaunch-home">
+<div class="tf-background" aria-hidden="true">
+  <video id="tfBackgroundVideo" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/hero.webp"><source src="assets/tattoo-fashion-hintergrundvideo.mp4" type="video/mp4"></video>
+  <div class="tf-video-color"></div><div class="tf-video-vignette"></div><div class="tf-ambient-gold"></div>
 </div>
-<main><section aria-label="Tattoo Fashion – Whatever you think, we ink" class="tf-film-hero">
-<div class="tf-film-content"><h1 class="tf-film-title"><span>WHATEVER</span><span>YOU THINK,</span><em>WE INK.</em></h1><div class="tf-film-buttons"><a class="tf-film-cta primary" href="studios.html">UNSERE STUDIOS <span>↗</span></a><a class="tf-film-cta" href="geschichte.html">UNSERE GESCHICHTE <span>↗</span></a></div></div>
+<header class="header tf-header">
+  <a class="tf-brand" href="index.html" aria-label="Tattoo Fashion – Startseite"><img src="assets/logo.png" class="logo" alt="Tattoo Fashion – Original-Logo"></a>
+  <button class="menu-btn" aria-controls="navigation" aria-expanded="false">☰ Menü</button>
+  <nav class="nav tf-nav" id="navigation" aria-label="Hauptnavigation">
+    <a class="active" aria-current="page" href="index.html">Startseite</a>
+    <a href="geschichte.html">Unsere Geschichte</a>
+    <a href="studios.html">Studios</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="shop.html">Shop</a>
+    <a href="partner.html">Partner</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="tf-header-cta" href="studios.html">STUDIO FINDEN <span>↗</span></a>
+</header>
+<main>
+<section class="tf-hero" aria-label="Tattoo Fashion – Whatever you think, we ink.">
+  <div class="tf-hero-inner">
+    <h1 class="tf-headline"><span class="tf-silver">WHATEVER</span><span class="tf-silver">YOU THINK,</span><span class="tf-gold">WE INK.</span></h1>
+    <p class="tf-hero-text">Tattoo Fashion verbindet internationale Artists, echte Handwerkskunst<br class="tf-desktop-break"> und eine kompromisslose Leidenschaft für individuelle Körperkunst.</p>
+    <div class="tf-actions"><a class="tf-action tf-primary" href="studios.html">UNSERE STUDIOS <span>↗</span></a><a class="tf-action tf-secondary" href="geschichte.html">UNSERE GESCHICHTE <span>↗</span></a></div>
+  </div>
 </section>
-<section class="section story-grid" id="discover"><img alt="Atmosphärische Tattoo-Kunst – Designvisualisierung" class="story-pic reveal" src="assets/story.webp"/><div class="reveal"><div class="eyebrow">Unsere Geschichte</div><h2>MEHR ALS<br><em class="gold">INK.</em></h2><p>Jede Idee hat eine Geschichte. Entdecke die Menschen, die Kunst und die Leidenschaft hinter Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte.html">UNSERE GESCHICHTE ↗</a></div></section>
-<section class="section overview-grid"><div class="eyebrow">Die Tattoo Fashion Welt</div><h2>ENTDECKE<br><em class="gold">UNSERE WELT.</em></h2><div class="link-tiles"><a href="studios.html"><span>01 / INTERNATIONAL</span><strong>STUDIOS</strong><small>Interaktive Karte &amp; alle Standorte →</small></a><a href="leistungen.html"><span>02 / ART &amp; BEAUTY</span><strong>LEISTUNGEN</strong><small>Tattoo · Piercing · Removal · Carbonpeeling · Fashionsmile →</small></a><a href="shop.html"><span>03 / LIFESTYLE</span><strong>SHOP</strong><small>Tattoo Fashion Merchandise →</small></a><a href="partner.html"><span>04 / NETWORK</span><strong>PARTNER</strong><small>Werde Teil von Tattoo Fashion →</small></a></div></section></main>
-<footer class="footer"><span>© Tattoo Fashion · Designvorlage</span><span><a href="kontakt.html">Kontakt</a> · <a href="studios.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Aktuelle Website ↗</a></span></footer><script src="site.js"></script><script>(function(){ const v=document.getElementById('tfHeroVideo'); if(!v)return;v.muted=true;v.defaultMuted=true; const play=()=>v.play().catch(err=>console.warn('Video-Wiedergabe nicht möglich:',err)); if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',play,{once:true});else play();document.addEventListener('visibilitychange',()=>{if(!document.hidden)play()}); v.addEventListener('error',()=>console.error('Tattoo Fashion Video konnte nicht geladen werden:',v.currentSrc,v.error));})();</script></body></html>
+<section class="section story-grid" id="discover"><img alt="Portrait aus der Tattoo-Fashion-Fotogalerie" class="story-pic reveal" src="https://tattoo-fashion-online.de/wp-content/uploads/2022/04/PHOTO-2022-04-20-00-07-54.jpg" loading="lazy" onerror="this.onerror=null;this.src='assets/story.webp'"><div class="reveal"><div class="eyebrow">Unsere Geschichte</div><h2>MEHR ALS<br><em class="gold">INK.</em></h2><p>Jede Idee hat eine Geschichte. Entdecke die Menschen, die Kunst und die Leidenschaft hinter Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte.html">UNSERE GESCHICHTE ↗</a></div></section>
+<section class="section overview-grid"><div class="eyebrow">Die Tattoo Fashion Welt</div><h2>ENTDECKE<br><em class="gold">UNSERE WELT.</em></h2><div class="link-tiles"><a href="studios.html"><span>01 / INTERNATIONAL</span><strong>STUDIOS</strong><small>Interaktive Karte &amp; alle Standorte →</small></a><a href="leistungen.html"><span>02 / ART &amp; BEAUTY</span><strong>LEISTUNGEN</strong><small>Tattoo · Piercing · Removal · Carbonpeeling · Fashionsmile →</small></a><a href="shop.html"><span>03 / LIFESTYLE</span><strong>SHOP</strong><small>Tattoo Fashion Merchandise →</small></a><a href="partner.html"><span>04 / NETWORK</span><strong>PARTNER</strong><small>Werde Teil von Tattoo Fashion →</small></a></div></section>
+</main>
+<footer class="footer"><span>© Tattoo Fashion · Designvorlage</span><span><a href="kontakt.html">Kontakt</a> · <a href="studios.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Aktuelle Website ↗</a></span></footer>
+<script src="site.js"></script>
+<script>
+(()=>{const video=document.getElementById('tfBackgroundVideo');if(!video)return;video.muted=true;video.defaultMuted=true;video.playsInline=true;const start=()=>{const promise=video.play();if(promise&&promise.catch)promise.catch(()=>{});};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();window.addEventListener('pageshow',start);document.addEventListener('visibilitychange',()=>{if(!document.hidden)start();});})();
+</script>
+</body></html>
