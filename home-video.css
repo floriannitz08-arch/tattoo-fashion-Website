@@ -101,3 +101,56 @@ body.home-page .footer::after {
   display: none !important;
   content: none !important;
 }
+
+
+/* ===== TATTOO FASHION · DEEP BLACK PALETTE / 27.10.2026 =====
+   Only neutralize brown surfaces; preserve bronze-gold type, effects, video.
+   This stylesheet section can be copied to the end of either page stylesheet. */
+:root {
+ --bg: #020202; --panel: #080808; --line: rgba(200,157,86,.20);
+ --cream: #f7f2e9; --muted: #c3c1bd;
+}
+body.home-page, body.interior-page { background-color: #020202 !important; color:var(--cream); }
+/* Never paint an opaque brown/black overlay across the site-wide video. */
+body.home-page .section, body.interior-page .section,
+body.home-page main, body.interior-page main,
+body.home-page .overview-grid, body.interior-page .finder,
+body.interior-page .subhero, body.interior-page .studio-teaser {
+ background-color: transparent !important;
+}
+/* Cards and content panels are true neutral blacks, not chocolate/sepia. */
+body.home-page .link-tiles a,
+body.interior-page .panel,
+body.interior-page .service,
+body.interior-page .service-feature,
+body.interior-page .service-content,
+body.interior-page .service-more,
+body.interior-page .studio-card,
+body.interior-page .card-body,
+body.interior-page .contact-note,
+body.interior-page .contact-card,
+body.interior-page .partner-card,
+body.interior-page .shop-card,
+body.interior-page .link-tiles a {
+ background-color: rgba(4,4,4,.88) !important;
+ background-image: none !important;
+}
+body.interior-page .search, body.interior-page .filter,
+body.interior-page input, body.interior-page textarea, body.interior-page select {
+ background-color: #090909 !important; color: #f5f1eb;
+}
+body.interior-page .filter.active,body.interior-page .filter:hover {
+ background-color: #171717 !important;
+}
+/* Preserve video images and artwork in media panels. */
+body.interior-page .service-media, body.interior-page .card-image,
+body.interior-page .map-frame, body.interior-page .map,
+body.interior-page .leaflet-container {
+ background-color: #090909 !important;
+}
+/* Faint neutral edge, not a gold separator bar. */
+body.home-page .link-tiles a,body.interior-page .service-feature,
+body.interior-page .panel,body.interior-page .studio-card {
+ border-color: rgba(195,195,195,.12) !important;
+}
+/* Never change typography gradients, highlighted gold, CTAs, or gold flares. */
