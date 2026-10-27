@@ -103,4 +103,99 @@ body.interior-page main .service-heading {
 .service-content summary:hover {
   color: var(--gold-bright) !important;
 }
-/* Text in ausgefuellten Gold-Buttons bleibt absichtlich dunkel/lesbar. */
+/* Text in ausgefuellten Gold-Buttons b/* Tattoo Fashion – zentrale Korrektur der Texte, 27.10.2026.
+   Ganz am ENDE von style.css einfügen oder als LETZTES Stylesheet laden.
+   Kein Eingriff in Videos, Footer, Bilddateien, Karten oder Layout-Funktionen. */
+:root {
+  --gold: #E5B84F;
+  --light: #F2D480;
+  --tf-gold: #E5B84F;
+  --tf-gold-bright: #F5D783;
+  --grad: linear-gradient(105deg,#BF8830 0%,#E5B84F 34%,#F8DEA0 51%,#D29B3B 76%,#E5B84F 100%);
+}
+/* Einheitliche Gold-Typografie: Navigation, Eyebrows, explizit goldene Akzente. */
+body .header .nav a,
+body .tf-header .tf-nav a,
+body .eyebrow,
+body .service-overline,
+body .service-num,
+body .service-corner,
+body .service-period,
+body .count,
+body .tip,
+body .footer a,
+body .tf-partner-group .eyebrow {
+  color: #E5B84F !important;
+}
+body .header .nav a.active,
+body .header .nav a:hover,
+body .tf-header .tf-nav a.active,
+body .tf-header .tf-nav a:hover {
+  color: #F5D783 !important;
+}
+/* Goldschrift mit identischem Metallglanz: keine alten bräunlichen Farbverläufe. */
+body .gold, body em.gold, body .gold-text,
+body main .tf-gold, body main .text-gold {
+  background-image: linear-gradient(105deg,#BF8830 0%,#E5B84F 34%,#F8DEA0 51%,#D29B3B 76%,#E5B84F 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #E5B84F;
+}
+/* Gemeinsame horizontale Mitte der großen Titel und Einleitungstexte. */
+body main .subhero .inner,
+body main .inner-page-hero .inner,
+body main .section > .eyebrow,
+body main .section > h1,
+body main .section > h2,
+body main .section > .lead,
+body main .section > p.lead,
+body main .section > .section-title,
+body main .service-heading,
+body main .results-head,
+body main .tf-partner-intro,
+body main .tf-partner-group > h2,
+body main .tf-partner-join,
+body main .service-section > h2 {
+  text-align: center !important;
+}
+body main .subhero .inner,
+body main .inner-page-hero .inner,
+body main .section > .lead,
+body main .section > p.lead,
+body main .service-heading,
+body main .tf-partner-intro,
+body main .tf-partner-join {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body main .subhero h1,
+body main .inner-page-hero h1,
+body main .section > h1,
+body main .section > h2,
+body main .service-heading h2,
+body main .tf-partner-group > h2 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body main .service-heading,
+body main .results-head {
+  justify-content: center !important;
+  align-items: center !important;
+}
+body main .section > .lead,
+body main .subhero .lead,
+body main .inner-page-hero .lead {
+  max-width: 780px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+/* Titel mittig, aber Studiofilter, Karteninhalte und Kontaktformulare bedienbar lassen. */
+body main .finder > .results-head h2,
+body main .showcase-grid > .eyebrow,
+body main .showcase-grid > h2,
+body main .tf-partner-join > h2 {
+  text-align: center !important;
+}leibt absichtlich dunkel/lesbar. */
