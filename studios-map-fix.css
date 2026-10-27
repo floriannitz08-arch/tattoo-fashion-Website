@@ -1,0 +1,9 @@
+/* Tattoo Fashion – nur die Studio-Karte; andere Seiten bleiben unverändert. */
+/* Die alte globale Regel .map-fallback { display:grid } überschrieb HTML hidden. */
+#map-fallback[hidden] { display: none !important; }
+#map-fallback:not([hidden]) { display: grid; z-index: 3; }
+/* Die Leaflet-Fläche muss sichtbar und bedienbar bleiben. */
+#map { position: relative; z-index: 1; min-height: 530px; width: 100%; }
+.map-frame { position: relative; isolation: isolate; }
+.map-frame .leaflet-container { z-index: 1; }
+@media (max-width:780px) { #map { min-height: 400px; } }
