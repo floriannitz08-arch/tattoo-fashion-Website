@@ -37,3 +37,26 @@ html{scroll-padding-top:90px}body{background:#030303}.header{background:linear-g
 @media(max-width:780px){.home-page>.header{display:flex}.interior-page .subhero{min-height:420px}.interior-page .subhero h1{font-size:clamp(55px,10vw,95px)}.mobile-copy h1{font-size:clamp(56px,12vw,90px)}.header{height:75px}.nav{background:#090705f8;box-shadow:0 10px 50px #000}.nav a{font-size:14px;padding:5px 0}.nav a:after{bottom:-2px}}
 @media(max-width:480px){.mobile-copy h1{font-size:clamp(48px,12vw,70px)}.mobile-actions .btn{width:100%}.mobile-cinema{padding-top:70px}.mobile-cinema .eyebrow{letter-spacing:.13em}}
 @media(prefers-reduced-motion:reduce){.light-wash,.mobile-cinema-bg{animation:none}}
+
+/* ============================================================
+   Tattoo Fashion — Überschriften auf allen Seiten zentrieren
+   Ergänzung: 27.10.2026
+   Absichtlich nur Inhaltsüberschriften; Navigation, Formulare,
+   Partnerkarten und andere Layoutbereiche bleiben unangetastet.
+   ============================================================ */
+body.home-page main h2,
+body.home-page main h3,
+body.interior-page main h1,
+body.interior-page main h2,
+body.interior-page main h3,
+body.interior-page main .section-title,
+body.interior-page main .service-heading,
+body.interior-page main .tf-partner-intro,
+body.interior-page main .tf-partner-group > h2,
+body.interior-page main .tf-partner-join > h2 {
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+body.interior-page main .service-heading {
+  align-items: center !important;
+}
