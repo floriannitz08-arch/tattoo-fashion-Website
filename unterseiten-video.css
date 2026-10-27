@@ -29,7 +29,7 @@
 .interior-page .btn:hover,.interior-page .filter.active:hover{box-shadow:0 0 25px rgba(213,156,67,.30);transform:translateY(-2px)}
 .interior-page .subhero:after{content:"";position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(231,171,75,.32),transparent);pointer-events:none}
 /* video in every viewport, even as page scrolls */
-.interior-page>.tf-global-background{position:fixed!important;inset:0!important;z-index:-1!important}
+.interior-page>.tf-global-background{position:absolute!important;inset:0!important;z-index:-1!important}
 .interior-page .finder,.interior-page .studio-teaser{background:transparent!important}
 
 /* EINHEITLICHES DESIGN: gleiche Navigations-Sprache wie die Startseite. */
@@ -67,7 +67,7 @@
 
 /* V4: schwebende, dauerhaft sichtbare Kopfzeile ohne schwarzen Balken */
 .interior-page > header.header.tf-header {
-  position:fixed!important; top:0!important; left:0!important; right:0!important;
+  position:absolute!important; top:0!important; left:0!important; right:0!important;
   width:100%!important; box-sizing:border-box!important; z-index:999!important;
   background:transparent!important; background-image:none!important;
   border:0!important; border-bottom:0!important;
@@ -130,3 +130,14 @@
 }
 .interior-page > .footer {background:transparent!important; background-image:none!important;box-shadow:none!important}
 /* Schwebenden Header, aktive Goldnavigation, Karten und Buttons bewusst beibehalten. */
+
+/* Header nur am Seitenanfang zeigen und beim Scrollen natürlich verschwinden. */
+html body.interior-page > header.header.tf-header {
+ position: absolute !important; inset: 0 0 auto 0 !important;
+ z-index: 2147483000 !important; width: 100% !important;
+ background: transparent !important; border: 0 !important;
+ box-shadow: none !important; backdrop-filter: none !important;
+ -webkit-backdrop-filter: none !important;
+ transform: none !important; opacity: 1 !important; visibility: visible !important;
+}
+html body.interior-page > header.header.tf-header .menu-btn { display: none !important; }
