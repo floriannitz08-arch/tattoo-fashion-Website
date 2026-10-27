@@ -248,3 +248,40 @@
   body .header nav.nav a:last-child{grid-column:1/-1}
   body .header nav.nav a.nav-cta{border:1px solid #d0a149!important}
 }
+
+
+/* TATTOO FASHION – DESKTOP HEADER FIX (nach allen bisherigen Regeln)
+   Alte style.css versteckt die Startseiten-Navigation mit
+   .home-page > .header { display:none }. Desktop muss diese
+   Regel ausdrücklich übersteuern. */
+@media screen and (min-width: 1181px) {
+  body.home-page > .header,
+  body.home-page > header.header,
+  body.home-page.tf-relaunch-home > .tf-header,
+  body.home-page.tf-relaunch-home > header.tf-header {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    transform: none !important;
+    min-height: 90px;
+  }
+  body .header .nav,
+  body .header nav.nav,
+  body .tf-header .tf-nav,
+  body .tf-header nav.tf-nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    max-width: none !important;
+    transform: none !important;
+  }
+  body .header .menu-btn,
+  body .tf-header .menu-btn { display: none !important; }
+}
