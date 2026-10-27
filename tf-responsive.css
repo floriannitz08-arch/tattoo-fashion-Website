@@ -296,3 +296,25 @@ header.tf-header > .tf-header-cta {
   display: none !important;
   visibility: hidden !important;
 }
+
+/* FIX 2026-10-27: Header scrollt auf Smartphones normal aus dem Bild.
+   Überschreibt ältere fixed/sticky-Regeln; Desktop und Tablet bleiben gleich. */
+@media screen and (max-width: 700px) {
+  html body header.header,
+  html body .header.tf-header,
+  html body header.tf-header,
+  html body.home-page > .header,
+  html body.home-page > header.header,
+  html body .site-header,
+  html body .tf-header {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+    transform: none !important;
+    margin-top: 0 !important;
+  }
+  html body { scroll-padding-top: 0 !important; }
+}
