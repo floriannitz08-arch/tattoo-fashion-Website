@@ -28,3 +28,7 @@
 .video-hero .hero-darken { z-index:1; }
 .video-hero .hero-glow { z-index:2; }
 .video-hero .hero-center { position:relative;z-index:3; }
+
+/* UPDATE: Hintergrundvideo besser sichtbar, ohne Layoutänderungen */
+.video-hero .hero-video { filter: brightness(1.04) saturate(.77) contrast(1.05); opacity: 1; }
+.video-hero .hero-darken { background: linear-gradient(180deg, rgba(0,0,0,.40) 0%, rgba(0,0,0,.36) 32%, rgba(0,0,0,.43) 68%, rgba(0,0,0,.60) 100%), radial-gradient(ellipse at center,rgba(0,0,0,.03) 0%,rgba(0,0,0,.18) 76%); }
