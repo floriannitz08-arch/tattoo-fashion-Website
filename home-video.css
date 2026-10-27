@@ -37,3 +37,18 @@
 .home-page .footer { background:rgba(0,0,0,.87);backdrop-filter:blur(7px); }
 @media(max-width:900px){.home-page>.header{margin-bottom:-80px}}
 @media(prefers-reduced-motion:reduce){.home-page .tf-sitewide-flare{animation:none}}
+
+/* Update: Schwarze Flaechen unterhalb des Heroes entfernen.
+   Die Video-Abdunklung im ersten Bildschirm bleibt unveraendert. */
+.home-page main > .section,
+.home-page main > .section.story-grid,
+.home-page main > .section.overview-grid {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.home-page .overview-grid { background: transparent !important; }
+/* Nur auf den Textkarten etwas Kontrast fuer die Lesbarkeit */
+.home-page .link-tiles a { background: rgba(7,6,5,.50) !important; backdrop-filter: blur(3px); }
+.home-page .link-tiles a:hover { background: rgba(12,9,6,.66) !important; }
+.home-page .footer { background: rgba(0,0,0,.55) !important; backdrop-filter: none; }
