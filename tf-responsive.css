@@ -129,192 +129,66 @@
 }
 
 
-/* Tattoo Fashion — Mobile Button Alignment Fix · 2026-10-27
-   Begrenzung auf Handy/iPad; Desktop-Styles bleiben unangetastet. */
-@media (max-width: 1024px) {
-  .hero-actions, .mobile-actions, .cta-actions, .tf-film-buttons,
-  .service-bottom, .service-bottom .actions, .tf-product-bottom {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 12px !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-  :is(a.btn,button.btn,.tf-film-cta,.tf-header-cta,.shop-buy,
-      .service-bottom a.btn,.story-grid a.btn) {
-    box-sizing: border-box !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    width: auto !important;
-    text-align: center !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-    word-break: normal !important;
-    line-height: 1.35 !important;
-    padding: 14px 22px !important;
-    gap: 10px !important;
-    border-radius: 0 !important;
-  }
-  :is(a.btn,button.btn,.tf-film-cta,.tf-header-cta,.shop-buy) > :is(svg, i, .icon) {
-    flex: 0 0 auto !important;
-    max-width: 1.2em;
+/* Tattoo Fashion – einheitliche goldene Aktionsbuttons, 2026-10-27.
+   Die Navigation, Filter und Formularfelder sind ausdrücklich ausgenommen. */
+:root { --tf-button-border: #e8bd62; --tf-button-ink: #ffe2a0; }
+:is(a.btn, button.btn, a.tf-film-cta, a.shop-buy, .tf-product-detail,
+   .story-grid a.btn, .service-bottom a.btn, .link-tiles a.btn,
+   .partner-card a.btn, .contact-wrap a.btn) {
+  box-sizing:border-box !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:.7em !important;
+  max-width:100% !important;
+  min-height:64px !important;
+  padding:17px 34px !important;
+  background:rgba(4,4,4,.83) !important;
+  border:2px solid var(--tf-button-border) !important;
+  border-radius:0 !important;
+  color:var(--tf-button-ink) !important;
+  font-weight:750 !important;
+  font-size:clamp(.85rem,1vw,1.02rem) !important;
+  letter-spacing:.1em !important;
+  text-transform:uppercase !important;
+  line-height:1.4 !important;
+  text-align:center !important;
+  text-decoration:none !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  box-shadow:0 0 12px rgba(224,173,72,.08) !important;
+  transition:background .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease !important;
+}
+:is(a.btn,button.btn,a.tf-film-cta,a.shop-buy,.tf-product-detail):is(:hover,:focus-visible){
+  background:rgba(19,16,10,.95) !important;
+  border-color:#ffdfa0 !important;
+  box-shadow:0 0 18px rgba(223,175,86,.23) !important;
+  transform:translateY(-2px);
+}
+:is(a.btn,button.btn,a.tf-film-cta,a.shop-buy,.tf-product-detail):focus-visible{
+  outline:2px solid #fff0c5 !important;outline-offset:4px;
+}
+@media (max-width:1180px) {
+  :is(a.btn,button.btn,a.tf-film-cta,a.shop-buy,.tf-product-detail){
+    min-height:62px !important;
+    padding:16px 26px !important;
+    font-size:.92rem !important;
   }
 }
-@media (max-width: 600px) {
-  :is(.hero-actions,.mobile-actions,.cta-actions,.tf-film-buttons,.service-bottom) {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    width: min(100%, 360px) !important;
-    margin-inline: auto !important;
+@media (max-width:767px) {
+  :is(a.btn,button.btn,a.tf-film-cta,a.shop-buy,.tf-product-detail){
+    width:min(100%,370px) !important;
+    min-height:59px !important;
+    padding:15px 19px !important;
+    font-size:clamp(.8rem,3.2vw,.94rem) !important;
+    letter-spacing:.075em !important;
+    margin-inline:auto !important;
   }
-  :is(.hero-actions,.mobile-actions,.cta-actions,.tf-film-buttons,.service-bottom)
-    > :is(a.btn,button.btn,.tf-film-cta,.tf-header-cta,.shop-buy) {
-    width: 100% !important;
-    margin-inline: auto !important;
-  }
-  :is(a.btn,button.btn,.tf-film-cta,.tf-header-cta,.shop-buy) {
-    width: min(100%,360px) !important;
-    min-height: 52px !important;
-    padding: 13px 16px !important;
-    font-size: .77rem !important;
-    letter-spacing: .075em !important;
+  :is(.tf-film-buttons,.hero-actions,.mobile-actions,.cta-actions,.service-bottom){
+    display:flex !important;flex-wrap:wrap !important;align-items:center !important;
+    justify-content:center !important;gap:12px !important;
   }
 }
-
-/* === TF HEADER v4: Tablet single-row; mobile compact 2-column popover === */
-@media (min-width: 701px) and (max-width:1180px) {
-  body .header, body .header.tf-header, body .home-page>.header {
-    display:flex!important; flex-flow:row nowrap!important; align-items:center!important;
-    justify-content:space-between!important; padding:12px clamp(14px,2.2vw,32px)!important;
-    gap:clamp(12px,2vw,25px)!important; min-height:76px!important;
-    background:transparent!important; border:0!important;
-  }
-  body .header .tf-brand,body .header>a:has(.logo) {margin:0!important; flex:0 0 auto!important;}
-  body .header .logo{width:clamp(122px,16vw,190px)!important;max-height:65px!important}
-  body .header .menu-btn{display:none!important}
-  body .header nav.nav,body .header .nav.tf-nav,body .header nav.nav.open {
-    position:static!important;display:flex!important;flex-flow:row nowrap!important;
-    align-items:center!important;justify-content:flex-end!important;
-    gap:clamp(7px,1.2vw,17px)!important;flex:1 1 auto!important;width:auto!important;
-    min-width:0!important;max-width:none!important;padding:0!important;margin:0!important;
-    border:0!important;background:transparent!important;box-shadow:none!important;
-    opacity:1!important;visibility:visible!important;transform:none!important;
-  }
-  body .header nav.nav a{display:inline-flex!important;white-space:nowrap!important;
-    width:auto!important;min-height:34px!important;padding:7px 0!important;
-    font-size:clamp(8px,.95vw,12px)!important;letter-spacing:.025em!important}
-  body .header nav.nav a.nav-cta{padding:8px!important}
-}
-@media (max-width:700px) {
-  body .header,body .header.tf-header,body .home-page>.header {
-    position:relative!important;display:flex!important;flex-flow:row nowrap!important;
-    align-items:center!important;justify-content:space-between!important;
-    padding:10px 16px!important;min-height:66px!important;gap:12px!important;
-    background:transparent!important;border:0!important;box-shadow:none!important;
-  }
-  body .header .tf-brand,body .header>a:has(.logo){display:flex!important;flex:0 1 auto!important;margin:0!important;justify-content:flex-start!important}
-  body .header .logo{width:clamp(130px,39vw,178px)!important;max-height:60px!important}
-  body .header button.menu-btn {
-    display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;
-    justify-content:center!important;min-width:92px!important;min-height:41px!important;
-    padding:10px 13px!important;margin-left:auto!important;
-    color:#f4d58b!important;background:#080808e6!important;
-    border:1px solid #e5b84f!important;border-radius:2px!important;
-    box-shadow:0 0 15px #d9aa3220!important;font-size:12px!important;
-    letter-spacing:.04em!important;line-height:1.2!important;cursor:pointer!important;
-  }
-  body .header nav.nav,body .header .nav.tf-nav {
-    position:absolute!important;left:12px!important;right:12px!important;top:calc(100% + 5px)!important;
-    width:auto!important;max-width:none!important;height:auto!important;max-height:min(70svh,440px)!important;
-    overflow-y:auto!important;inset-inline:12px!important;inset-block:auto auto!important;
-    margin:0!important;padding:13px!important;box-sizing:border-box!important;
-    display:none!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    gap:5px 10px!important;align-items:stretch!important;
-    background:rgba(6,6,6,.97)!important;border:1px solid #a98035b0!important;
-    box-shadow:0 16px 30px #0008!important;z-index:110!important;
-    visibility:visible!important;opacity:1!important;transform:none!important;
-  }
-  body .header nav.nav.open,body .header .nav.tf-nav.open {display:grid!important}
-  body .header nav.nav a,body .header .nav.tf-nav a{
-    display:flex!important;justify-content:center!important;align-items:center!important;
-    white-space:normal!important;text-align:center!important;line-height:1.35!important;
-    font-size:11px!important;letter-spacing:.035em!important;
-    min-height:46px!important;width:auto!important;margin:0!important;padding:10px 5px!important;
-    background:transparent!important;border:0!important;
-    border-bottom:1px solid #a07b353c!important;
-  }
-  body .header nav.nav a:last-child{grid-column:1/-1}
-  body .header nav.nav a.nav-cta{border:1px solid #d0a149!important}
-}
-
-
-/* TATTOO FASHION – DESKTOP HEADER FIX (nach allen bisherigen Regeln)
-   Alte style.css versteckt die Startseiten-Navigation mit
-   .home-page > .header { display:none }. Desktop muss diese
-   Regel ausdrücklich übersteuern. */
-@media screen and (min-width: 1181px) {
-  body.home-page > .header,
-  body.home-page > header.header,
-  body.home-page.tf-relaunch-home > .tf-header,
-  body.home-page.tf-relaunch-home > header.tf-header {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    transform: none !important;
-    min-height: 90px;
-  }
-  body .header .nav,
-  body .header nav.nav,
-  body .tf-header .tf-nav,
-  body .tf-header nav.tf-nav {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: static !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    max-width: none !important;
-    transform: none !important;
-  }
-  body .header .menu-btn,
-  body .tf-header .menu-btn { display: none !important; }
-}
-
-
-/* Tattoo Fashion: kein zusätzliches „Studio finden“ im Header.
-   Gilt auf Desktop, Tablet und Smartphone. Navigation > Studios bleibt. */
-header.header > a.tf-header-cta,
-header.tf-header > a.tf-header-cta,
-header.header > .tf-header-cta,
-header.tf-header > .tf-header-cta {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* FIX 2026-10-27: Header scrollt auf Smartphones normal aus dem Bild.
-   Überschreibt ältere fixed/sticky-Regeln; Desktop und Tablet bleiben gleich. */
-@media screen and (max-width: 700px) {
-  html body header.header,
-  html body .header.tf-header,
-  html body header.tf-header,
-  html body.home-page > .header,
-  html body.home-page > header.header,
-  html body .site-header,
-  html body .tf-header {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    inset: auto !important;
-    transform: none !important;
-    margin-top: 0 !important;
-  }
-  html body { scroll-padding-top: 0 !important; }
+@media (prefers-reduced-motion:reduce){
+  :is(a.btn,button.btn,a.tf-film-cta,a.shop-buy,.tf-product-detail){transition:none !important;}
 }
