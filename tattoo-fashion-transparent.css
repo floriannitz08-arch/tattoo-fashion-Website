@@ -1,0 +1,59 @@
+/* TATTOO FASHION – gemeinsame finale Transparenz / Zentrierung (alle 7 Seiten)
+   Diese Datei ist die letzte geladene CSS-Datei. Bestehende Video-, Logo- und Navigationseffekte bleiben erhalten. */
+:root {--bg:#020202; --panel:transparent;}
+html {background:#020202;}
+body.home-page, body.interior-page{background:#020202!important;}
+/* Globales Videomotiv fest im Hintergrund: beim Scrollen durchgehend sichtbar */
+body.home-page > .tf-sitewide-video,
+body.interior-page > .tf-global-background {position:fixed!important;inset:0!important;width:100%!important;height:100vh!important;height:100dvh!important;z-index:0!important;overflow:hidden!important;pointer-events:none!important;}
+body.home-page > .tf-sitewide-video video,
+body.interior-page > .tf-global-background video {display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;opacity:1!important;}
+/* Keine braunen oder schwarzen Videofilter. Film selbst bleibt unverändert. */
+body.interior-page .tf-global-tint,body.home-page .tf-sitewide-shade {opacity:0!important;background:transparent!important;}
+/* Die Flare-/Glint-Effekte bleiben bewusst aktiv. */
+body.home-page > main,body.interior-page > main,
+body.home-page > footer,body.interior-page > footer {position:relative;z-index:1;}
+/* Keine deckenden Inhaltsflächen: Flächen bleiben transparent, NICHT Formulare/Buttons/Map-Tiles */
+body.home-page main,body.interior-page main,
+body.home-page main > section,body.interior-page main > section,
+body.home-page main .story-grid,body.home-page main .overview-grid,
+body.home-page main .link-tiles a,
+body.interior-page main .subhero,body.interior-page main .finder,
+body.interior-page main .studio-teaser,body.interior-page main .panel,
+body.interior-page main .service,body.interior-page main .service-feature,
+body.interior-page main .service-content,body.interior-page main .service-more,
+body.interior-page main .studio-card,body.interior-page main .card-body,
+body.interior-page main .contact-card,body.interior-page main .contact-note,
+body.interior-page main .partner-card,body.interior-page main .shop-card,
+body.interior-page main .service-heading,body.interior-page main .service-bottom,
+body.interior-page .footer,body.home-page .footer{
+ background:transparent!important;background-color:transparent!important;
+ background-image:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ box-shadow:none!important;
+}
+body.home-page main > section::before,body.home-page main > section::after,
+body.interior-page main > section::before,body.interior-page main > section::after {background-image:none!important;box-shadow:none!important;}
+/* Hauptüberschriften und Abschnittseinleitungen zentrieren; keine Zentrierung von Formular- und Studiocard-Text. */
+body.home-page main h1,body.home-page main h2,
+body.interior-page main .subhero h1,body.interior-page main .subhero .lead,
+body.interior-page main .subhero .eyebrow,
+body.interior-page main section > h2,body.interior-page main .results-head h2,
+body.interior-page main .studio-teaser h2,
+body.interior-page main .section > h2 {text-align:center!important;}
+body.interior-page main .subhero .inner,body.interior-page main .subhero .inner > p {text-align:center!important;}
+body.interior-page main .subhero .inner > .btn {margin-inline:auto!important;}
+body.home-page main h1,body.home-page main h2,body.home-page main p,
+body.interior-page main h1,body.interior-page main h2,body.interior-page main h3,body.interior-page main p {text-shadow:0 2px 10px #000,0 5px 26px rgba(0,0,0,.7);}
+/* Header auf Unterseiten NICHT fixieren; soll beim Scrollen aus dem Bild verschwinden. */
+body.interior-page > header.tf-header {position:relative!important;top:auto!important;inset:auto!important;background:transparent!important;box-shadow:none!important;}
+/* keine langen goldenen Abschnittslinien – Buttons und Navigation bleiben golden */
+body.interior-page main > section {border-top:0!important;border-bottom:0!important;}
+/* Karte: genug Höhe, sichtbar über Video, bedienbar */
+body.interior-page #map,body.interior-page .map-frame{min-height:410px!important;position:relative;}
+body.interior-page #map{height:460px!important;z-index:1;}
+body.interior-page .map-frame{isolation:isolate;}
+body.interior-page .map-fallback[hidden]{display:none!important;}
+body.interior-page .leaflet-container {background:#111!important;}
+body.interior-page .leaflet-tile-pane {opacity:1!important;}
+@media(max-width:700px){body.interior-page #map{height:360px!important;min-height:360px!important;}}
+@media(prefers-reduced-motion:reduce){.tf-sitewide-flare,.tf-global-glint{animation:none!important;}}
