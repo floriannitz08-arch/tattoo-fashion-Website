@@ -285,3 +285,14 @@
   body .header .menu-btn,
   body .tf-header .menu-btn { display: none !important; }
 }
+
+
+/* Tattoo Fashion: kein zusätzliches „Studio finden“ im Header.
+   Gilt auf Desktop, Tablet und Smartphone. Navigation > Studios bleibt. */
+header.header > a.tf-header-cta,
+header.tf-header > a.tf-header-cta,
+header.header > .tf-header-cta,
+header.tf-header > .tf-header-cta {
+  display: none !important;
+  visibility: hidden !important;
+}
