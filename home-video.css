@@ -63,3 +63,13 @@
   .home-page > .header { justify-content: flex-end !important; }
   .home-page > .header .menu-btn { margin-left: auto; }
 }
+
+/* 2026-10-27 – gezielter Marken-Layout-Fix: Logo statt Slogan. */
+.home-page .tf-film-content { width: min(1060px, 100%) !important; }
+.home-page .tf-center-brand { margin: 0 auto !important; padding: 0 !important; width: min(54vw, 560px); max-width: 100%; line-height: 1; animation: tfBrandReveal 1.3s ease-out both; }
+.home-page .tf-center-brand img { display: block; width: 100%; height: auto; max-height: 42vh; object-fit: contain; margin: 0 auto; filter: drop-shadow(0 0 12px rgba(215,165,78,.24)) drop-shadow(0 12px 32px rgba(0,0,0,.7)); }
+.home-page .tf-film-hero::after { content: ''; position: absolute; pointer-events: none; left: 50%; top: 47%; width: min(720px,70vw); height: 3px; transform: translate(-50%,-50%); background: linear-gradient(90deg,transparent,rgba(237,166,75,.24),rgba(255,218,145,.63),rgba(237,166,75,.24),transparent); box-shadow: 0 0 17px rgba(240,170,78,.25); opacity: .4; }
+.home-page .tf-film-buttons { margin-top: clamp(28px,4vw,56px) !important; }
+@keyframes tfBrandReveal { from {opacity:0; transform: translateY(12px)} to {opacity:1;transform: translateY(0)} }
+@media(max-width:780px) {.home-page .tf-center-brand {width:min(84vw,440px)} .home-page .tf-center-brand img{max-height:36vh}}
+@media(prefers-reduced-motion:reduce){.home-page .tf-center-brand{animation:none}}
