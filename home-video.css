@@ -82,3 +82,22 @@
   .home-page .tf-center-brand { width: min(91vw, 520px) !important; }
   .home-page .tf-center-brand img { max-height: 43vh !important; }
 }
+
+/* Startseite: schwarzen Balken am Seitenende entfernen, Videohintergrund sichtbar lassen. */
+body.home-page .footer,
+body.home-page footer.footer {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  position: relative;
+  z-index: 1;
+}
+body.home-page .footer::before,
+body.home-page .footer::after {
+  display: none !important;
+  content: none !important;
+}
