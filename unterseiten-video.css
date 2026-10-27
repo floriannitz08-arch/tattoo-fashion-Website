@@ -29,7 +29,7 @@
 .interior-page .btn:hover,.interior-page .filter.active:hover{box-shadow:0 0 25px rgba(213,156,67,.30);transform:translateY(-2px)}
 .interior-page .subhero:after{content:"";position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(231,171,75,.32),transparent);pointer-events:none}
 /* video in every viewport, even as page scrolls */
-.interior-page>.tf-global-background{position:absolute!important;inset:0!important;z-index:-1!important}
+.interior-page>.tf-global-background{position:fixed!important;inset:0!important;z-index:-1!important}
 .interior-page .finder,.interior-page .studio-teaser{background:transparent!important}
 
 /* EINHEITLICHES DESIGN: gleiche Navigations-Sprache wie die Startseite. */
@@ -67,7 +67,7 @@
 
 /* V4: schwebende, dauerhaft sichtbare Kopfzeile ohne schwarzen Balken */
 .interior-page > header.header.tf-header {
-  position:absolute!important; top:0!important; left:0!important; right:0!important;
+  position:fixed!important; top:0!important; left:0!important; right:0!important;
   width:100%!important; box-sizing:border-box!important; z-index:999!important;
   background:transparent!important; background-image:none!important;
   border:0!important; border-bottom:0!important;
@@ -130,104 +130,3 @@
 }
 .interior-page > .footer {background:transparent!important; background-image:none!important;box-shadow:none!important}
 /* Schwebenden Header, aktive Goldnavigation, Karten und Buttons bewusst beibehalten. */
-
-/* Header nur am Seitenanfang zeigen und beim Scrollen natürlich verschwinden. */
-html body.interior-page > header.header.tf-header {
- position: absolute !important; inset: 0 0 auto 0 !important;
- z-index: 2147483000 !important; width: 100% !important;
- background: transparent !important; border: 0 !important;
- box-shadow: none !important; backdrop-filter: none !important;
- -webkit-backdrop-filter: none !important;
- transform: none !important; opacity: 1 !important; visibility: visible !important;
-}
-html body.interior-page > header.header.tf-header .menu-btn { display: none !important; }
-
-
-/* V7 – Nur für Leistungen / Shop / Partner / Kontakt: keine Trennlinien.
-   Navigation-Underline, CTA-Goldränder und Akzent-Licht bleiben erhalten. */
-html body.interior-page.tf-no-divider > main > section,
-html body.interior-page.tf-no-divider > main > section::before,
-html body.interior-page.tf-no-divider > main > section::after,
-html body.interior-page.tf-no-divider > main .subhero,
-html body.interior-page.tf-no-divider > main .subhero::before,
-html body.interior-page.tf-no-divider > main .subhero::after,
-html body.interior-page.tf-no-divider > main .service-bottom,
-html body.interior-page.tf-no-divider > main .results-head,
-html body.interior-page.tf-no-divider > .footer {
-  border-top:0 !important; border-bottom:0 !important;
-  background-image:none !important;
-}
-html body.interior-page.tf-no-divider > main > section::before,
-html body.interior-page.tf-no-divider > main > section::after,
-html body.interior-page.tf-no-divider > main .subhero::before,
-html body.interior-page.tf-no-divider > main .subhero::after,
-html body.interior-page.tf-no-divider > main .eyebrow::before {
-  content:none !important; display:none !important;
-}
-html body.interior-page.tf-no-divider > main hr,
-html body.interior-page.tf-no-divider > main .divider,
-html body.interior-page.tf-no-divider > main .separator {
-  display:none !important;
-}
-html body.interior-page.tf-no-divider > main .service-feature details,
-html body.interior-page.tf-no-divider > main .service-feature details summary,
-html body.interior-page.tf-no-divider > main .contact-note {
-  border-top:0 !important; border-bottom:0 !important;
-}
-/* Hintergrund wieder frei sichtbar, keine goldene Linie im Footer. */
-html body.interior-page.tf-no-divider > .footer {
-  background:transparent !important;box-shadow:none !important;
-}
-
-
-/* ===== TATTOO FASHION · DEEP BLACK PALETTE / 27.10.2026 =====
-   Only neutralize brown surfaces; preserve bronze-gold type, effects, video.
-   This stylesheet section can be copied to the end of either page stylesheet. */
-:root {
- --bg: #020202; --panel: #080808; --line: rgba(200,157,86,.20);
- --cream: #f7f2e9; --muted: #c3c1bd;
-}
-body.home-page, body.interior-page { background-color: #020202 !important; color:var(--cream); }
-/* Never paint an opaque brown/black overlay across the site-wide video. */
-body.home-page .section, body.interior-page .section,
-body.home-page main, body.interior-page main,
-body.home-page .overview-grid, body.interior-page .finder,
-body.interior-page .subhero, body.interior-page .studio-teaser {
- background-color: transparent !important;
-}
-/* Cards and content panels are true neutral blacks, not chocolate/sepia. */
-body.home-page .link-tiles a,
-body.interior-page .panel,
-body.interior-page .service,
-body.interior-page .service-feature,
-body.interior-page .service-content,
-body.interior-page .service-more,
-body.interior-page .studio-card,
-body.interior-page .card-body,
-body.interior-page .contact-note,
-body.interior-page .contact-card,
-body.interior-page .partner-card,
-body.interior-page .shop-card,
-body.interior-page .link-tiles a {
- background-color: rgba(4,4,4,.88) !important;
- background-image: none !important;
-}
-body.interior-page .search, body.interior-page .filter,
-body.interior-page input, body.interior-page textarea, body.interior-page select {
- background-color: #090909 !important; color: #f5f1eb;
-}
-body.interior-page .filter.active,body.interior-page .filter:hover {
- background-color: #171717 !important;
-}
-/* Preserve video images and artwork in media panels. */
-body.interior-page .service-media, body.interior-page .card-image,
-body.interior-page .map-frame, body.interior-page .map,
-body.interior-page .leaflet-container {
- background-color: #090909 !important;
-}
-/* Faint neutral edge, not a gold separator bar. */
-body.home-page .link-tiles a,body.interior-page .service-feature,
-body.interior-page .panel,body.interior-page .studio-card {
- border-color: rgba(195,195,195,.12) !important;
-}
-/* Never change typography gradients, highlighted gold, CTAs, or gold flares. */
