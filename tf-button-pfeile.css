@@ -1,0 +1,13 @@
+/* Einheitliche Goldpfeile auf allen Geraeten. Keine Emoji-Darstellung. */
+.tf-arrow-icon {
+ display:inline-block !important; width:1.05em !important; height:1.05em !important;
+ flex:0 0 1.05em !important; vertical-align:middle !important;
+ fill:none !important; stroke:currentColor !important;
+ stroke-width:2 !important; stroke-linecap:round !important;
+ stroke-linejoin:round !important;
+ color:inherit !important; filter:none !important; transform:none !important;
+}
+.tf-arrow-target {display:inline-flex !important; align-items:center !important; justify-content:center !important; gap:.65em !important;}
+.tf-arrow-target:hover .tf-arrow-icon {transform:translate(2px,-2px) !important;transition:transform .18s ease !important;}
+.tf-arrow-target .tf-previous-arrow {display:none !important;}
+@media(prefers-reduced-motion:reduce){.tf-arrow-target:hover .tf-arrow-icon{transform:none !important;transition:none !important;}}
