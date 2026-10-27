@@ -73,3 +73,12 @@
 @keyframes tfBrandReveal { from {opacity:0; transform: translateY(12px)} to {opacity:1;transform: translateY(0)} }
 @media(max-width:780px) {.home-page .tf-center-brand {width:min(84vw,440px)} .home-page .tf-center-brand img{max-height:36vh}}
 @media(prefers-reduced-motion:reduce){.home-page .tf-center-brand{animation:none}}
+
+/* LOGO-FEINSCHLIFF: nur Logo groesser; Querstreifen hinter Logo entfernen. */
+.home-page .tf-center-brand { width: min(65vw, 700px) !important; }
+.home-page .tf-center-brand img { max-height: 52vh !important; }
+.home-page .tf-film-hero::after { content: none !important; display: none !important; background: none !important; box-shadow: none !important; }
+@media (max-width: 780px) {
+  .home-page .tf-center-brand { width: min(91vw, 520px) !important; }
+  .home-page .tf-center-brand img { max-height: 43vh !important; }
+}
