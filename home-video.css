@@ -22,3 +22,9 @@
 @media(max-width:1050px){.home-page>.header{height:76px}.home-page .menu-btn{display:block}.home-page .nav{display:none;position:absolute;top:76px;left:0;right:0;background:#090807;flex-direction:column;align-items:stretch;gap:15px;padding:23px 6vw;max-height:80vh;overflow:auto}.home-page .nav.open{display:flex}.home-page .nav a{font-size:13px;padding:7px}.hero-slogan{font-size:clamp(64px,13vw,120px)}}
 @media(max-width:590px){.video-hero{min-height:100svh;padding:130px 18px 70px}.hero-slogan{font-size:clamp(53px,14vw,82px);line-height:.87}.hero-actions{gap:12px;margin-top:52px;flex-direction:column}.hero-btn{width:min(100%,340px);min-width:0}.hero-video{object-position:52% center}.home-page .logo{width:185px}}
 @media(prefers-reduced-motion:reduce){.hero-glow,.hero-center{animation:none}.hero-video{display:none}.video-hero{background:linear-gradient(#000b,#000d),url('assets/hero.webp') center/cover}}
+
+/* Video always stays visible above the hero background, but below overlays and content */
+.video-hero .hero-video { z-index:0; }
+.video-hero .hero-darken { z-index:1; }
+.video-hero .hero-glow { z-index:2; }
+.video-hero .hero-center { position:relative;z-index:3; }
