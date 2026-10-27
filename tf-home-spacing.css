@@ -1,0 +1,22 @@
+/* Tattoo Fashion: kompakte Startseite – nur Abstände, keine Farben/Animationen. */
+body.home-page main > section.story-grid,
+body.home-page main > section.overview-grid {
+  min-height: 0 !important;
+  margin-block: 0 !important;
+  padding-top: clamp(20px, 3vw, 42px) !important;
+  padding-bottom: clamp(20px, 3vw, 42px) !important;
+}
+body.home-page main > section.story-grid { row-gap: clamp(14px,2.5vw,32px) !important; column-gap: clamp(18px,3.2vw,48px) !important; }
+body.home-page .story-grid .eyebrow,
+body.home-page .overview-grid .eyebrow { margin-top:0 !important; margin-bottom:8px !important; }
+body.home-page .story-grid h2,
+body.home-page .overview-grid h2 { margin-top:0 !important; margin-bottom:clamp(10px,1.8vw,20px) !important; line-height:1.08 !important; }
+body.home-page .story-grid p { margin-top:0 !important; margin-bottom:clamp(12px,2vw,22px) !important; }
+body.home-page .story-grid .story-pic { max-height:380px !important; object-fit:cover !important; }
+body.home-page .overview-grid .link-tiles { margin-top:clamp(12px,2vw,24px) !important; gap:clamp(10px,1.5vw,18px) !important; }
+body.home-page main + .footer { margin-top:0 !important; padding-top:clamp(18px,3vw,32px) !important; padding-bottom:clamp(18px,3vw,32px) !important; }
+@media (max-width: 720px) {
+ body.home-page main > section.story-grid,
+ body.home-page main > section.overview-grid { padding:22px 18px !important; }
+ body.home-page .story-grid .story-pic { max-height:230px !important; }
+}
