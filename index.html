@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 
-<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Tattoo Fashion | Startseite – Cinematic Luxury</title><link href="style.css" rel="stylesheet"/><link href="home-video.css" rel="stylesheet"/></head><body class="home-page">
+<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Tattoo Fashion | Startseite – Cinematic Luxury</title><link href="style.css" rel="stylesheet"/><link href="home-video.css?v=logo-fix-20261027-2" rel="stylesheet"/><style>
+/* Tattoo Fashion: verbindliche Logo-Korrektur. Diese Regeln werden NACH der CSS-Datei geladen. */
+.home-page .tf-film-hero .tf-film-content .tf-center-brand {
+  width: min(72vw, 780px) !important;
+  max-width: 100% !important;
+  margin-inline: auto !important;
+}
+.home-page .tf-film-hero .tf-film-content .tf-center-brand img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 58vh !important;
+  object-fit: contain !important;
+}
+.home-page .tf-film-hero::after,
+.home-page .tf-center-brand::before,
+.home-page .tf-center-brand::after,
+.home-page .tf-film-content::before,
+.home-page .tf-film-content::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 780px) {
+  .home-page .tf-film-hero .tf-film-content .tf-center-brand { width: min(94vw, 560px) !important; }
+  .home-page .tf-film-hero .tf-film-content .tf-center-brand img { max-height: 46vh !important; }
+}
+</style></head><body class="home-page">
 <header class="header"><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menü</button><nav class="nav" id="navigation" style="margin-inline:auto"><a class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></header>
 <div class="tf-sitewide-video" aria-hidden="true">
 <video autoplay="" class="tf-film-video" id="tfHeroVideo" loop="" muted="" playsinline="" poster="assets/hero.webp" preload="auto"><source src="assets/tattoo-fashion-hintergrundvideo.mp4" type="video/mp4"/>Dein Browser unterstützt HTML5-Video nicht.</video>
