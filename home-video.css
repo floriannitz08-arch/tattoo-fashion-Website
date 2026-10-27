@@ -8,7 +8,7 @@
 .home-page .tf-sitewide-flare{position:absolute;inset:0;z-index:2;opacity:.7;mix-blend-mode:screen;background:linear-gradient(108deg,transparent 20%,rgba(239,176,70,.02) 44%,rgba(255,205,111,.13) 49%,rgba(239,176,70,.015) 55%,transparent 80%);background-size:240% 100%;animation:tfLightSweep 17s ease-in-out infinite}
 @keyframes tfLightSweep{0%,16%{background-position:180% 0}76%,100%{background-position:-140% 0}}
 /* ORIGINAL LOGO + sieben goldene Menuepunkte */
-.home-page>.header{display:flex!important;position:relative!important;z-index:50!important;height:106px;min-height:106px;margin-bottom:-106px;padding:0 clamp(20px,3.2vw,56px);background:linear-gradient(180deg,rgba(0,0,0,.97),rgba(0,0,0,.91));border-bottom:1px solid rgba(246,199,101,.70);box-shadow:0 1px 9px rgba(226,160,58,.18)}
+.home-page>.header{display:flex!important;position:relative!important;z-index:50!important;height:106px;min-height:106px;margin-bottom:-106px;padding:0 clamp(20px,3.2vw,56px);background:transparent!important;border-bottom:none!important;box-shadow:none!important}
 .home-page>.header .logo{width:clamp(160px,17vw,235px);max-height:94px;filter:drop-shadow(0 0 7px rgba(233,175,66,.34))}
 .home-page .nav{gap:clamp(8px,1.25vw,22px)}
 .home-page .nav a{position:relative;color:#e2ba65!important;font-size:clamp(9px,.77vw,12px);text-shadow:0 0 9px #edab4038;transition:color .25s,text-shadow .25s}
@@ -36,7 +36,7 @@
 .home-page .tf-film-cta:hover{transform:translateY(-3px);box-shadow:0 0 24px #dea44a80}
 /* Hintergrund bleibt auch UNTERHALB des Hero transparent */
 .home-page .section,.home-page .overview-grid{background:transparent!important}
-.home-page .story-grid,.home-page .overview-grid{background:transparent!important}
+.home-page .story-grid,.home-page .overview-grid{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.20))!important}
 .home-page .link-tiles a{background:rgba(9,8,7,.67)!important;backdrop-filter:blur(5px)}
 .home-page .footer{background:rgba(0,0,0,.55)!important}
 .home-page .ribbon{display:none!important}
