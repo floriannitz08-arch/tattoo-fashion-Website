@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     const update=()=>{
       const term=(input?.value||'').trim().toLocaleLowerCase('de');let shown=0;
       for(const item of items){
-        const hit=(category==='Alle'||item.dataset.category===category)&&((item.dataset.name||item.textContent).toLocaleLowerCase('de').includes(term));
+        const hit=(category==='Alle'||item.dataset.category===category)&&(((item.dataset.name||'')+' '+item.textContent).toLocaleLowerCase('de').includes(term));
         item.hidden=!hit;if(hit)shown++;
       }
-      if(count)count.textContent=shown+' '+(shown===1?'Produkt':'Produkte');
+      if(count)count.textContent=shown+' '+(document.documentElement.lang==='en'?(shown===1?'product':'products'):document.documentElement.lang==='da'?(shown===1?'produkt':'produkter'):(shown===1?'Produkt':'Produkte'));
       if(empty)empty.hidden=shown!==0;
     };
     filters.forEach(btn=>btn.addEventListener('click',()=>{category=btn.dataset.filter||'Alle';filters.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));update()}));

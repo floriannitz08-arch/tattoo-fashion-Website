@@ -48,7 +48,7 @@
 .home-page.tf-below-hero .tf-sitewide-shade { opacity: 0 !important; }
 .home-page .tf-sitewide-shade { transition: opacity 450ms ease; }
 </style>
-<link rel="preload" as="image" href="assets/tf-dark-ink-background.webp"/><style id="tf-startseite-cleanup-20261118">
+<link as="image" href="assets/tf-dark-ink-background.webp" rel="preload"/><style id="tf-startseite-cleanup-20261118">
 /* Nur Startseite: Story ohne Foto sauber zentrieren. */
 .home-page main > .story-grid {
   display: flex !important;
@@ -127,7 +127,7 @@
   .home-page .news-card figure{min-height:0;}
 }
 </style>
-<link rel="stylesheet" href="tf-unified.css?v=20261118-full-1"/><link rel="stylesheet" href="tf-brand-consistency.css?v=20261118-final-1"/>
+<link href="tf-unified.css?v=20261118-full-1" rel="stylesheet"/><link href="tf-brand-consistency.css?v=20261118-final-1" rel="stylesheet"/>
 <style id="tf-home-desktop-navigation-under-logo">
 /* Nur Desktop-Startseite: Navigation wie auf Mobil unter dem Logo.
    Der Header ist NICHT fixed oder sticky. */
@@ -218,44 +218,39 @@
   }
 }
 </style>
-</head><body class="home-page">
+<link href="tf-languages.css?v=20261118-1" rel="stylesheet"/><link href="index.html" hreflang="de" rel="alternate"/><link href="index-en.html" hreflang="en" rel="alternate"/><link href="index-da.html" hreflang="da" rel="alternate"/></head><body class="home-page">
 <header class="header"><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menü</button><nav class="nav" id="navigation" style="margin-inline:auto"><a class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></header>
 <main><section aria-label="Tattoo Fashion – Whatever you think, we ink" class="tf-film-hero">
-<div class="tf-film-content"><h1 class="tf-center-brand"><img alt="Tattoo Fashion – Whatever you think, we ink" src="assets/tattoo-fashion-original-logo.png"/></h1><nav class="tf-mobile-home-nav" aria-label="Hauptnavigation Mobil"><a href="index.html" aria-current="page" class="active">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></div>
+<div class="tf-film-content"><h1 class="tf-center-brand"><img alt="Tattoo Fashion – Whatever you think, we ink" src="assets/tattoo-fashion-original-logo.png"/></h1><nav aria-label="Hauptnavigation Mobil" class="tf-mobile-home-nav"><a aria-current="page" class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav><div aria-label="Sprache wählen / Choose language / Vælg sprog" class="tf-language-switch" role="navigation"><a aria-current="page" aria-label="Deutsch" class="selected" href="index.html" hreflang="de" lang="de">DE</a><a aria-label="English" href="index-en.html" hreflang="en" lang="en">EN</a><a aria-label="Dansk" href="index-da.html" hreflang="da" lang="da">DA</a></div></div>
 </section>
 <section class="section story-grid" id="discover"><div class="reveal"><h2>MEHR ALS<br/><em class="gold">INK.</em></h2><p>Jede Idee hat eine Geschichte. Entdecke die Menschen, die Kunst und die Leidenschaft hinter Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte.html">UNSERE GESCHICHTE <span aria-hidden="true" class="tf-arrow-icon"></span></a></div></section>
-
 <!-- NEWS-UPDATE-20261118-V3 -->
 <section class="section news-section" id="news">
-  
-  <h2>AKTUELLE<br/><em class="gold">NEWS.</em></h2>
-  <p>Hier findest du aktuelle Neuigkeiten, Aktionen und Updates aus der Tattoo Fashion Welt.</p>
-  <div class="news-grid">
-    <article class="news-card reveal">
-      <figure><img src="assets/news-inhaberwechsel-eckernfoerde.png" alt="Inhaberwechsel bei Tattoo Fashion Eckernförde"/></figure>
-      <div class="news-copy">
-        
-        <h3>INHABERWECHSEL BEI TATTOO FASHION ECKERNFÖRDE</h3>
-        <p>Alle Infos zum Walk In Day und zur Aktion in Eckernförde auf einen Blick.</p>
-      </div>
-    </article>
-    <article class="news-card reveal">
-      <figure><img src="assets/news-flensburg-neu.png" alt="Neu bei uns in Flensburg"/></figure>
-      <div class="news-copy">
-        
-        <h3>NEU BEI UNS IN FLENSBURG</h3>
-        <p>CarbonPeeling und FashionSmile – neue Beauty-Angebote jetzt bei Tattoo Fashion Flensburg.</p>
-      </div>
-    </article>
-    <article class="news-card reveal">
-      <figure><img src="assets/news-inhaberwechsel-itzehoe.jpg" alt="Inhaberwechsel und Wiedereröffnung in Itzehoe"/></figure>
-      <div class="news-copy">
-        
-        <h3>INHABERWECHSEL &amp; WIEDERERÖFFNUNG IN ITZEHOE</h3>
-        <p>Open Doors ab 10:00 Uhr, 50,- Euro Gutschein bei Terminbuchung und weitere Specials vor Ort.</p>
-      </div>
-    </article>
-  </div>
+<h2>AKTUELLE<br/><em class="gold">NEWS.</em></h2>
+<p>Hier findest du aktuelle Neuigkeiten, Aktionen und Updates aus der Tattoo Fashion Welt.</p>
+<div class="news-grid">
+<article class="news-card reveal">
+<figure><img alt="Inhaberwechsel bei Tattoo Fashion Eckernförde" src="assets/news-inhaberwechsel-eckernfoerde.png"/></figure>
+<div class="news-copy">
+<h3>INHABERWECHSEL BEI TATTOO FASHION ECKERNFÖRDE</h3>
+<p>Alle Infos zum Walk In Day und zur Aktion in Eckernförde auf einen Blick.</p>
+</div>
+</article>
+<article class="news-card reveal">
+<figure><img alt="Neu bei uns in Flensburg" src="assets/news-flensburg-neu.png"/></figure>
+<div class="news-copy">
+<h3>NEU BEI UNS IN FLENSBURG</h3>
+<p>CarbonPeeling und FashionSmile – neue Beauty-Angebote jetzt bei Tattoo Fashion Flensburg.</p>
+</div>
+</article>
+<article class="news-card reveal">
+<figure><img alt="Inhaberwechsel und Wiedereröffnung in Itzehoe" src="assets/news-inhaberwechsel-itzehoe.jpg"/></figure>
+<div class="news-copy">
+<h3>INHABERWECHSEL &amp; WIEDERERÖFFNUNG IN ITZEHOE</h3>
+<p>Open Doors ab 10:00 Uhr, 50,- Euro Gutschein bei Terminbuchung und weitere Specials vor Ort.</p>
+</div>
+</article>
+</div>
 </section>
 <section class="section overview-grid"><h2>ENTDECKE<br/><em class="gold">UNSERE WELT.</em></h2><div class="link-tiles"><a href="studios.html"><strong>STUDIOS</strong><small>Interaktive Karte &amp; alle Standorte <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="leistungen.html"><strong>LEISTUNGEN</strong><small>Tattoo · Piercing · Removal · Carbonpeeling · Fashionsmile <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="shop.html"><strong>SHOP</strong><small>Tattoo Fashion Merchandise <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="partner.html"><strong>PARTNER</strong><small>Werde Teil von Tattoo Fashion <span aria-hidden="true" class="tf-arrow-right"></span></small></a></div></section></main>
-<footer class="footer"><span>© Tattoo Fashion · Designvorlage</span><span><a href="kontakt.html">Kontakt</a> · <a href="studios.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Aktuelle Website <span aria-hidden="true" class="tf-arrow-icon"></span></a></span></footer><script src="site.js?v=20261118-full-1"></script></body></html>
+<footer class="footer"><span>© Tattoo Fashion · Designvorlage</span><span><a href="kontakt.html">Kontakt</a> · <a href="studios.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Aktuelle Website <span aria-hidden="true" class="tf-arrow-icon"></span></a></span></footer><script src="site.js?v=20261118-full-1"></script><script defer="False" src="tf-languages.js?v=20261118-1"></script></body></html>

@@ -1,4 +1,5 @@
-const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');menu?.addEventListener('click',()=>{let on=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.textContent=on?'✕ Schließen':'☰ Menü'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));}else{document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'));}
+const tfLocale=(de,en,da)=>document.documentElement.lang==='en'?en:document.documentElement.lang==='da'?da:de;
+const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');menu?.addEventListener('click',()=>{let on=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.textContent=on?tfLocale('✕ Schließen','✕ Close','✕ Luk'):tfLocale('☰ Menü','☰ Menu','☰ Menu')});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));}else{document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'));}
 
 /* Auf der offiziellen Tattoo-Fashion-Studioübersicht am 18.11.2026 gelistete Standorte.
    Marker sind ungefähre Stadtmittelpunkte, keine verifizierten Studioadressen. */
@@ -245,7 +246,7 @@ if (document.getElementById('cards')) {
 
   function render() {
     const items = filtered();
-    count.textContent = `${items.length} von ${studios.length} gelisteten Standorten`;
+    count.textContent = tfLocale(`${items.length} von ${studios.length} gelisteten Standorten`, `${items.length} of ${studios.length} listed locations`, `${items.length} af ${studios.length} registrerede lokationer`);
     cards.replaceChildren();
     items.forEach((s, i) => {
       const card = document.createElement('article');
@@ -254,25 +255,25 @@ if (document.getElementById('cards')) {
       const illustration = document.createElement('div');
       illustration.className = 'card-image';
       illustration.setAttribute('role','img');
-      illustration.setAttribute('aria-label','Dekoratives Tattoo-Studio-Motiv, kein Originalfoto des Standortes');
+      illustration.setAttribute('aria-label',tfLocale('Dekoratives Tattoo-Studio-Motiv, kein Originalfoto des Standortes','Illustrative studio image, not a photo of this location','Illustrativt studiebillede, ikke et foto af denne lokation'));
       const body = document.createElement('div');
       body.className = 'card-body';
       const title = document.createElement('h3');
       title.textContent = s.city;
       const country = document.createElement('p');
-      country.textContent = s.country;
+      country.textContent = tfLocale(s.country, ({'Deutschland':'Germany','Dänemark':'Denmark','Schweden':'Sweden','Österreich':'Austria','Spanien':'Spain'})[s.country]||s.country, ({'Deutschland':'Tyskland','Dänemark':'Danmark','Schweden':'Sverige','Österreich':'Østrig','Spanien':'Spanien'})[s.country]||s.country);
       const links = document.createElement('div');
       links.className = 'card-links';
       const button = document.createElement('button');
       button.type = 'button';
-      button.innerHTML = 'Auf Karte zeigen ' + arrow;
+      button.innerHTML = tfLocale('Auf Karte zeigen ','Show on map ','Vis på kort ') + arrow;
       button.addEventListener('click', () => showCity(s.city));
       const link = document.createElement('a');
       link.href = s.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.innerHTML = 'Studio-Details ' + arrow;
-      link.setAttribute('aria-label', `Original-Studioseite für ${s.city} öffnen`);
+      link.innerHTML = tfLocale('Studio-Details ','Studio details ','Studiedetaljer ') + arrow;
+      link.setAttribute('aria-label', tfLocale(`Original-Studioseite für ${s.city} öffnen`, `Open original studio page for ${s.city}`, `Åbn den oprindelige studieside for ${s.city}`));
       links.append(button, link);
       body.append(title,country,links);
       card.append(illustration,body);
@@ -281,7 +282,7 @@ if (document.getElementById('cards')) {
     if (!items.length) {
       const empty = document.createElement('div');
       empty.className = 'empty';
-      empty.textContent = 'Keine Standorte gefunden. Bitte Suchbegriff oder Länderfilter ändern.';
+      empty.textContent = tfLocale('Keine Standorte gefunden. Bitte Suchbegriff oder Länderfilter ändern.','No locations found. Try another search or country filter.','Ingen lokationer fundet. Prøv en anden søgning eller et andet landefilter.');
       cards.append(empty);
     }
     markers.forEach(({marker,city}) => {
@@ -327,7 +328,7 @@ if (document.getElementById('cards')) {
       label.textContent = s.city;
       label.style.color = '#9F7A34';
       const subtitle = document.createElement('div');
-      subtitle.textContent = `${s.country} · ungefährer Stadtbereich`;
+      subtitle.textContent = tfLocale(`${s.country} · ungefährer Stadtbereich`, `${({'Deutschland':'Germany','Dänemark':'Denmark','Schweden':'Sweden','Österreich':'Austria','Spanien':'Spain'})[s.country]||s.country} · approximate city area`, `${({'Deutschland':'Tyskland','Dänemark':'Danmark','Schweden':'Sverige','Österreich':'Østrig','Spanien':'Spanien'})[s.country]||s.country} · omtrentligt byområde`);
       const link = document.createElement('a');
       link.href = s.url;
       link.target = '_blank';

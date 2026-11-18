@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Tattoo Fashion | Home</title><style>
+/* Tattoo Fashion: verbindliche Logo-Korrektur. Diese Regeln werden NACH der CSS-Datei geladen. */
+.home-page .tf-film-hero .tf-film-content .tf-center-brand {
+  width: min(72vw, 780px) !important;
+  max-width: 100% !important;
+  margin-inline: auto !important;
+}
+.home-page .tf-film-hero .tf-film-content .tf-center-brand img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 58vh !important;
+  object-fit: contain !important;
+}
+.home-page .tf-film-hero::after,
+.home-page .tf-center-brand::before,
+.home-page .tf-center-brand::after,
+.home-page .tf-film-content::before,
+.home-page .tf-film-content::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 780px) {
+  .home-page .tf-film-hero .tf-film-content .tf-center-brand { width: min(94vw, 560px) !important; }
+  .home-page .tf-film-hero .tf-film-content .tf-center-brand img { max-height: 46vh !important; }
+}
+
+/* Nur Startseite: keinerlei dunkle Flaeche hinter den Inhaltsabschnitten. */
+.home-page main > .story-grid,
+.home-page main > .overview-grid,
+.home-page main > section.section.story-grid,
+.home-page main > section.section.overview-grid {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.home-page main > .story-grid::before,
+.home-page main > .story-grid::after,
+.home-page main > .overview-grid::before,
+.home-page main > .overview-grid::after { content: none !important; display: none !important; }
+/* Erst UNTER dem Hero verschwindet die globale Videoabdunklung. */
+.home-page.tf-below-hero .tf-sitewide-shade { opacity: 0 !important; }
+.home-page .tf-sitewide-shade { transition: opacity 450ms ease; }
+</style>
+<link as="image" href="assets/tf-dark-ink-background.webp" rel="preload"/><style id="tf-startseite-cleanup-20261118">
+/* Nur Startseite: Story ohne Foto sauber zentrieren. */
+.home-page main > .story-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: min(100% - 32px, 1100px) !important;
+  margin-inline: auto !important;
+}
+.home-page main > .story-grid > div {
+  width: 100% !important;
+  max-width: 760px !important;
+  margin-inline: auto !important;
+  text-align: center !important;
+}
+.home-page main > .story-grid .btn { margin-inline: auto !important; }
+</style>
+<style id="tf-home-news-20261118">
+.home-page .news-section{
+  width:min(100% - 32px, 1240px);
+  margin:0 auto;
+  padding-top:50px;
+}
+.home-page .news-section .section-label{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+  color:#9F7A34;
+  font-size:.9rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+}
+.home-page .news-section .section-label::before,
+.home-page .news-section .section-label::after{
+  content:"";
+  display:block;
+  width:56px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, #9F7A34, transparent);
+}
+.home-page .news-section > h2{
+  text-align:center;
+  margin:0 0 16px;
+}
+.home-page .news-section > p{
+  max-width:720px;
+  margin:0 auto 28px;
+  text-align:center;
+}
+.home-page .news-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:28px;
+}
+.home-page .news-card{
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(159,122,52,.55);
+  background:rgba(0,0,0,.14);
+  box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
+  overflow:hidden;
+}
+.home-page .news-card figure{margin:0; min-height:260px; display:flex; align-items:center; justify-content:center; overflow:hidden; background:#050505;}
+.home-page .news-card img{max-width:100%; width:auto; height:auto; max-height:600px; object-fit:contain; display:block; margin:auto;}
+.home-page .news-card .news-copy{padding:22px 24px 26px; text-align:center;}
+.home-page .news-card .news-kicker{display:block; color:#9F7A34; letter-spacing:.22em; text-transform:uppercase; font-size:.78rem; margin-bottom:8px;}
+.home-page .news-card h3{margin:0 0 10px; font-size:clamp(1.2rem,2vw,1.8rem); line-height:1.1;}
+.home-page .news-card p{margin:0; color:rgba(255,255,255,.86);}
+@media (max-width: 1100px){
+  .home-page .news-grid{grid-template-columns:repeat(2, minmax(0,1fr));}
+}
+@media (max-width: 900px){
+  .home-page .news-grid{grid-template-columns:1fr;}
+  .home-page .news-card figure{min-height:0;}
+}
+</style>
+<link href="tf-unified.css?v=20261118-full-1" rel="stylesheet"/><link href="tf-brand-consistency.css?v=20261118-final-1" rel="stylesheet"/>
+<style id="tf-home-desktop-navigation-under-logo">
+/* Nur Desktop-Startseite: Navigation wie auf Mobil unter dem Logo.
+   Der Header ist NICHT fixed oder sticky. */
+@media (min-width: 821px) {
+  body.home-page > header.header {
+    display: none !important;
+  }
+  body.home-page .tf-film-hero {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: min(760px, 78vh) !important;
+    height: auto !important;
+    padding: 48px 24px 65px !important;
+  }
+  body.home-page .tf-film-hero .tf-film-content {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: clamp(18px, 3vh, 32px) !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  body.home-page .tf-film-hero .tf-center-brand {
+    display: block !important;
+    width: min(66vw, 780px) !important;
+    margin: 0 auto !important;
+  }
+  body.home-page .tf-film-hero .tf-center-brand img {
+    display: block !important;
+    width: 100% !important;
+    max-height: min(52vh, 540px) !important;
+    object-fit: contain !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav {
+    position: static !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px clamp(14px, 1.8vw, 30px) !important;
+    width: 100% !important;
+    max-width: 1140px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    padding: 11px 3px !important;
+    border: 0 !important;
+    border-bottom: 1px solid transparent !important;
+    background: none !important;
+    color: #9F7A34 !important;
+    font-family: inherit !important;
+    font-size: clamp(12px, 1vw, 15px) !important;
+    font-weight: 700 !important;
+    letter-spacing: .045em !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    transition: border-color .2s ease !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav a.active,
+  body.home-page .tf-film-hero .tf-mobile-home-nav a:hover,
+  body.home-page .tf-film-hero .tf-mobile-home-nav a:focus-visible {
+    border-bottom-color: #9F7A34 !important;
+  }
+}
+</style>
+<link href="tf-languages.css?v=20261118-1" rel="stylesheet"/><link href="index.html" hreflang="de" rel="alternate"/><link href="index-en.html" hreflang="en" rel="alternate"/><link href="index-da.html" hreflang="da" rel="alternate"/></head><body class="home-page">
+<header class="header"><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menu</button><nav class="nav" id="navigation" style="margin-inline:auto"><a class="active" href="index-en.html">Home</a><a href="geschichte-en.html">Our Story</a><a href="studios-en.html">Studios</a><a href="leistungen-en.html">Services</a><a href="shop-en.html">Shop</a><a href="partner-en.html">Partners</a><a href="kontakt-en.html">Contact</a></nav></header>
+<main><section aria-label="Tattoo Fashion – Whatever you think, we ink" class="tf-film-hero">
+<div class="tf-film-content"><h1 class="tf-center-brand"><img alt="Tattoo Fashion – Whatever you think, we ink" src="assets/tattoo-fashion-original-logo.png"/></h1><nav aria-label="Mobile navigation" class="tf-mobile-home-nav"><a aria-current="page" class="active" href="index-en.html">Home</a><a href="geschichte-en.html">Our Story</a><a href="studios-en.html">Studios</a><a href="leistungen-en.html">Services</a><a href="shop-en.html">Shop</a><a href="partner-en.html">Partners</a><a href="kontakt-en.html">Contact</a></nav><div aria-label="Sprache wählen / Choose language / Vælg sprog" class="tf-language-switch" role="navigation"><a aria-label="Deutsch" href="index.html" hreflang="de" lang="de">DE</a><a aria-current="page" aria-label="English" class="selected" href="index-en.html" hreflang="en" lang="en">EN</a><a aria-label="Dansk" href="index-da.html" hreflang="da" lang="da">DA</a></div></div>
+</section>
+<section class="section story-grid" id="discover"><div class="reveal"><h2>MORE THAN<br/><em class="gold">INK.</em></h2><p>Every idea has a story. Discover the people, the art and the passion behind Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte-en.html">OUR STORY <span aria-hidden="true" class="tf-arrow-icon"></span></a></div></section>
+<!-- NEWS-UPDATE-20261118-V3 -->
+<section class="section news-section" id="news">
+<h2>LATEST<br/><em class="gold">NEWS.</em></h2>
+<p>Discover the latest news, events and updates from the world of Tattoo Fashion.</p>
+<div class="news-grid">
+<article class="news-card reveal">
+<figure><img alt="Inhaberwechsel bei Tattoo Fashion Eckernförde" src="assets/news-inhaberwechsel-eckernfoerde.png"/></figure>
+<div class="news-copy">
+<h3>NEW OWNERS AT TATTOO FASHION ECKERNFÖRDE</h3>
+<p>All the details about the walk-in day and special offer in Eckernförde.</p>
+</div>
+</article>
+<article class="news-card reveal">
+<figure><img alt="Neu bei uns in Flensburg" src="assets/news-flensburg-neu.png"/></figure>
+<div class="news-copy">
+<h3>NEW IN FLENSBURG</h3>
+<p>Carbon peeling and FashionSmile – new beauty services at Tattoo Fashion Flensburg.</p>
+</div>
+</article>
+<article class="news-card reveal">
+<figure><img alt="Inhaberwechsel und Wiedereröffnung in Itzehoe" src="assets/news-inhaberwechsel-itzehoe.jpg"/></figure>
+<div class="news-copy">
+<h3>NEW OWNERS &amp; REOPENING IN ITZEHOE</h3>
+<p>Doors open at 10 a.m., a €50 voucher when booking an appointment and more specials on site.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="section overview-grid"><h2>DISCOVER<br/><em class="gold">OUR WORLD.</em></h2><div class="link-tiles"><a href="studios-en.html"><strong>STUDIOS</strong><small>Interactive map &amp; all locations <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="leistungen-en.html"><strong>LEISTUNGEN</strong><small>Tattoo · Piercing · Removal · Carbon peeling · FashionSmile <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="shop-en.html"><strong>SHOP</strong><small>Tattoo Fashion merchandise <span aria-hidden="true" class="tf-arrow-right"></span></small></a><a href="partner-en.html"><strong>PARTNER</strong><small>Become part of Tattoo Fashion <span aria-hidden="true" class="tf-arrow-right"></span></small></a></div></section></main>
+<footer class="footer"><span>© Tattoo Fashion · Website design</span><span><a href="kontakt-en.html">Contact</a> · <a href="studios-en.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Original website <span aria-hidden="true" class="tf-arrow-icon"></span></a></span></footer><script src="site.js?v=20261118-full-1"></script><script defer="False" src="tf-languages.js?v=20261118-1"></script></body></html>

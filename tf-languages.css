@@ -1,0 +1,9 @@
+/* Tattoo Fashion – language switcher, shared across all seven pages */
+.tf-language-switch { display:flex!important; flex-wrap:nowrap!important; justify-content:center!important; align-items:center!important; gap:8px!important; flex:0 0 auto; width:max-content; max-width:100%; margin:0 8px!important; padding:0!important; background:transparent!important; border:none!important; box-shadow:none!important; position:static!important; transform:none!important; }
+.tf-language-switch a { display:inline-flex!important; justify-content:center!important; align-items:center!important; min-width:36px; min-height:36px; padding:7px 9px!important; border:1px solid rgba(159,122,52,.45)!important; border-radius:3px; background:rgba(0,0,0,.25)!important; font:700 12px/1.1 Manrope,Arial,sans-serif!important; letter-spacing:.08em!important; color:#9F7A34!important; text-decoration:none!important; white-space:nowrap!important; }
+.tf-language-switch a.selected { color:#fff!important; background:#9F7A34!important; border-color:#9F7A34!important; }
+.tf-language-switch a:hover, .tf-language-switch a:focus-visible { border-color:#9F7A34!important; outline-offset:3px; }
+body.interior-page .tf-header .tf-language-switch { margin-left:auto!important; }
+body.home-page .tf-film-hero .tf-language-switch { margin:10px auto 0!important; align-self:center!important; }
+@media(max-width:950px){ body.interior-page header.header.tf-header{display:flex!important; flex-wrap:wrap!important; gap:10px!important;} body.interior-page header.header.tf-header .tf-language-switch{order:4; width:auto!important; margin:8px auto 4px!important;} }
+@media(max-width:600px){ .tf-language-switch a{min-height:34px;min-width:36px;font-size:11px!important;} body.home-page .tf-film-hero .tf-language-switch{margin:4px auto 10px!important;} }
