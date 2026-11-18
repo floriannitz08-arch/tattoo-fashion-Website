@@ -1,0 +1,64 @@
+/* Tattoo Fashion – gemeinsame Designkorrektur, 18.11.2026
+   Wird NACH tf-fast-bundle.css geladen.
+   Bewusst KEINE Positionierungs-/Layoutregeln fuer Header, Navigation, Karten oder Bilder.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root {
+  --gold: #9F7A34 !important;
+  --tf-gold: #9F7A34 !important;
+  --tf-shop-gold: #9F7A34 !important;
+  --accent: #9F7A34 !important;
+  --light: #9F7A34 !important;
+  --line: rgba(159,122,52,.45) !important;
+  --bg: #010101;
+  --panel: #070707;
+  --cream: #F4F2ED;
+  --muted: #BBB9B4;
+  --grad: linear-gradient(90deg,#9F7A34,#9F7A34) !important;
+  --tf-main-font: 'Manrope',Arial,Helvetica,sans-serif;
+}
+html, body, button, input, textarea, select {font-family:var(--tf-main-font)!important;}
+body :is(h1,h2,h3,h4,h5,h6),
+body :is(.nav,.tf-nav,.nav a,.tf-nav a,.btn,.tf-header-cta,
+  .tf-product-info,.tf-product-bottom,.tf-shop-intro,.tf-partner-card,
+  .news-section,.news-card,.studio-card,.service-content) {
+  font-family:var(--tf-main-font)!important;
+  font-stretch:normal!important;
+}
+/* Einheitliche Typografie nach Ebene, aber responsiv. */
+body main :is(h1,.tf-shop-intro h1,.tf-partner-intro h1,.tf-story-main h1) {
+  font-family:var(--tf-main-font)!important;
+  font-size:clamp(36px,6vw,88px)!important;
+  font-weight:800!important;
+  line-height:1.1!important;
+  letter-spacing:-.035em!important;
+  overflow-wrap:anywhere;
+}
+body main h2 {font-family:var(--tf-main-font)!important;font-size:clamp(28px,4.2vw,58px)!important;font-weight:800!important;line-height:1.17!important;letter-spacing:-.025em!important;}
+body main h3 {font-family:var(--tf-main-font)!important;font-size:clamp(21px,2.7vw,36px)!important;font-weight:800!important;line-height:1.2!important;letter-spacing:-.02em!important;}
+body main :is(p,li) {font-family:var(--tf-main-font)!important;line-height:1.7;}
+body :is(.nav,.tf-nav) a {font-family:var(--tf-main-font)!important;font-weight:800!important;}
+/* Gold-Farbtoken auch an Elementen angleichen, die noch Hex-Codes statt Variablen nutzen. */
+body main :is(.gold,em.gold,.gold-text,.accent,.highlight-gold,
+  .tf-shop-intro h1 span,.tf-shop-kicker,.tf-shop-count strong,
+  .tf-product-category,.tf-product-bottom strong,.tf-partner-mark,
+  .service-period,.news-kicker,.section-label,.eyebrow,.studio-count,.tf-studios-count) {
+  color:#9F7A34!important;
+  -webkit-text-fill-color:#9F7A34!important;
+}
+body main :is(.gold,em.gold,.tf-shop-intro h1 span) {
+  background-image:none!important;
+  -webkit-background-clip:initial!important;
+  background-clip:initial!important;
+}
+body :is(.nav,.tf-nav) a:is(:hover,.active,[aria-current="page"]),
+body .tf-header-cta {color:#9F7A34!important;}
+body :is(.nav,.tf-nav) a::after {background-color:#9F7A34!important;}
+body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.tf-studio-card) {border-color:rgba(159,122,52,.58)!important;}
+body main :is(.tf-shop-filters button,.tf-shop-search-label input) {border-color:#9F7A34!important;font-family:var(--tf-main-font)!important;}
+body main .tf-shop-filters button[aria-pressed="true"] {background-color:rgba(159,122,52,.16)!important;}
+@media(max-width:640px) {
+  body main :is(h1,.tf-shop-intro h1,.tf-partner-intro h1,.tf-story-main h1) {font-size:clamp(32px,8vw,52px)!important;}
+  body main h2 {font-size:clamp(26px,6.5vw,38px)!important;}
+  body main h3 {font-size:clamp(20px,5vw,28px)!important;}
+}
