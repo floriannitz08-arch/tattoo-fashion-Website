@@ -66,11 +66,92 @@
   text-align: center !important;
 }
 .home-page main > .story-grid .btn { margin-inline: auto !important; }
-</style></head><body class="home-page">
+</style>
+<style id="tf-home-news-20261118">
+.home-page .news-section{
+  width:min(100% - 32px, 1240px);
+  margin:0 auto;
+  padding-top:10px;
+}
+.home-page .news-section .section-label{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+  color:#9F7A34;
+  font-size:.9rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+}
+.home-page .news-section .section-label::before,
+.home-page .news-section .section-label::after{
+  content:"";
+  display:block;
+  width:56px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, #9F7A34, transparent);
+}
+.home-page .news-section > h2{
+  text-align:center;
+  margin:0 0 16px;
+}
+.home-page .news-section > p{
+  max-width:720px;
+  margin:0 auto 28px;
+  text-align:center;
+}
+.home-page .news-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:28px;
+}
+.home-page .news-card{
+  display:flex;
+  flex-direction:column;
+  border:1px solid rgba(159,122,52,.55);
+  background:rgba(0,0,0,.14);
+  box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
+  overflow:hidden;
+}
+.home-page .news-card figure{margin:0; aspect-ratio:4/3; overflow:hidden; background:#050505;}
+.home-page .news-card img{width:100%; height:100%; object-fit:cover; display:block;}
+.home-page .news-card .news-copy{padding:22px 24px 26px; text-align:center;}
+.home-page .news-card .news-kicker{display:block; color:#9F7A34; letter-spacing:.22em; text-transform:uppercase; font-size:.78rem; margin-bottom:8px;}
+.home-page .news-card h3{margin:0 0 10px; font-size:clamp(1.2rem,2vw,1.8rem); line-height:1.1;}
+.home-page .news-card p{margin:0; color:rgba(255,255,255,.86);}
+@media (max-width: 900px){
+  .home-page .news-grid{grid-template-columns:1fr;}
+}
+</style>
+</head><body class="home-page">
 <header class="header"><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menü</button><nav class="nav" id="navigation" style="margin-inline:auto"><a class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></header>
 <main><section aria-label="Tattoo Fashion – Whatever you think, we ink" class="tf-film-hero">
 <div class="tf-film-content"><h1 class="tf-center-brand"><img alt="Tattoo Fashion – Whatever you think, we ink" src="assets/tattoo-fashion-original-logo.png"/></h1></div>
 </section>
 <section class="section story-grid" id="discover"><div class="reveal"><div class="eyebrow">Unsere Geschichte</div><h2>MEHR ALS<br/><em class="gold">INK.</em></h2><p>Jede Idee hat eine Geschichte. Entdecke die Menschen, die Kunst und die Leidenschaft hinter Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte.html">UNSERE GESCHICHTE ↗</a></div></section>
+
+<section class="section news-section" id="news">
+  <div class="section-label">News</div>
+  <h2>AKTUELLE<br/><em class="gold">NEWS.</em></h2>
+  <p>Hier findest du aktuelle Neuigkeiten, Aktionen und Updates aus der Tattoo Fashion Welt.</p>
+  <div class="news-grid">
+    <article class="news-card reveal">
+      <figure><img src="assets/news-inhaberwechsel-eckernfoerde.png" alt="Inhaberwechsel bei Tattoo Fashion Eckernförde"/></figure>
+      <div class="news-copy">
+        <span class="news-kicker">Eckernförde</span>
+        <h3>INHABERWECHSEL BEI TATTOO FASHION ECKERNFÖRDE</h3>
+        <p>Alle Infos zum Walk In Day und zur Aktion in Eckernförde auf einen Blick.</p>
+      </div>
+    </article>
+    <article class="news-card reveal">
+      <figure><img src="assets/news-flensburg-neu.png" alt="Neu bei uns in Flensburg"/></figure>
+      <div class="news-copy">
+        <span class="news-kicker">Flensburg</span>
+        <h3>NEU BEI UNS IN FLENSBURG</h3>
+        <p>CarbonPeeling und FashionSmile – neue Beauty-Angebote jetzt bei Tattoo Fashion Flensburg.</p>
+      </div>
+    </article>
+  </div>
+</section>
 <section class="section overview-grid"><h2>ENTDECKE<br/><em class="gold">UNSERE WELT.</em></h2><div class="link-tiles"><a href="studios.html"><span>01 / INTERNATIONAL</span><strong>STUDIOS</strong><small>Interaktive Karte &amp; alle Standorte →</small></a><a href="leistungen.html"><span>02 / ART &amp; BEAUTY</span><strong>LEISTUNGEN</strong><small>Tattoo · Piercing · Removal · Carbonpeeling · Fashionsmile →</small></a><a href="shop.html"><span>03 / LIFESTYLE</span><strong>SHOP</strong><small>Tattoo Fashion Merchandise →</small></a><a href="partner.html"><span>04 / NETWORK</span><strong>PARTNER</strong><small>Werde Teil von Tattoo Fashion →</small></a></div></section></main>
 <footer class="footer"><span>© Tattoo Fashion · Designvorlage</span><span><a href="kontakt.html">Kontakt</a> · <a href="studios.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Aktuelle Website ↗</a></span></footer><script src="site.js"></script></body></html>
