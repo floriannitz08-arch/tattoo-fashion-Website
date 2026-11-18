@@ -21,20 +21,58 @@ body.interior-page .tf-story-end {padding-bottom:160px;}
 @media(max-width:650px){body.interior-page .tf-story-section {padding-left:20px;padding-right:20px;}body.interior-page .tf-story-intro{padding-top:145px;}body.interior-page .tf-story-image-wrap{width:calc(100% - 30px);}body.interior-page .tf-story-image{aspect-ratio:4/3;}body.interior-page .tf-story-main h1{font-size:clamp(1.85rem,8vw,2.8rem);}body.interior-page .tf-story-copy p{line-height:1.8;}}
 @media(prefers-reduced-motion:no-preference){body.interior-page .tf-story-image{transition:transform .9s ease,filter .9s ease}body.interior-page .tf-story-image-wrap:hover .tf-story-image{transform:scale(1.035);filter:saturate(.85) contrast(1.13)}}
 </style>
-<link rel="preload" as="image" href="assets/tf-dark-ink-background.webp"/><link rel="stylesheet" href="tf-unified.css?v=20261118-full-1"/></head><body class="interior-page">
+<link as="image" href="assets/tf-dark-ink-background.webp" rel="preload"/><link href="tf-unified.css?v=20261118-full-1" rel="stylesheet"/><style id="tf-geschichte-bilder-rahmen-20261118">
+/* Geschichte – nur die beiden neuen Fotos; Gold aus dem Website-Design */
+body.interior-page .tf-story-main .tf-story-image-wrap {
+  display:block !important;
+  box-sizing:border-box !important;
+  border:1px solid #9F7A34 !important;
+  border-radius:2px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#030303 !important;
+  box-shadow:none !important;
+}
+body.interior-page .tf-story-main .tf-story-image-wrap:not(.tf-story-image-secondary) {
+  width:min(520px,calc(100% - 32px)) !important;
+  max-width:520px !important;
+}
+body.interior-page .tf-story-main .tf-story-image-wrap.tf-story-image-secondary {
+  width:min(1080px,calc(100% - 32px)) !important;
+  max-width:1080px !important;
+}
+body.interior-page .tf-story-main .tf-story-image-wrap .tf-story-image,
+body.interior-page .tf-story-main .tf-story-image-wrap.tf-story-image-secondary .tf-story-image {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  border-radius:0 !important;
+  opacity:1 !important;
+  filter:none !important;
+  transform:none !important;
+}
+body.interior-page .tf-story-main .tf-story-image-wrap:hover .tf-story-image,
+body.interior-page .tf-story-main .tf-story-image-wrap.tf-story-image-secondary:hover .tf-story-image {
+  filter:none !important;
+  transform:none !important;
+}
+</style></head><body class="interior-page">
 <header class="header tf-header"><a aria-label="Tattoo Fashion – Startseite" class="tf-brand" href="index.html"><img alt="Tattoo Fashion Original-Logo" class="logo" src="assets/logo.png"/></a><nav aria-label="Hauptnavigation" class="nav tf-nav" id="navigation"><a href="index.html">Startseite</a><a aria-current="page" class="active" href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav><a class="tf-header-cta" href="studios.html">STUDIO FINDEN <span>↗</span></a></header>
 <main class="tf-story-main" id="inhalt">
 <section class="tf-story-section tf-story-intro">
-
 <h1>Aus einer Vision wurde eine Marke.<br/><span>Aus Leidenschaft eine Erfolgsgeschichte.</span></h1>
 <div class="tf-story-copy">
 <p>Jede große Geschichte beginnt mit einer Idee. Unsere begann mit dem Mut, etwas Eigenes zu schaffen, Grenzen zu überwinden und aus Leidenschaft etwas Besonderes entstehen zu lassen.</p>
 <p>Was einst mit einem Bekleidungsgeschäft und einer Vision begann, entwickelte sich unter der Leitung von Gründer <strong>Mads Kristensen</strong> zu einer internationalen Tattoo-Marke. Von den ersten Schritten im dänischen Sønderborg bis hin zu zahlreichen Studios in Europa steht Tattoo Fashion heute für Kreativität, Qualität und eine klare Philosophie: <strong>Tattoos sind mehr als Kunst auf der Haut – sie sind Ausdruck von Persönlichkeit, Freiheit und Individualität.</strong></p>
 </div>
 </section>
-<div class="tf-story-image-wrap"><img alt="Atmosphärisches Tattoo-Fashion-Bildmotiv" class="tf-story-image" loading="lazy" src="assets/story.webp"/></div>
+<div class="tf-story-image-wrap"><img alt="Tattoo Fashion – Portrait" class="tf-story-image" decoding="async" height="1024" loading="lazy" src="assets/geschichte-bild-1.webp" width="683"/></div>
 <section class="tf-story-section">
-
 <h2>FROM PASSION <span>TO SUCCESS.</span></h2>
 <div class="tf-story-copy">
 <p>Tattoo Fashion wurde mit dem Ziel gegründet, die Tattoo-Branche auf ein neues Level zu bringen. Nicht einfach nur Tattoos stechen, sondern Orte schaffen, an denen Kunst, Lifestyle und Menschen zusammenkommen.</p>
@@ -42,9 +80,8 @@ body.interior-page .tf-story-end {padding-bottom:160px;}
 <p>Dabei steht nicht allein das Wachstum im Mittelpunkt, sondern vor allem das, was Tattoo Fashion ausmacht: <strong>außergewöhnliche Artists, individuelle Designs, höchste Qualitätsansprüche und eine Atmosphäre, in der sich jeder willkommen fühlt.</strong></p>
 </div>
 </section>
-<div class="tf-story-image-wrap tf-story-image-secondary"><img alt="Atmosphärische Tattoo-Studio-Szene" class="tf-story-image" loading="lazy" src="assets/studio.webp"/></div>
+<div class="tf-story-image-wrap tf-story-image-secondary"><img alt="Tattoo Fashion – Studios in Europa, Mads Kristensen" class="tf-story-image" decoding="async" height="295" loading="lazy" src="assets/geschichte-bild-2.webp" width="1290"/></div>
 <section class="tf-story-section tf-story-end">
-
 <h2>MORE THAN A TATTOO.<br/><span>A LIFESTYLE.</span></h2>
 <div class="tf-story-copy">
 <p>Für uns ist jedes Tattoo einzigartig. Hinter jedem Motiv steckt eine Geschichte, eine Erinnerung oder eine persönliche Bedeutung. Genau deshalb geht es bei Tattoo Fashion nicht nur um das fertige Kunstwerk, sondern um das gesamte Erlebnis.</p>
