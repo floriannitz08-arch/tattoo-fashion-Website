@@ -123,3 +123,56 @@ body .filter.active,body .filter:hover {background:rgba(159,122,52,.13)!importan
   }
 }
 @media (prefers-reduced-motion:reduce){body.home-page::before,body.home-page::after,body.interior-page::before,body.interior-page::after{animation:none!important}}
+
+
+/* DARK INK | Verbindlicher Hintergrund-Override 2026-11-18 */
+html, body, body.home-page, body.interior-page {
+  background-color: #010101 !important;
+  background-image: none !important;
+}
+/* CSS-gezeichnete Goldwolken durch leichte, optimierte Hintergrundgrafik ersetzen. */
+body.home-page::before, body.interior-page::before {
+  content: "" !important;
+  display: block !important;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  transform: none !important;
+  animation: none !important;
+  background-color: #010101 !important;
+  background-image: url("assets/tf-dark-ink-background.webp") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: scroll !important;
+}
+body.home-page::after, body.interior-page::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+/* Seiteninhalt immer ueber dem Hintergrund anzeigen. */
+body.home-page > header, body.home-page > main, body.home-page > footer,
+body.interior-page > header, body.interior-page > main, body.interior-page > footer {
+  position: relative;
+  z-index: 2;
+}
+/* Altes Hero-Bild, Video und dessen Poster duerfen nicht wieder erscheinen. */
+body .hero,body .subhero,body .tf-film-hero,body .tf-hero,
+body .inner-page-hero,body .studio-teaser,body .mobile-cinema,
+body main > .section,body main > .story-grid,body main > .overview-grid {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+body video, body .tf-sitewide-video, body .tf-sitewide-shade,
+body .tf-global-video,body .tf-video-wrap,body .tf-background,
+body .tf-global-background {display:none !important}
+@media (max-width: 767px) {
+  body.home-page::before, body.interior-page::before {
+    background-position: 50% center !important;
+  }
+}
