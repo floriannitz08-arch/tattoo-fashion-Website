@@ -133,98 +133,10 @@
   .home-page .news-card figure{min-height:0;}
 }
 </style>
-<style id="tf-home-desktop-navigation-under-logo">
-/* Nur Desktop-Startseite: Navigation wie auf Mobil unter dem Logo.
-   Der Header ist NICHT fixed oder sticky. */
-@media (min-width: 821px) {
-  body.home-page > header.header {
-    display: none !important;
-  }
-  body.home-page .tf-film-hero {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-height: min(760px, 78vh) !important;
-    height: auto !important;
-    padding: 48px 24px 65px !important;
-  }
-  body.home-page .tf-film-hero .tf-film-content {
-    position: relative !important;
-    inset: auto !important;
-    transform: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: clamp(18px, 3vh, 32px) !important;
-    width: 100% !important;
-    max-width: 1180px !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
-  body.home-page .tf-film-hero .tf-center-brand {
-    display: block !important;
-    width: min(66vw, 780px) !important;
-    margin: 0 auto !important;
-  }
-  body.home-page .tf-film-hero .tf-center-brand img {
-    display: block !important;
-    width: 100% !important;
-    max-height: min(52vh, 540px) !important;
-    object-fit: contain !important;
-  }
-  body.home-page .tf-film-hero .tf-mobile-home-nav {
-    position: static !important;
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 10px clamp(14px, 1.8vw, 30px) !important;
-    width: 100% !important;
-    max-width: 1140px !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    background: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    transform: none !important;
-  }
-  body.home-page .tf-film-hero .tf-mobile-home-nav a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex: 0 0 auto !important;
-    padding: 11px 3px !important;
-    border: 0 !important;
-    border-bottom: 1px solid transparent !important;
-    background: none !important;
-    color: #9F7A34 !important;
-    font-family: inherit !important;
-    font-size: clamp(12px, 1vw, 15px) !important;
-    font-weight: 700 !important;
-    letter-spacing: .045em !important;
-    line-height: 1.4 !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-    white-space: nowrap !important;
-    transition: border-color .2s ease !important;
-  }
-  body.home-page .tf-film-hero .tf-mobile-home-nav a.active,
-  body.home-page .tf-film-hero .tf-mobile-home-nav a:hover,
-  body.home-page .tf-film-hero .tf-mobile-home-nav a:focus-visible {
-    border-bottom-color: #9F7A34 !important;
-  }
-}
-</style>
+
 <link as="image" fetchpriority="high" href="assets/tattoo-fashion-original-logo.png" rel="preload"/><link href="tf-design-einheitlich.css?v=20261118-all3" rel="stylesheet"/>
-<link href="tf-home-header-match.css?v=20261118-1" rel="stylesheet"/></head><body class="home-page">
+<link rel="stylesheet" href="tf-home-exact-header.css?v=20261118-2"/>
+</head><body class="home-page">
 <header class="header tf-header"><a aria-label="Tattoo Fashion – Home" class="tf-brand" href="index-en.html"><img alt="Tattoo Fashion Original-Logo" class="logo" decoding="async" height="181" src="assets/logo.png" width="408"/></a><nav aria-label="Main navigation" class="nav tf-nav" id="navigation"><a aria-current="page" class="active" href="index-en.html">Home</a><a class="" href="geschichte-en.html">Our Story</a><a href="studios-en.html">Studios</a><a href="leistungen-en.html">Services</a><a href="shop-en.html">Shop</a><a href="partner-en.html">Partners</a><a href="kontakt-en.html">Contact</a></nav><div aria-label="Sprache wählen / Choose language / Vælg sprog" class="tf-language-switch" role="navigation"><a aria-label="Deutsch" href="index.html" hreflang="de" lang="de">DE</a><a aria-current="page" aria-label="English" class="selected" href="index-en.html" hreflang="en" lang="en">EN</a><a aria-label="Dansk" href="index-da.html" hreflang="da" lang="da">DA</a></div><a class="tf-header-cta" href="studios-en.html">FIND A STUDIO <span>↗</span></a></header>
 <main>
 <section class="section story-grid" id="discover"><div class="reveal"><h2>MORE THAN<br/><em class="gold">INK.</em></h2><p>Every idea has a story. Discover the people, the art and the passion behind Tattoo Fashion.</p><a class="btn btn-outline" href="geschichte-en.html">OUR STORY <span aria-hidden="true" class="tf-arrow-icon"></span></a></div></section>

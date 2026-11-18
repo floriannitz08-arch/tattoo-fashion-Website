@@ -1,0 +1,7 @@
+Startseite Header wie auf den Unterseiten (DE/EN/DA)
+
+Alle Dateien dieses Ordners ins GitHub-Hauptverzeichnis hochladen und gleichnamige Dateien ersetzen.
+Wichtig: Die alte Datei tf-home-header-match.css kann nach Kontrolle entfernt werden; sie wird nicht mehr eingebunden.
+Geaendert: index.html, index-en.html, index-da.html und neue tf-home-exact-header.css.
+Die alten CSS-Regeln zum Ausblenden der Startseiten-Navigation wurden aus den drei HTML-Dateien entfernt.
+Keine Browser-/Geraetetests erfolgt.

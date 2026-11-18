@@ -1,0 +1,72 @@
+/* Tattoo Fashion – Startseite: Header optisch wie auf den Unterseiten. */
+/* Muss als letztes Stylesheet geladen werden. Keine Änderungen an Inhaltssektionen. */
+body.home-page > header.header.tf-header {
+ display:flex!important;position:relative!important;inset:auto!important;
+ top:auto!important;left:auto!important;right:auto!important;
+ width:100%!important;box-sizing:border-box!important;z-index:20!important;
+ margin:0!important;min-height:106px!important;height:auto!important;
+ padding:10px 3.2vw!important;gap:clamp(12px,2vw,36px)!important;
+ flex-wrap:nowrap!important;align-items:center!important;
+ background:transparent!important;background-image:none!important;
+ border:0!important;box-shadow:none!important;
+}
+body.home-page > header.tf-header .tf-brand {flex:0 0 auto!important;display:block!important;}
+body.home-page > header.tf-header .tf-brand .logo {
+ display:block!important;width:clamp(195px,18vw,254px)!important;
+ height:auto!important;max-height:85px!important;object-fit:contain!important;
+ filter:drop-shadow(0 0 8px #d69e4066)!important;
+}
+body.home-page > header.tf-header .tf-nav,
+body.home-page > header.tf-header .tf-nav:not(.open) {
+ position:static!important;display:flex!important;align-items:center!important;
+ visibility:visible!important;opacity:1!important;transform:none!important;
+ flex-wrap:nowrap!important;margin-left:auto!important;
+ gap:clamp(11px,1.6vw,29px)!important;
+ background:transparent!important;box-shadow:none!important;
+}
+body.home-page > header.tf-header .tf-nav a {
+ color:#efd092!important;font-size:clamp(9px,.79vw,12px)!important;
+ font-weight:800!important;letter-spacing:.09em!important;
+ text-transform:none!important;text-decoration:none!important;
+ text-shadow:0 0 8px #b17b2830!important;
+}
+body.home-page > header.tf-header .tf-nav a:is(:hover,.active,:focus-visible) {color:#9F7A34!important;}
+body.home-page > header.tf-header .tf-language-switch {
+ display:flex!important;position:static!important;margin-left:auto!important;
+ align-items:center!important;flex:0 0 auto!important;
+}
+body.home-page > header.tf-header .tf-header-cta {
+ display:inline-flex!important;align-items:center!important;justify-content:space-between!important;
+ margin-left:clamp(10px,2vw,35px)!important;padding:19px 16px!important;
+ min-width:160px!important;border:1px solid #9F7A34!important;
+ color:#f7db9f!important;font-size:11px!important;font-weight:800!important;
+ letter-spacing:.11em!important;text-decoration:none!important;
+}
+@media(max-width:1200px){
+ body.home-page > header.tf-header .tf-nav {gap:10px!important;}
+ body.home-page > header.tf-header .tf-header-cta {min-width:138px!important;padding:15px 10px!important;margin-left:5px!important;}
+ body.home-page > header.tf-header .tf-brand .logo {width:195px!important;}
+}
+@media(max-width:980px){
+ body.home-page > header.header.tf-header {
+  display:flex!important;flex-wrap:wrap!important;justify-content:center!important;
+  gap:5px!important;padding:7px 12px 11px!important;min-height:0!important;
+ }
+ body.home-page > header.tf-header .tf-brand {width:100%!important;text-align:center!important;}
+ body.home-page > header.tf-header .tf-brand .logo {width:158px!important;max-height:54px!important;margin:0 auto!important;}
+ body.home-page > header.tf-header .tf-nav,
+ body.home-page > header.tf-header .tf-nav:not(.open) {
+  display:flex!important;position:static!important;flex-wrap:wrap!important;
+  justify-content:center!important;align-items:center!important;
+  gap:7px 12px!important;width:100%!important;margin:0!important;padding:0!important;
+  opacity:1!important;visibility:visible!important;transform:none!important;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+ }
+ body.home-page > header.tf-header .tf-nav a {font-size:10px!important;padding:3px 0!important;}
+ body.home-page > header.tf-header .tf-language-switch {margin:8px auto 0!important;}
+ body.home-page > header.tf-header .tf-header-cta {display:none!important;}
+}
+@media(max-width:480px){
+ body.home-page > header.tf-header .tf-nav {gap:5px 9px!important;}
+ body.home-page > header.tf-header .tf-nav a {font-size:9px!important;}
+}

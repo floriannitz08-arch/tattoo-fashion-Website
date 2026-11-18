@@ -1,0 +1,20 @@
+TATTOO FASHION – KOMPLETTPAKET (DE / EN / DA) – 18.11.2026
+
+Enthalten ist das komplette hochgeladene Repository, mit allen bestehenden Dateien.
+Die 21 HTML-Seiten (7 DE, 7 EN, 7 DA) wurden mit derselben Designkorrektur verbunden.
+Die Datei tf-design-einheitlich.css wurde aktualisiert und wird in jedem HTML-Head zuletzt geladen.
+
+INSTALLATION (GITHUB)
+1. ZIP entpacken.
+2. Den INHALT des Ordners tattoo-fashion-Website-main hochladen (nicht den Ordner als Unterordner).
+3. Auf GitHub alle gleichnamigen Dateien im Hauptverzeichnis ersetzen; neue Dateien hinzufügen.
+4. Commit changes.
+5. Die GitHub-Pages-Seite auf Handy/Desktop mit hartem Neuladen aktualisieren.
+
+WICHTIG:
+- Keine Bilder, JavaScript-Dateien, Übersetzungen oder Seiteninhalte wurden geändert.
+- HTML wurde ausschließlich um die CSS-Einbindung ergänzt.
+- Die bereits funktionierende Header-/Navigationstechnik bleibt erhalten.
+- Dies ist eine Codeprüfung, kein echter Browser-/Mobilgerättest.
+- Das CSS ist eine abgestimmte finale Korrekturschicht über dem bestehenden CSS-Bundle;
+  die alten Stylesheets wurden nicht gelöscht.
