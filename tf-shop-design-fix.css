@@ -1,0 +1,150 @@
+/* TATTOO FASHION – Shop-Korrektur, 18.11.2026
+   Nur die Shop-Seite, keine Änderungen an anderen Seiten.
+   Gold überall: #9F7A34 | Standardschrift: Manrope.
+*/
+:root{--tf-shop-gold:#9F7A34}
+body.interior-page .tf-shop-catalog{
+  color:#f4f1eb!important;
+  font-family:Manrope,Arial,Helvetica,sans-serif!important;
+  width:min(100%,1320px)!important;
+  padding:clamp(48px,6vw,84px) clamp(18px,4vw,54px) 100px!important;
+}
+body .tf-shop-intro{max-width:900px!important;margin:0 auto 38px!important;text-align:center!important;}
+body .tf-shop-intro h1{
+  font-family:Manrope,Arial,Helvetica,sans-serif!important;
+  font-weight:800!important;
+  font-stretch:normal!important;
+  font-size:clamp(34px,5vw,65px)!important;
+  line-height:1.15!important;
+  letter-spacing:-.035em!important;
+  text-transform:uppercase!important;
+  color:#f6f3ed!important;
+  -webkit-text-fill-color:#f6f3ed!important;
+  background:none!important;
+  margin:0 auto 20px!important;
+  text-wrap:balance;
+  overflow-wrap:normal!important;
+}
+body .tf-shop-intro h1 span{
+  color:#9F7A34!important;
+  -webkit-text-fill-color:#9F7A34!important;
+  background:none!important;
+}
+body .tf-shop-intro>p:last-child{
+  color:#e1ded8!important;
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(14px,1.2vw,17px)!important;
+  font-weight:400!important;
+  line-height:1.8!important;
+}
+body .tf-shop-toolbar{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:16px!important;justify-content:center!important;margin:24px auto 12px!important;}
+body .tf-shop-filters{justify-content:center!important;gap:9px!important;}
+body .tf-shop-filters button{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:12px!important;
+  font-weight:650!important;
+  letter-spacing:0!important;
+  color:#9F7A34!important;
+  border:1px solid #9F7A34!important;
+  border-radius:3px!important;
+  background:#040404!important;
+  padding:10px 14px!important;
+}
+body .tf-shop-filters button:hover,
+body .tf-shop-filters button[aria-pressed="true"],
+body .tf-shop-filters button.selected{
+  background:rgba(159,122,52,.16)!important;
+  color:#9F7A34!important;
+  border-color:#9F7A34!important;
+}
+body .tf-shop-search-label input{
+  background:#050505!important;
+  border:1px solid #9F7A34!important;
+  color:#eee!important;
+  border-radius:3px!important;
+  font-family:Manrope,Arial,sans-serif!important;
+}
+body .tf-shop-search-label input::placeholder{color:#b8b4ad!important;opacity:1!important}
+body .tf-shop-count{color:#bbb7b0!important;text-align:center!important;font-size:13px!important;}
+body .tf-product-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:22px!important;
+  max-width:1150px!important;
+  margin:0 auto!important;
+}
+body .tf-product{
+  background:rgba(2,2,2,.86)!important;
+  border:1px solid rgba(159,122,52,.7)!important;
+  border-radius:3px!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  min-width:0!important;
+  overflow:hidden!important;
+  color:#f4f1eb!important;
+}
+body .tf-product-photo{
+  aspect-ratio:4/4!important;
+  background:#080808!important;
+  border-bottom:1px solid rgba(159,122,52,.5)!important;
+  padding:18px!important;
+  overflow:hidden!important;
+  min-width:0!important;
+}
+body .tf-product-photo::before{display:none!important;content:none!important;}
+body .tf-product-photo>span{color:#9F7A34!important;font-family:Manrope,Arial,sans-serif!important;letter-spacing:.11em!important;font-size:11px!important;}
+body .tf-product-photo>b{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(14px,1.3vw,19px)!important;
+  font-weight:600!important;
+  letter-spacing:0!important;
+  color:#d8d5cf!important;
+  line-height:1.4!important;
+}
+body .tf-product-photo img,
+body .tf-product-photo picture,
+body .tf-product-photo picture img{
+  display:block;
+  max-width:100%;
+  width:100%;height:100%;object-fit:contain;
+}
+body .tf-product-info{padding:18px!important;}
+body .tf-product-info h2{
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:clamp(16px,1.4vw,20px)!important;
+  font-weight:750!important;
+  line-height:1.4!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  color:#f4f1eb!important;
+  text-align:left!important;
+  margin:0 0 8px!important;
+}
+body .tf-product-detail{color:#bbb8b3!important;font-size:13px!important;line-height:1.6!important;}
+body .tf-product-bottom strong{color:#9F7A34!important;font-family:Manrope,Arial,sans-serif!important;font-size:17px!important;}
+body .tf-product-bottom a{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  color:#9F7A34!important;
+  background:#050505!important;
+  border:1px solid #9F7A34!important;
+  border-radius:2px!important;
+  font-family:Manrope,Arial,sans-serif!important;
+  font-size:12px!important;font-weight:700!important;
+  padding:11px 13px!important;
+  text-align:center!important;
+  min-height:42px;
+}
+body .tf-product-bottom a:hover{background:rgba(159,122,52,.16)!important;color:#9F7A34!important;}
+body .tf-product-bottom a .tf-arrow-icon{color:#9F7A34!important;}
+body .tf-shop-footnote{color:#aaa7a0!important;}
+@media(max-width:980px){body .tf-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:600px){
+ body .tf-product-grid{grid-template-columns:1fr!important;max-width:420px!important;gap:18px!important;}
+ body.interior-page .tf-shop-catalog{padding:48px 16px 70px!important;}
+ body .tf-shop-intro h1{font-size:clamp(30px,8vw,42px)!important;}
+ body .tf-shop-filters button{font-size:11px!important;padding:9px 11px!important;}
+ body .tf-shop-search-label{width:100%!important;}
+ body .tf-shop-search-label input{width:100%!important;}
+ body .tf-product-photo{aspect-ratio:4/3.5!important;}
+ body .tf-product-info{padding:17px!important;}
+}
