@@ -1,0 +1,12 @@
+/* Tattoo Fashion – dekorative Mini-Überschriften auf allen 7 Seiten entfernt.
+   Haupttitel, Navigation, Buttons, Beschreibungen und Shop-Filter bleiben erhalten. */
+.eyebrow, .section-label, .news-kicker,
+.tf-story-kicker, .tf-partner-kicker, .tf-shop-kicker,
+.service-overline, .tf-product-category,
+.tf-service-overline, .tf-partner-eyebrow {
+  display: none !important;
+}
+/* Reserveabstände verschwinden, auch bei älteren CSS-Versionen. */
+.home-page .news-section > h2 {margin-top:0!important;}
+.home-page .news-card .news-copy h3 {margin-top:0!important;}
+.tf-product-info h2 {margin-top:0!important;}
