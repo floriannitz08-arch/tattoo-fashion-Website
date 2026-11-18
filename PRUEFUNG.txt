@@ -1,0 +1,4 @@
+21 HTML-Seiten aktualisiert.
+CSS-Links tf-unified, tf-brand-consistency, tf-languages, tf-performance werden durch tf-fast-bundle.css ersetzt.
+Shop-, Studio- und andere CSS-Ergänzungen sind im gemeinsamen Bundle enthalten.
+Meta-Descriptions und hreflang aus dem SEO-Paket bleiben erhalten.
