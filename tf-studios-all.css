@@ -1,0 +1,13 @@
+/* Ergänzungen ausschließlich für die Studios-Seite – bestehendes Design bleibt. */
+body.interior-page .finder .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-start}
+body.interior-page .finder .filter{color:#9F7A34;border-color:#9F7A34;background:#050505}
+body.interior-page .finder .filter.active,body.interior-page .finder .filter:hover{color:#050505;background:#9F7A34;border-color:#9F7A34}
+body.interior-page .finder .count{color:#9F7A34}
+body.interior-page .finder .studio-card{border-color:rgba(159,122,52,.65)}
+body.interior-page .finder .studio-card.selected,body.interior-page .finder .studio-card:hover{border-color:#9F7A34}
+body.interior-page .finder .studio-card .card-links button,body.interior-page .finder .studio-card .card-links a{color:#9F7A34;border-bottom-color:#9F7A34}
+body.interior-page .finder .studio-card .card-links{gap:12px 15px}
+body.interior-page .finder .studio-card .card-links button,body.interior-page .finder .studio-card .card-links a{display:inline-flex;align-items:center;min-height:30px;white-space:normal}
+body.interior-page .finder .gold-pin{border-color:#9F7A34;background:#9F7A34;box-shadow:0 0 0 6px rgba(159,122,52,.18)}
+body.interior-page .finder .map-fallback[hidden]{display:none!important}
+@media(max-width:650px){body.interior-page .finder .filters{justify-content:center}body.interior-page .finder .card-links{justify-content:center}}
