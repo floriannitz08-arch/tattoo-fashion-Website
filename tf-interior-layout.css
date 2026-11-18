@@ -1,0 +1,107 @@
+/* Tattoo Fashion: Layout ohne Video- und Poster-Regeln. */
+.interior-page{background:#030303!important;min-height:100vh;isolation:isolate}
+.interior-page>.header,.interior-page>main,.interior-page>.footer{position:relative;z-index:1}
+.interior-page>.header{background:rgba(2,2,2,.70);backdrop-filter:blur(10px);border-bottom:1px solid rgba(230,180,93,.55);box-shadow:0 2px 18px rgba(209,144,48,.15)}
+.interior-page .header .logo{filter:drop-shadow(0 0 7px rgba(232,170,65,.26))}
+.interior-page .nav a{position:relative;transition:color .25s,text-shadow .25s}
+.interior-page .nav a:hover,.interior-page .nav a.active{color:#f5cd7d;text-shadow:0 0 15px rgba(237,176,66,.45)}
+.interior-page .nav a:not(.nav-cta)::after{content:"";height:1px;position:absolute;left:0;right:0;bottom:-9px;background:linear-gradient(90deg,transparent,#f8d38b,transparent);opacity:0;transform:scaleX(.4);transition:.3s}
+.interior-page .nav a:hover::after,.interior-page .nav a.active::after{opacity:1;transform:scaleX(1)}
+.interior-page .subhero{background:transparent!important;min-height:410px}
+.interior-page .subhero .inner{text-shadow:0 4px 25px rgba(0,0,0,.70)}
+.interior-page .section{background:transparent!important}
+.interior-page .section h1,.interior-page .section h2,.interior-page .section p,.interior-page .subhero p{text-shadow:0 2px 12px rgba(0,0,0,.58)}
+.interior-page .footer{background:rgba(7,6,5,.40)!important;backdrop-filter:blur(5px)}
+.interior-page .service,.interior-page .studio-card,.interior-page .link-tiles a,.interior-page .contact-note{box-shadow:0 12px 38px rgba(0,0,0,.38)}
+@media(max-width:780px){.interior-page .nav{background:rgba(4,4,4,.97)}}
+@media(prefers-reduced-motion:reduce){.interior-page .tf-global-glint{animation:none}}
+.interior-page .subhero:before{content:"";position:absolute;top:0;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,rgba(236,179,87,.62),transparent);box-shadow:0 0 20px rgba(235,166,65,.22);pointer-events:none}
+.interior-page .btn,.interior-page .filter.active{transition:box-shadow .3s,transform .3s,background .3s}
+.interior-page .btn:hover,.interior-page .filter.active:hover{box-shadow:0 0 25px rgba(213,156,67,.30);transform:translateY(-2px)}
+.interior-page .subhero:after{content:"";position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(231,171,75,.32),transparent);pointer-events:none}
+.interior-page .finder,.interior-page .studio-teaser{background:transparent!important}
+.interior-page { --tf-gold:#d9aa5c; --tf-gold-light:#f4d696; --tf-black:#030303; color:#f7f1e6; }
+.interior-page>.header {min-height:96px; padding:12px clamp(18px,3.1vw,56px); display:flex; align-items:center; gap:clamp(16px,1.8vw,30px); background:linear-gradient(180deg,rgba(0,0,0,.97),rgba(0,0,0,.83))!important; border-bottom:1px solid #c69546; box-shadow:0 5px 25px #0009, 0 1px 14px #9f6d2730;}
+.interior-page .header>a:first-child {flex:0 0 auto;display:inline-flex;align-items:center}
+.interior-page .header .logo {width:clamp(150px,16.5vw,230px);height:76px;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 6px rgba(225,168,66,.28));}
+.interior-page .header .nav {margin-left:auto;display:flex;align-items:center;gap:clamp(8px,1.55vw,27px)}
+.interior-page .header .nav a {color:var(--tf-gold-light);font-size:clamp(10px,.78vw,13px);letter-spacing:.075em;font-weight:750;white-space:nowrap;text-transform:uppercase}
+.interior-page .header .nav a.active {color:#ffdf9a}
+.interior-page .header .tf-top-cta {flex:0 0 auto;display:inline-flex;align-items:center;gap:14px;padding:17px 18px;border:1px solid #d3a15c;color:#f6d79c;font-size:11px;letter-spacing:.09em;font-weight:800;text-decoration:none;box-shadow:inset 0 0 9px #ffd88c12, 0 0 10px #ac712a28;transition:transform .3s,box-shadow .3s;background:rgba(0,0,0,.24)}
+.interior-page .header .tf-top-cta:hover,.interior-page .header .tf-top-cta:focus-visible {transform:translateY(-2px);box-shadow:0 0 21px #e7ae5666}
+.interior-page .inner-page-hero,.interior-page .subhero {padding-top:90px;padding-bottom:90px;}
+.interior-page .subhero h1 {text-shadow:0 5px 24px #000a;}
+.interior-page .gold {color:#e9bb6a}
+@media(max-width:1150px) {.interior-page .header .tf-top-cta{display:none}}
+@media(max-width:860px) {.interior-page>.header{min-height:80px}.interior-page .header .logo{height:64px;width:180px}.interior-page .header .nav{margin-left:0}.interior-page .nav:not(.open){display:none}.interior-page .header .menu-btn{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.interior-page .tf-top-cta{transition:none}}
+.interior-page>.header.tf-header{display:flex!important;position:relative!important;z-index:20;min-height:106px!important;height:auto!important;padding:10px 3.2vw!important;gap:clamp(12px,2vw,36px)!important;background:linear-gradient(180deg,rgba(0,0,0,.98),rgba(0,0,0,.89))!important;border-bottom:1px solid #c69546!important;box-shadow:0 6px 22px #0007!important;align-items:center!important;flex-wrap:nowrap}
+.interior-page .tf-brand{flex:0 0 auto!important;display:block!important}
+.interior-page .tf-brand .logo{width:clamp(195px,18vw,254px)!important;height:auto!important;max-height:85px!important;object-fit:contain!important;filter:drop-shadow(0 0 8px #d69e4066)!important}
+.interior-page .tf-nav{margin-left:auto!important;gap:clamp(11px,1.6vw,29px)!important;display:flex;align-items:center}
+.interior-page .tf-nav a{color:#efd092!important;font-size:clamp(9px,.79vw,12px)!important;font-weight:800!important;letter-spacing:.09em!important;position:relative!important;text-shadow:0 0 8px #b17b2830!important;transition:color .25s,text-shadow .25s;text-transform:none!important}
+.interior-page .tf-nav a::after{content:""!important;display:block!important;position:absolute!important;left:0;right:0;bottom:-12px;height:1px;background:linear-gradient(90deg,transparent,#ffe2a1,transparent);transform:scaleX(.65);opacity:.52;transition:.3s}
+.interior-page .tf-nav a:hover,.interior-page .tf-nav a.active{color:#ffe3a2!important;text-shadow:0 0 15px #e7aa5aa0!important}
+.interior-page .tf-nav a:hover::after,.interior-page .tf-nav a.active::after{transform:scaleX(1);opacity:1}
+.interior-page .tf-header-cta{margin-left:clamp(10px,2vw,35px)!important;min-width:160px!important;padding:19px 16px!important;border:1px solid #e2b363!important;display:inline-flex!important;justify-content:space-between;gap:16px;align-items:center;color:#f7db9f!important;font-size:11px!important;font-weight:800!important;letter-spacing:.11em!important;text-decoration:none;box-shadow:inset 0 0 10px #f8cc4e19,0 0 7px #d9a45143!important;transition:background .3s,box-shadow .3s}
+.interior-page .tf-header-cta:hover{background:#b88a3822!important;box-shadow:0 0 22px #f3c36b75!important}
+@media(max-width:1200px){.interior-page .tf-nav{gap:10px!important}.interior-page .tf-header-cta{min-width:138px!important;padding:15px 10px!important;margin-left:5px!important}.interior-page .tf-brand .logo{width:195px!important}}
+@media(max-width:980px){.interior-page>.header.tf-header{min-height:80px!important;padding:8px 5vw!important}.interior-page .menu-btn{display:block!important;margin-left:auto}.interior-page .tf-header-cta{display:none!important}.interior-page .tf-nav:not(.open){display:none!important}.interior-page .tf-nav.open{display:flex!important;gap:15px!important}}
+.interior-page > header.header.tf-header {
+  position:fixed!important; top:0!important; left:0!important; right:0!important;
+  width:100%!important; box-sizing:border-box!important; z-index:999!important;
+  background:transparent!important; background-image:none!important;
+  border:0!important; border-bottom:0!important;
+  box-shadow:none!important; backdrop-filter:none!important; -webkit-backdrop-filter:none!important;
+  min-height:94px!important;
+}
+.interior-page > header.header.tf-header::before,
+.interior-page > header.header.tf-header::after{content:none!important;display:none!important}
+.interior-page > main{padding-top:106px!important}
+.interior-page .tf-header .menu-btn{display:none!important}
+.interior-page .tf-nav{background:transparent!important;box-shadow:none!important}
+@media(max-width:980px){
+  .interior-page > header.header.tf-header{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:5px!important;padding:7px 12px 11px!important;min-height:0!important}
+  .interior-page .tf-brand{width:100%!important;text-align:center!important}
+  .interior-page .tf-brand .logo{width:158px!important;max-height:54px!important}
+  .interior-page .tf-nav,.interior-page .tf-nav:not(.open){display:flex!important;position:static!important;flex-wrap:wrap!important;justify-content:center!important;gap:7px 12px!important;width:100%!important;margin:0!important;padding:0!important;opacity:1!important;visibility:visible!important;transform:none!important;background:transparent!important;border:0!important}
+  .interior-page .tf-nav a{font-size:10px!important;padding:3px 0!important}
+  .interior-page .tf-nav a::after{bottom:0!important}
+  .interior-page > main{padding-top:158px!important}
+}
+@media(max-width:480px){.interior-page .tf-nav{gap:5px 9px!important}.interior-page .tf-nav a{font-size:9px!important}.interior-page > main{padding-top:169px!important}}
+.interior-page > main,
+.interior-page > main > section,
+.interior-page > main .subhero,
+.interior-page > main .inner-page-hero,
+.interior-page > main .section,
+.interior-page > main .overview-grid,
+.interior-page > main .story-grid,
+.interior-page > main .finder,
+.interior-page > main .studio-teaser,
+.interior-page > main .service-section {
+  background:transparent!important;
+  background-image:none!important;
+  border-top:0!important;
+  border-bottom:0!important;
+  box-shadow:none!important;
+}
+.interior-page > main .subhero::before,
+.interior-page > main .subhero::after,
+.interior-page > main .inner-page-hero::before,
+.interior-page > main .inner-page-hero::after,
+.interior-page .eyebrow::before,
+.interior-page .ribbon,
+.interior-page .service-bottom::before,
+.interior-page .service-bottom::after {
+  display:none!important;
+  content:none!important;
+}
+.interior-page .service-bottom,
+.interior-page .results-head,
+.interior-page .tip,
+.interior-page > .footer {
+  border-top:0!important;
+  border-bottom:0!important;
+}
+.interior-page > .footer {background:transparent!important; background-image:none!important;box-shadow:none!important}

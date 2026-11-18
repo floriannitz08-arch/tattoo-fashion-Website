@@ -1,0 +1,39 @@
+/* Tattoo Fashion • definitiver Video-freier Hintergrund • 2026-11-18 V2 */
+:root{--tf-bg:#020304;--tf-gold:#dfb65d;--tf-gold-light:#ffe0a0; color-scheme:dark}
+html,body{min-height:100%;background:#020304!important}
+body.home-page,body.interior-page{isolation:isolate;background:#020304!important;background-image:none!important;min-height:100vh;position:relative}
+/* Permanent, visible from the first paint, no image or video downloads. */
+body.home-page::before,body.interior-page::before{
+  content:""!important;display:block!important;position:fixed!important;inset:0!important;
+  z-index:0!important;pointer-events:none!important;opacity:1!important;
+  background:
+    radial-gradient(ellipse 55% 45% at 84% 14%,rgba(168,112,29,.28) 0%,rgba(132,81,21,.115) 34%,transparent 75%),
+    radial-gradient(ellipse 63% 48% at 8% 84%,rgba(151,98,25,.18) 0%,transparent 72%),
+    radial-gradient(ellipse 35% 40% at 46% 52%,rgba(34,36,39,.24),transparent 80%),
+    linear-gradient(145deg,#020203 0%,#08090a 48%,#020203 100%)!important;
+  animation:none!important;transform:none!important;
+}
+body.home-page::after,body.interior-page::after{
+  content:""!important;display:block!important;position:fixed!important;inset:0!important;
+  z-index:0!important;pointer-events:none!important;opacity:.45!important;
+  background:linear-gradient(112deg,transparent 30%,rgba(226,175,79,.02) 46%,rgba(239,185,83,.085) 50%,rgba(226,175,79,.02) 54%,transparent 70%)!important;
+  animation:none!important;
+}
+/* Block legacy layers even when an old cached stylesheet still contains rules. */
+.tf-sitewide-video,.tf-global-background,.tf-background,.tf-sitewide-shade,.tf-global-tint,.tf-global-glint,.tf-sitewide-flare,.tf-global-video,.tf-video-wrap,.tf-video-overlay,.tf-video-color,.tf-video-vignette,.tf-ambient-gold,
+video[src*="hintergrund"],video[src*="background"],video[autoplay][muted]{display:none!important;visibility:hidden!important;opacity:0!important;background:none!important}
+body.home-page>header,body.home-page>main,body.home-page>footer,
+body.interior-page>header,body.interior-page>main,body.interior-page>footer{position:relative;z-index:2}
+body.home-page .tf-film-hero,body.home-page .tf-hero,body.home-page main>.section,
+body.interior-page .subhero,body.interior-page .inner-page-hero,body.interior-page .section,
+body.interior-page .finder,body.interior-page .studio-teaser{
+  background:transparent!important;background-image:none!important;
+}
+body.home-page .tf-film-hero::before,body.home-page .tf-film-hero::after,
+body.interior-page .subhero::before,body.interior-page .subhero::after{
+  background-image:none!important;
+}
+body.home-page .header,body.interior-page .header{background:transparent!important;background-image:none!important}
+body.home-page .footer,body.interior-page .footer{background:transparent!important;background-image:none!important;backdrop-filter:none!important}
+/* Content images, logos, cards and gold buttons intentionally retained. */
+@media(max-width:767px){body.home-page::before,body.interior-page::before{background:radial-gradient(ellipse 90% 40% at 90% 8%,rgba(169,107,32,.24),transparent 79%),radial-gradient(ellipse 90% 35% at 0% 94%,rgba(156,95,20,.14),transparent 75%),linear-gradient(135deg,#020203,#08090b 58%,#020203)!important}}
