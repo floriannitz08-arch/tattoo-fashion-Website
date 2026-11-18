@@ -127,7 +127,98 @@
   .home-page .news-card figure{min-height:0;}
 }
 </style>
-<link rel="stylesheet" href="tf-unified.css?v=20261118-full-1"/><link rel="stylesheet" href="tf-brand-consistency.css?v=20261118-final-1"/></head><body class="home-page">
+<link rel="stylesheet" href="tf-unified.css?v=20261118-full-1"/><link rel="stylesheet" href="tf-brand-consistency.css?v=20261118-final-1"/>
+<style id="tf-home-desktop-navigation-under-logo">
+/* Nur Desktop-Startseite: Navigation wie auf Mobil unter dem Logo.
+   Der Header ist NICHT fixed oder sticky. */
+@media (min-width: 821px) {
+  body.home-page > header.header {
+    display: none !important;
+  }
+  body.home-page .tf-film-hero {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: min(760px, 78vh) !important;
+    height: auto !important;
+    padding: 48px 24px 65px !important;
+  }
+  body.home-page .tf-film-hero .tf-film-content {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: clamp(18px, 3vh, 32px) !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  body.home-page .tf-film-hero .tf-center-brand {
+    display: block !important;
+    width: min(66vw, 780px) !important;
+    margin: 0 auto !important;
+  }
+  body.home-page .tf-film-hero .tf-center-brand img {
+    display: block !important;
+    width: 100% !important;
+    max-height: min(52vh, 540px) !important;
+    object-fit: contain !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav {
+    position: static !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px clamp(14px, 1.8vw, 30px) !important;
+    width: 100% !important;
+    max-width: 1140px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    padding: 11px 3px !important;
+    border: 0 !important;
+    border-bottom: 1px solid transparent !important;
+    background: none !important;
+    color: #9F7A34 !important;
+    font-family: inherit !important;
+    font-size: clamp(12px, 1vw, 15px) !important;
+    font-weight: 700 !important;
+    letter-spacing: .045em !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    transition: border-color .2s ease !important;
+  }
+  body.home-page .tf-film-hero .tf-mobile-home-nav a.active,
+  body.home-page .tf-film-hero .tf-mobile-home-nav a:hover,
+  body.home-page .tf-film-hero .tf-mobile-home-nav a:focus-visible {
+    border-bottom-color: #9F7A34 !important;
+  }
+}
+</style>
+</head><body class="home-page">
 <header class="header"><button aria-controls="navigation" aria-expanded="false" class="menu-btn">☰ Menü</button><nav class="nav" id="navigation" style="margin-inline:auto"><a class="active" href="index.html">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></header>
 <main><section aria-label="Tattoo Fashion – Whatever you think, we ink" class="tf-film-hero">
 <div class="tf-film-content"><h1 class="tf-center-brand"><img alt="Tattoo Fashion – Whatever you think, we ink" src="assets/tattoo-fashion-original-logo.png"/></h1><nav class="tf-mobile-home-nav" aria-label="Hauptnavigation Mobil"><a href="index.html" aria-current="page" class="active">Startseite</a><a href="geschichte.html">Unsere Geschichte</a><a href="studios.html">Studios</a><a href="leistungen.html">Leistungen</a><a href="shop.html">Shop</a><a href="partner.html">Partner</a><a href="kontakt.html">Kontakt</a></nav></div>
