@@ -1,4 +1,4 @@
-const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');menu?.addEventListener('click',()=>{let on=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.textContent=on?'✕ Schließen':'☰ Menü'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const menu=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');menu?.addEventListener('click',()=>{let on=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.textContent=on?'✕ Schließen':'☰ Menü'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));}else{document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'));}
 if(document.getElementById('cards')){
  const studios=[
  {city:'Hamburg',country:'Deutschland',lat:53.5511,lon:9.9937},
@@ -24,3 +24,4 @@ if(document.getElementById('cards')){
  }else{document.getElementById('map-fallback').hidden=false}
  render();
 }
+
