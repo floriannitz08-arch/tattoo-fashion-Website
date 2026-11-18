@@ -1,0 +1,52 @@
+/* TATTOO FASHION – Fast Black Background v1
+   Replaces video & image fallback with zero-download CSS atmosphere.
+   Loaded LAST by every HTML page. No old hero/photo flicker. */
+:root{--tf-bg:#020304;--tf-gold:#dfb65d;--tf-gold-light:#ffe0a0}
+html{background:#020304!important}
+body.home-page,body.interior-page{background:#020304!important;background-image:none!important;isolation:isolate;min-height:100vh}
+/* Constant, GPU-friendly background: no images, no video */
+body.home-page::before,body.interior-page::before{
+ content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+ background:
+ radial-gradient(ellipse 55% 34% at 90% 8%,rgba(181,132,49,.095),transparent 78%),
+ radial-gradient(ellipse 39% 48% at 5% 78%,rgba(102,110,117,.075),transparent 75%),
+ linear-gradient(135deg,#010203 0%,#07090c 44%,#020304 80%,#010203 100%);
+}
+/* Very subtle gold glint, independent of network speed */
+body.home-page::after,body.interior-page::after{
+ content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.42;
+ background:linear-gradient(115deg,transparent 27%,rgba(225,176,88,.015) 48%,rgba(255,219,148,.055) 50%,rgba(225,176,88,.015) 52%,transparent 73%);
+ background-size:250% 100%;animation:tf-background-glint 24s ease-in-out infinite;
+}
+@keyframes tf-background-glint{0%,20%{background-position:160% 0}80%,100%{background-position:-160% 0}}
+@media(prefers-reduced-motion:reduce){body.home-page::after,body.interior-page::after{animation:none}}
+/* Remove ALL legacy video/poster surfaces, even when old CSS has important flags */
+.tf-sitewide-video,.tf-global-background,.tf-background,.tf-sitewide-shade,.tf-global-tint,.tf-global-glint,
+.tf-video-color,.tf-video-vignette,.tf-ambient-gold,.tf-sitewide-flare{display:none!important;background:none!important}
+/* Ensure content remains above the common fixed CSS background */
+body.home-page>header,body.home-page>main,body.home-page>footer,
+body.interior-page>header,body.interior-page>main,body.interior-page>footer{
+ position:relative;z-index:2
+}
+/* All page-wide old photo/hero backgrounds removed, but individual product & story images retained */
+body.home-page .tf-film-hero,body.home-page .tf-hero,
+body.interior-page .subhero,body.interior-page .inner-page-hero,
+body.interior-page .section,body.home-page main>.section,
+body.interior-page .finder,body.interior-page .studio-teaser{
+ background-image:none!important;background-color:transparent!important;
+}
+body.home-page .tf-film-hero::before,body.home-page .tf-film-hero::after,
+body.interior-page .subhero::before,body.interior-page .subhero::after{
+ background-image:none!important;
+}
+/* The floating navigation and transparent sections remain visually consistent */
+body.home-page .header,body.interior-page .header{background:transparent!important;background-image:none!important;box-shadow:none!important}
+body.home-page .footer,body.interior-page .footer{background:transparent!important;background-image:none!important;backdrop-filter:none!important}
+/* Keep primary panels readable without large dark rectangles */
+body.home-page .story-grid,body.home-page .overview-grid,
+body.interior-page .tf-story-section{background:transparent!important;background-image:none!important}
+/* The native logo and small gold highlights are deliberately preserved. */
+@media(max-width:767px){
+ body.home-page::before,body.interior-page::before{background:radial-gradient(ellipse 88% 28% at 88% 12%,rgba(181,132,49,.075),transparent 82%),linear-gradient(150deg,#010203,#080a0d 55%,#010203)}
+ body.home-page::after,body.interior-page::after{opacity:.26}
+}
