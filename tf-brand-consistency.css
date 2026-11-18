@@ -1,0 +1,113 @@
+/* TATTOO FASHION | EINHEITLICHES DESIGN | 18.11.2026
+   Letzte gemeinsame Schicht fuer alle sieben Seiten.
+   Ein Gold: #9F7A34. Eine Schriftfamilie: Manrope.
+   Inhalts- und Datenstrukturen werden nicht veraendert.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root {
+ --gold:#9F7A34!important;
+ --tf-gold:#9F7A34!important;
+ --tf-shop-gold:#9F7A34!important;
+ --accent:#9F7A34!important;
+ --light:#9F7A34!important;
+ --line:rgba(159,122,52,.45)!important;
+ --cream:#F4F2ED;
+ --muted:#BBB9B4;
+ --bg:#010101;
+ --panel:#070707;
+ --grad:linear-gradient(90deg,#9F7A34,#9F7A34)!important;
+ --tf-main-font:'Manrope',Arial,Helvetica,sans-serif;
+}
+html, body, button, input, textarea, select, option {font-family:var(--tf-main-font)!important;}
+body, body.home-page, body.interior-page {color:#F4F2ED; background-color:#010101;}
+body :is(h1,h2,h3,h4,h5,h6),
+body :is(.nav,.tf-nav,.nav a,.tf-nav a,.btn,.tf-header-cta,
+ .link-tiles a,.link-tiles strong,.link-tiles small,.tf-product-info,
+ .tf-product-photo,.tf-product-bottom,.tf-product-category,
+ .tf-shop-intro,.tf-shop-intro h1,.tf-partner-mark,.tf-partner-title,
+ .tf-partner-name,.tf-partner-card,.tf-story-main,
+ .service-content,.service-content h3,.studio-card,.studio-card h3,
+ .news-section,.news-card,.news-card h3,
+ .tf-shop-filters button, .tf-shop-search-label input) {
+ font-family:var(--tf-main-font)!important;
+ font-stretch:normal!important;
+}
+body :is(h1,h2,h3,h4,h5,h6) {letter-spacing:-.028em;}
+body main :is(h1,h2,h3,h4) {text-wrap:balance; overflow-wrap:break-word;}
+/* Heading proportions: keep the approved layouts but remove extreme font size and weight discrepancies. */
+body main :is(.tf-shop-intro h1,.tf-partner-intro h1,.tf-story-main h1) {
+ font-family:var(--tf-main-font)!important;
+ font-weight:800!important;
+ line-height:1.08!important;
+}
+body :is(.tf-product-info h2,.tf-partner-card h3,.news-card h3) {font-weight:750!important;}
+/* Text remains neutral white/grey, brand marks remain original image files. */
+body main p, body main li {font-family:var(--tf-main-font)!important;}
+body main :is(.gold,em.gold,.gold-text,.accent,.highlight-gold,
+ .tf-shop-intro h1 span,.tf-shop-kicker,
+ .tf-shop-count strong,.tf-product-category,
+ .tf-product-bottom strong,.tf-partner-mark,
+ .service-period,.news-kicker,.section-label,.eyebrow,
+ .studio-count,.tf-studios-count) {
+ color:#9F7A34!important;
+ -webkit-text-fill-color:#9F7A34!important;
+}
+body :is(.nav,.tf-nav) a,
+body :is(.nav,.tf-nav) a.active,
+body :is(.nav,.tf-nav) a:hover,
+body .tf-header-cta,
+body .tf-header-cta span {
+ color:#9F7A34!important;
+ -webkit-text-fill-color:#9F7A34!important;
+ text-shadow:none!important;
+}
+body :is(.nav,.tf-nav) a::after {
+ background:#9F7A34!important;
+ box-shadow:none!important;
+}
+body main a.btn, body main a.btn-outline,
+body main .tf-product-bottom a, body .tf-header-cta,
+body main .tf-partner-card a, body main .tf-partner-join a,
+body main .studio-card .studio-links a,
+body main .tf-studio-card a,
+body main .tf-shop-filters button,
+body main .tf-shop-search-label input {
+ border-color:#9F7A34!important;
+ color:#9F7A34!important;
+ -webkit-text-fill-color:#9F7A34!important;
+ box-shadow:none!important;
+ text-shadow:none!important;
+}
+body main a.btn,body main a.btn-outline,
+body main .tf-product-bottom a,body .tf-header-cta {
+ background-color:#050505!important;
+ background-image:none!important;
+}
+body main a.btn:hover, body main .tf-product-bottom a:hover,
+body main .tf-shop-filters button:hover {background-color:rgba(159,122,52,.13)!important;}
+body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.tf-studio-card) {
+ border-color:rgba(159,122,52,.58)!important;
+}
+body main :is(.tf-partner-mark,.tf-partner-card .tf-partner-mark) {
+ border-color:#9F7A34!important;
+ color:#9F7A34!important;
+ -webkit-text-fill-color:#9F7A34!important;
+ background-color:#050505!important;
+ background-image:none!important;
+}
+body main :is(.tf-shop-filters button,.tf-shop-search-label input){
+ border-color:#9F7A34!important;
+ font-family:var(--tf-main-font)!important;
+}
+body main .tf-shop-filters button[aria-pressed='true'] {
+ background:rgba(159,122,52,.16)!important;
+ color:#9F7A34!important;
+}
+body :is(.tf-arrow-icon,.tf-arrow-right) {color:currentColor!important;}
+/* Remove bright gradients from prominent headline gold, keeping flat brand gold. */
+body main :is(.gold,.tf-shop-intro h1 span){background-image:none!important; -webkit-background-clip:initial!important; background-clip:initial!important;}
+/* Respect small screens without changing normal flow of the non-sticky menu. */
+@media(max-width:640px){
+ body :is(.nav,.tf-nav) a{font-size:clamp(10px,2.8vw,13px)!important;letter-spacing:0!important;}
+ body main :is(.tf-shop-intro h1,.tf-partner-intro h1,.tf-story-main h1){font-size:clamp(28px,8vw,48px)!important;}
+}
