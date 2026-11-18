@@ -111,3 +111,22 @@ body main :is(.gold,.tf-shop-intro h1 span){background-image:none!important; -we
  body :is(.nav,.tf-nav) a{font-size:clamp(10px,2.8vw,13px)!important;letter-spacing:0!important;}
  body main :is(.tf-shop-intro h1,.tf-partner-intro h1,.tf-story-main h1){font-size:clamp(28px,8vw,48px)!important;}
 }
+
+
+/* 2026-11-18: Tablet-/Handy-Hintergrund - Seiten und Inhalte bleiben unverändert.
+   Separat komponierte Formate statt Cover-Beschnitt der Goldadern.
+   Hintergrundgrafik bleibt oberhalb schwarzem Sofort-Fallback und hinter dem Inhalt. */
+@media (min-width: 641px) and (max-width: 1180px) {
+  body.home-page::before, body.interior-page::before {
+    background: #010101 url('assets/tf-dark-ink-tablet.webp') center center / 100% 100% no-repeat !important;
+    background-attachment: scroll !important;
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 640px) {
+  body.home-page::before, body.interior-page::before {
+    background: #010101 url('assets/tf-dark-ink-mobile.webp') center center / 100% 100% no-repeat !important;
+    background-attachment: scroll !important;
+    opacity: 1 !important;
+  }
+}
