@@ -1,0 +1,125 @@
+/* TATTOO FASHION | DARK PREMIUM | 18 Nov 2026
+   Einheitlicher Akzent: #9F7A34. Keine Hintergrundbilder / Videos.
+   Diese CSS-Datei muss als LETZTES Stylesheet geladen werden. */
+:root {
+  --gold: #9F7A34 !important;
+  --light: #9F7A34 !important;
+  --tf-gold: #9F7A34 !important;
+  --line: rgba(159,122,52,.42) !important;
+  --grad: linear-gradient(#9F7A34,#9F7A34) !important;
+  --bg: #010203 !important;
+  --panel: #090b0d !important;
+}
+html { background: #010203 !important; }
+body, body.home-page, body.interior-page {
+  background: #010203 !important;
+  background-image: none !important;
+  isolation: isolate;
+  overflow-x: clip;
+}
+/* Direkt vom Browser gezeichnetes Bild: schwarzes Metall, feine Architektur-Linien,
+   zwei Goldlicht-Felder. Alle goldenen RGB-Werte entsprechen #9F7A34. */
+body.home-page::before, body.interior-page::before {
+  content:"" !important; display:block !important; position:fixed !important;
+  inset:0 !important; z-index:0 !important; pointer-events:none !important;
+  opacity:1 !important; animation:none !important; transform:none !important;
+  background-image:
+    radial-gradient(ellipse 54% 38% at 90% 10%, rgba(159,122,52,.24), transparent 74%),
+    radial-gradient(ellipse 57% 43% at 3% 90%, rgba(159,122,52,.15), transparent 78%),
+    radial-gradient(ellipse 32% 58% at 51% 45%, rgba(159,122,52,.055),transparent 95%),
+    repeating-linear-gradient(117deg, transparent 0, transparent 156px, rgba(159,122,52,.037) 157px, transparent 158px, transparent 310px),
+    linear-gradient(145deg,#010203 0%,#080a0d 42%,#020304 72%,#010203 100%) !important;
+  background-size:cover !important;
+  background-attachment:fixed !important;
+}
+/* Goldlinien als feine Geometrie – sichtbar, aber ohne braune Grundfläche. */
+body.home-page::after, body.interior-page::after {
+  content:"" !important; display:block !important; position:fixed !important;
+  inset:0 !important; z-index:0 !important; pointer-events:none !important;
+  opacity:.85 !important; animation:none !important; transform:none !important;
+  background:
+    linear-gradient(125deg,transparent 22%,rgba(159,122,52,.018) 41%,rgba(159,122,52,.12) 50%,rgba(159,122,52,.018) 59%,transparent 75%),
+    repeating-linear-gradient(0deg,transparent 0,transparent 118px,rgba(159,122,52,.018) 119px,transparent 120px) !important;
+}
+body.home-page > header,body.home-page > main,body.home-page > footer,
+body.interior-page > header,body.interior-page > main,body.interior-page > footer {position:relative;z-index:2}
+/* Keine alten Hintergrundvideos oder Bild-Fallbacks. */
+body video, body .tf-background,body .tf-global-background,body .approved-frame,
+body .tf-sitewide-video,body .tf-sitewide-shade,body .tf-global-video,
+body .tf-video-wrap,body .tf-video-overlay,body .tf-global-tint,
+body .tf-global-glint,body .tf-sitewide-flare,body .tf-ambient-gold,
+body .mobile-cinema-bg {display:none!important;visibility:hidden!important}
+body .hero,body .subhero,body .inner-page-hero,body .studio-teaser,
+body .tf-film-hero,body .tf-hero,body .mobile-cinema,
+body main > .section,body main > .story-grid,body main > .overview-grid {
+  background-image:none !important; background-color:transparent !important;
+}
+body .hero::before, body .hero::after, body .subhero::before,body .subhero::after,
+body .inner-page-hero::before,body .inner-page-hero::after,
+body .tf-film-hero::before,body .tf-film-hero::after,
+body .tf-hero::before,body .tf-hero::after,
+body .mobile-cinema::before,body .mobile-cinema::after {background-image:none!important}
+/* EIN Goldton: Schrift, Linien, Rahmen, Buttons, Hintergrundleuchten. */
+body .gold,body em.gold,body .eyebrow,body .nav a,body .nav a.active,
+body .nav a:hover,body .footer a,body .service-overline,
+body .service-period,body .service-num,body .service-corner,
+body .tip,body .count,body .scroll-link,
+body .tf-film-cta,body .btn,body .btn-outline,
+body .service-content summary,body .service-more a,
+body .link-tiles a span,body .link-tiles a small,
+body .studio-card b,body .filter.active,body .filter:hover {
+  color:#9F7A34 !important;
+  -webkit-text-fill-color:#9F7A34 !important;
+  background-image:none !important;
+  text-shadow:none !important;
+}
+body .gold,body em.gold {background:none!important;animation:none!important}
+body .nav a::after {background:#9F7A34!important}
+body .eyebrow::before,body .pulse {background:#9F7A34!important}
+body .header,body .footer {
+  background:rgba(1,2,3,.76)!important;
+  border-color:rgba(159,122,52,.4)!important;
+}
+body .btn,body .btn-outline,body .tf-film-cta,
+body .menu-btn,body a[class*="button"],body button[class*="cta"] {
+  background:rgba(1,2,3,.82)!important;
+  border:1px solid #9F7A34!important;
+  color:#9F7A34!important;
+  -webkit-text-fill-color:#9F7A34!important;
+  box-shadow:0 0 0 1px rgba(159,122,52,.07),0 4px 22px rgba(0,0,0,.35)!important;
+  text-shadow:none!important;
+}
+body .btn:hover,body .tf-film-cta:hover,body .menu-btn:hover,
+body a[class*="button"]:hover {
+  background:rgba(159,122,52,.10)!important;
+  box-shadow:0 0 24px rgba(159,122,52,.22)!important;
+}
+/* Karten bleiben neutral-anthrazit, statt braun. Fotos in Karten bleiben erhalten. */
+body .panel,body .contact-note,body .link-tiles a,body .studio-card,
+body .service-feature,body .service,body .shop-card,body .product-card,
+body .partner-card,body .ribbon {
+  background-color:#0a0c0f!important;
+  border-color:rgba(159,122,52,.34)!important;
+}
+body .panel,body .contact-note,body .link-tiles a,body .studio-card,
+body .shop-card,body .product-card,body .partner-card,body .ribbon {
+  background-image:none!important;
+}
+body .link-tiles a:hover,body .service-feature:hover,body .partner-card:hover {
+  border-color:#9F7A34!important;
+}
+body .filter,body .search,body input[type="search"] {
+  background:#080a0d!important;border-color:rgba(159,122,52,.4)!important;
+}
+body .filter.active,body .filter:hover {background:rgba(159,122,52,.13)!important;border-color:#9F7A34!important}
+/* Logo bleibt Originaldatei (eingebettete Bildfarbe wird nicht verfälscht). */
+@media (max-width:767px) {
+  body.home-page::before,body.interior-page::before {
+    background-image:
+      radial-gradient(ellipse 85% 40% at 93% 10%,rgba(159,122,52,.25),transparent 80%),
+      radial-gradient(ellipse 90% 45% at 0% 90%,rgba(159,122,52,.15),transparent 80%),
+      repeating-linear-gradient(117deg,transparent 0,transparent 98px,rgba(159,122,52,.035) 99px,transparent 100px),
+      linear-gradient(145deg,#010203,#080a0d 47%,#010203) !important;
+  }
+}
+@media (prefers-reduced-motion:reduce){body.home-page::before,body.home-page::after,body.interior-page::before,body.interior-page::after{animation:none!important}}
