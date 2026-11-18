@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://floriannitz08-arch.github.io/tattoo-fashion-Website/sitemap.xml
