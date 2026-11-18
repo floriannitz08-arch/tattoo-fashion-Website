@@ -333,7 +333,7 @@ if (document.getElementById('cards')) {
       link.href = s.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = 'Studio-Details';
+      link.textContent = tfLocale('Studio-Details','Studio details','Studiedetaljer');
       popup.append(label,subtitle,link);
       marker.bindPopup(popup);
       marker.on('click', () => {

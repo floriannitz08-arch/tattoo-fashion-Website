@@ -8,10 +8,11 @@
     panel.className = 'tf-map-backup';
     panel.style.cssText = 'min-height:410px;padding:22px;display:flex;flex-direction:column;gap:18px;justify-content:center;background:#050505;color:#eee;border:1px solid #9F7A34';
     const title = document.createElement('h3');
-    title.textContent = 'Standorte auswählen';
+    const locale=(de,en,da)=>document.documentElement.lang==='en'?en:document.documentElement.lang==='da'?da:de;
+    title.textContent = locale('Standorte auswählen','Select locations','Vælg lokationer');
     title.style.cssText = 'margin:0;text-align:center;color:#9F7A34;font-size:22px';
     const info = document.createElement('p');
-    info.textContent = 'Die Karte konnte nicht geladen werden. Alle gelisteten Städte sind trotzdem unten auswählbar.';
+    info.textContent = locale('Die Karte konnte nicht geladen werden. Alle gelisteten Städte sind trotzdem unten auswählbar.','The map could not be loaded. You can still select all listed cities below.','Kortet kunne ikke indlæses. Du kan stadig vælge alle de viste byer nedenfor.');
     info.style.cssText = 'text-align:center;font-size:14px';
     const grid = document.createElement('div');
     grid.style.cssText = 'display:flex;justify-content:center;flex-wrap:wrap;gap:8px';

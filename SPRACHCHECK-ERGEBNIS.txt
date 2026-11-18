@@ -1,0 +1,27 @@
+Tattoo Fashion – Prüfung und Korrektur des Sprachpakets
+Stand: 18.11.2026
+
+Bestätigt:
+- 21 HTML-Dateien: 7 Deutsch, 7 Englisch, 7 Dänisch
+- 3 Sprachlinks auf jeder Seite vorhanden und auf korrekte Zielseite gerichtet
+- Alle internen lokalen Dateien/Verweise im Paket vorhanden
+- Jeweils 21 Produkte auf den 3 Shopseiten im HTML vorhanden
+- 30 Studiostandorte in der gemeinsamen JavaScript-Datenliste
+
+Korrigiert:
+- 2 englisch gebliebene Zwischenüberschriften auf der dänischen Geschichte-Seite
+- Dynamischer Studio-Popup-Link in EN und DA
+- Studios-Karten-Ersatzansicht (wenn Leaflet nicht lädt) in EN und DA
+- Shop-Suchfeld und Kategorienbeschriftung in EN und DA
+- Bildbeschreibungen auf News, Leistungen und Geschichte in EN und DA
+- Alternativtext der automatisch nachgeladenen Shopbilder
+
+Grenzen:
+- Originalbilder/Plakate mit eingebranntem deutschem Text werden durch diese HTML-Übersetzung nicht neu gestaltet.
+- Eigennamen, Produktnamen und externe Shop-/Studioseiten sind nicht durchgängig übersetzt.
+- Live-Veröffentlichung, Browseransicht und externe API-/Website-Verfügbarkeit wurden nicht hiermit getestet.
+
+INSTALLATION:
+Kompletten Inhalt dieser ZIP bei GitHub mit gleicher Ordnerstruktur hochladen;
+gleichnamige Dateien ersetzen, danach Commit changes.
+Vorher Repository sichern.
