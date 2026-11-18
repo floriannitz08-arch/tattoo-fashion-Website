@@ -255,7 +255,13 @@ if (document.getElementById('cards')) {
       const illustration = document.createElement('div');
       illustration.className = 'card-image';
       illustration.setAttribute('role','img');
-      illustration.setAttribute('aria-label',tfLocale('Dekoratives Tattoo-Studio-Motiv, kein Originalfoto des Standortes','Illustrative studio image, not a photo of this location','Illustrativt studiebillede, ikke et foto af denne lokation'));
+      illustration.setAttribute('aria-label',tfLocale(`Stadtansicht ${s.city} – kein Foto des Tattoo-Studios`, `City view of ${s.city} – not a photo of the tattoo studio`, `Bybillede af ${s.city} – ikke et foto af tatovørstudiet`));
+      illustration.dataset.cityPhoto = s.city;
+      illustration.dataset.city = s.city;
+      const placeholder = document.createElement('span');
+      placeholder.className = 'tf-city-photo-placeholder';
+      placeholder.textContent = s.city;
+      illustration.append(placeholder);
       const body = document.createElement('div');
       body.className = 'card-body';
       const title = document.createElement('h3');
@@ -278,6 +284,7 @@ if (document.getElementById('cards')) {
       body.append(title,country,links);
       card.append(illustration,body);
       cards.append(card);
+      window.TF_CITY_PHOTOS?.observe(illustration);
     });
     if (!items.length) {
       const empty = document.createElement('div');

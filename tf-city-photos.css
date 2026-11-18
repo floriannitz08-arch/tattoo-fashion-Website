@@ -1,0 +1,51 @@
+/* Tattoo Fashion — Stadtfotos, schlank, mobiloptimiert. */
+body.interior-page .finder .studio-card .card-image {
+ position:relative!important;
+ isolation:isolate;
+ overflow:hidden;
+ height:clamp(150px, 17vw, 195px)!important;
+ background:#050505!important;
+ background-image:none!important;
+ display:grid;
+ place-items:center;
+}
+body.interior-page .finder .studio-card .card-image::before,
+body.interior-page .finder .studio-card .card-image::after { display:none!important;content:none!important; }
+body.interior-page .finder .studio-card .tf-city-photo-placeholder {
+ color:#9F7A34;
+ font-size:clamp(1rem,1.5vw,1.4rem);font-weight:700;line-height:1.2;
+ font-family:inherit;
+ text-align:center;
+ padding:12px;
+ letter-spacing:.1em;
+ text-transform:uppercase;
+}
+body.interior-page .finder .studio-card .tf-city-photo {
+ position:absolute;
+ inset:0;
+ display:block;
+ z-index:1;
+ width:100%;height:100%;
+ object-fit:cover;
+ opacity:0;
+ transition:opacity 280ms ease;
+}
+body.interior-page .finder .studio-card .tf-city-photo-loaded .tf-city-photo {opacity:1;}
+body.interior-page .finder .studio-card .tf-city-photo-credit {
+ position:absolute;
+ right:7px;
+ bottom:6px;
+ z-index:2;
+ display:inline-block;
+ font-size:10px;font-weight:500;line-height:1.1;
+ font-family:inherit;
+ padding:5px 6px;
+ background:rgba(0,0,0,.77);
+ color:#e7e2d6;
+ text-decoration:underline;
+ text-underline-offset:2px;
+ border:0;
+}
+@media (prefers-reduced-motion:reduce){
+ body.interior-page .finder .studio-card .tf-city-photo{transition:none}
+}
