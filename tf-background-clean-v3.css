@@ -1,0 +1,41 @@
+/* Tattoo Fashion • Hintergrundbilder und Video endgültig deaktivieren • 18.11.2026 */
+:root{--tf-bg:#020304}
+html,body{background-color:#020304!important; background-image:none!important}
+body.home-page,body.interior-page {background:#020304!important;background-image:none!important;isolation:isolate}
+/* Neuer Hintergrund ohne Bilddateien oder Downloads. */
+body.home-page::before,body.interior-page::before{
+ content:""!important;display:block!important;position:fixed!important;inset:0!important;z-index:0!important;
+ pointer-events:none!important;opacity:1!important;transform:none!important;animation:none!important;
+ background:radial-gradient(ellipse 58% 48% at 85% 16%,rgba(172,110,36,.28),transparent 73%),radial-gradient(ellipse 58% 48% at 12% 85%,rgba(131,79,27,.16),transparent 76%),linear-gradient(145deg,#020203,#090a0b 53%,#020203)!important;
+}
+body.home-page::after,body.interior-page::after{content:""!important;position:fixed!important;inset:0!important;z-index:0!important;pointer-events:none!important;opacity:.4!important;background:linear-gradient(112deg,transparent 30%,rgba(235,175,78,.03) 47%,rgba(240,182,90,.10) 50%,rgba(235,175,78,.03) 53%,transparent 70%)!important}
+body.home-page>header,body.home-page>main,body.home-page>footer,body.interior-page>header,body.interior-page>main,body.interior-page>footer{position:relative;z-index:2}
+/* Alte Fotohintergründe aus style.css, alten Video- und Relaunch-Dateien. */
+body .hero,body .subhero,body .inner-page-hero,body .studio-teaser,
+body .tf-film-hero,body .tf-hero,body .mobile-cinema,body .mobile-cinema-bg,
+body .tf-background,body .tf-global-background,body .approved-frame,
+body .tf-sitewide-video,body .tf-sitewide-shade,body .tf-global-video,
+body .tf-video-wrap,body .tf-video-overlay,body .tf-global-tint,
+body .tf-global-glint,body .tf-sitewide-flare,body .tf-ambient-gold,
+body main>.section,body main>.story-grid,body main>.overview-grid {
+ background-image:none!important;
+}
+body .hero,body .subhero,body .inner-page-hero,body .studio-teaser,
+body .tf-film-hero,body .tf-hero,body .mobile-cinema,body .mobile-cinema-bg,
+body main>.section,body main>.story-grid,body main>.overview-grid{background-color:transparent!important}
+body .tf-background,body .tf-global-background,body .approved-frame,body .mobile-cinema-bg,
+body .tf-sitewide-video,body .tf-sitewide-shade,body .tf-global-video,body .tf-video-wrap,
+body .tf-video-overlay,body .tf-global-tint,body .tf-global-glint,body .tf-sitewide-flare,
+body .tf-ambient-gold{display:none!important;visibility:hidden!important}
+body video{display:none!important}
+/* Kein altes Foto in den Hintergrund-Pseudo-Elementen. */
+body .hero::before,body .hero::after,body .subhero::before,body .subhero::after,
+body .inner-page-hero::before,body .inner-page-hero::after,
+body .studio-teaser::before,body .studio-teaser::after,
+body .tf-film-hero::before,body .tf-film-hero::after,
+body .tf-hero::before,body .tf-hero::after,
+body .mobile-cinema::before,body .mobile-cinema::after{
+ background-image:none!important;
+}
+/* Bilder als echte Inhalte und Produktfotos bleiben erhalten. */
+@media(max-width:767px){body.home-page::before,body.interior-page::before{background:radial-gradient(ellipse 90% 40% at 90% 8%,rgba(169,107,32,.24),transparent 79%),radial-gradient(ellipse 90% 35% at 0% 94%,rgba(156,95,20,.14),transparent 75%),linear-gradient(135deg,#020203,#08090b 58%,#020203)!important}}
