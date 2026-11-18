@@ -1,150 +1,24 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-  </url>
-  <url>
-    <loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-da.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-en.html" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-da.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html" />
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/index-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/geschichte-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/studios-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/leistungen-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/shop-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/partner-da.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-en.html</loc></url>
+  <url><loc>https://floriannitz08-arch.github.io/tattoo-fashion-Website/kontakt-da.html</loc></url>
 </urlset>
