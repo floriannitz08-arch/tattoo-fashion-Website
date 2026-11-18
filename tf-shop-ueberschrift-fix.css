@@ -1,0 +1,10 @@
+/* Tattoo Fashion – Shop: WEAR THE ATTITUDE.
+   Ausschließlich Schriftkorrektur, keine Änderungen an Layout, Größen oder Farben. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&display=swap');
+
+/* Die Schriftfamilie der großen Shop-Überschriften wie auf den übrigen Seiten. */
+body.interior-page h1,
+body.interior-page .subhero h1,
+body.interior-page .tf-shop-hero h1 {
+  font-family: 'Barlow Condensed', Impact, 'Arial Narrow', sans-serif !important;
+}
