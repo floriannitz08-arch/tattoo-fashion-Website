@@ -1,0 +1,32 @@
+TATTOO FASHION – PERFORMANCE UPDATE (DE/EN/DA)
+
+DIESES PAKET ENTHÄLT:
+- 21 HTML-Seiten mit allen drei Sprachen
+- alle benötigten CSS- und JavaScript-Dateien
+- optimierte News-Bilder (WebP) und Leistungsbilder (WebP)
+- die bisherigen Logo-, Geschichte- und Hintergrundbilder
+- 30 Studios inklusive Stadtbild-Ladefunktion (externe Wikimedia-Bilder)
+
+GITHUB UPLOAD:
+1. Auf GitHub: Code -> Download ZIP (Backup machen).
+2. Dieses ZIP entpacken.
+3. Inhalt des Pakets in das Hauptverzeichnis deines Repositories hochladen.
+4. Inhalte des assets-Ordners in den vorhandenen assets-Ordner hochladen.
+5. Gleichnamige Dateien ersetzen und Commit changes anklicken.
+6. Nach Veröffentlichung die drei Sprachen und den Shop sowie die Studios-Karte testen.
+7. PageSpeed Insights für MOBILE erneut auf index.html und leistungen.html starten.
+
+NICHT LÖSCHEN: Alte, nicht mehr eingebundene Dateien dürfen auf GitHub zunächst bleiben.
+
+ÄNDERUNGEN:
+- Große News-Bilder als komprimierte WebP-Dateien, lazy loaded.
+- Alle 5 Leistungsbilder als externe WebP-Dateien statt Base64 im HTML.
+- Intrinsische Bildabmessungen gegen Layoutsprünge.
+- Schrift von Google einmal zentral pro HTML-Seite eingebunden (Manrope).
+- Nicht-kritische Skripte erhalten defer, Reihenfolge bleibt erhalten.
+- Altes Desktop-Bildpreload entfernt, um Datenverschwendung auf Handy zu vermeiden.
+- Logo auf Startseiten priorisiert.
+- Abseits des Viewports liegende Karten können ihren Inhalt später rendern.
+- Übernahme der letzten Hintergrund-, Studios-, Geschichte- und Sprachupdates.
+
+Diese Optimierung verbessert die Dateistruktur. Eine PageSpeed-Punktzahl kann ohne erneute Messung nicht garantiert werden.

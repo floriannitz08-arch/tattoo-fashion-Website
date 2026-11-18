@@ -44,7 +44,7 @@
     el.className = 'tf-original-product-img';
     el.loading = 'lazy';
     el.decoding = 'async';
-    el.alt = 'Original-Produktbild: ' + (product.name || card.getAttribute('data-name'));
+    el.alt = (document.documentElement.lang === 'en' ? 'Original product photo: ' : document.documentElement.lang === 'da' ? 'Originalt produktfoto: ' : 'Original-Produktbild: ') + (product.name || card.getAttribute('data-name'));
     el.src = url;
     el.addEventListener('load', () => {
       photo.classList.add('tf-original-photo-loaded');

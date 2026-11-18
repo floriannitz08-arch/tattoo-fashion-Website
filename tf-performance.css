@@ -1,0 +1,9 @@
+/* Tattoo Fashion – Performance: passive rendering optimization */
+/* Keep sections isolated without forcing a minimum box height; no content is hidden. */
+@supports (content-visibility:auto) {
+  body .tf-shop-catalog .tf-product,
+  body .studio-card { content-visibility:auto; contain-intrinsic-size:auto 460px; }
+}
+img {max-width:100%;}
+/* No motion on devices requesting reduced motion. */
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
