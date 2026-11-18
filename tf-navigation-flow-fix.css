@@ -1,0 +1,96 @@
+/* Tattoo Fashion - Header fliesst mit der Seite und verschwindet beim Scrollen.
+   Korrigiert die hochspezifische fixed!important-Regel aus tf-interior-layout.css.
+   Wird als LETZTES Stylesheet geladen. 18.11.2026 */
+html { scroll-padding-top: 0 !important; }
+body.home-page > header.header,
+body.interior-page > header.header.tf-header,
+body.interior-page > header.header,
+body.home-page .tf-mobile-home-nav {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  inset: auto !important;
+  transform: none !important;
+  translate: none !important;
+  margin-top: 0 !important;
+}
+/* Der vorher feststehende Header braucht keinen Abstandshalter mehr. */
+body.interior-page > main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+body.interior-page .tf-story-intro {
+  padding-top: clamp(38px, 7vw, 92px) !important;
+}
+/* Header bleibt im Layout und verdeckt keine Ueberschriften. */
+body.interior-page > header.header.tf-header {
+  height: auto !important;
+  min-height: 0 !important;
+  z-index: 3 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+/* Unterseiten: Logo und Menue ordentlich gestapelt auf kleinen Displays. */
+@media (max-width: 820px) {
+  body.interior-page > header.header.tf-header {
+    display: flex !important;
+    position: static !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px 12px 12px !important;
+    gap: 10px !important;
+  }
+  body.interior-page > header.header.tf-header .tf-brand {
+    display: flex !important;
+    width: auto !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  body.interior-page > header.header.tf-header .tf-brand img {
+    width: min(65vw, 210px) !important;
+    max-width: 100% !important;
+    max-height: 90px !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+  body.interior-page > header.header.tf-header nav.nav {
+    display: flex !important;
+    position: static !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    max-width: 650px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px clamp(8px, 2.3vw, 18px) !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  body.interior-page > header.header.tf-header nav.nav a {
+    display: inline-block !important;
+    flex: 0 0 auto !important;
+    padding: 8px 3px !important;
+    font-size: clamp(10px, 2.6vw, 13px) !important;
+    color: #9F7A34 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+  body.interior-page > main {
+    padding-top: 0 !important;
+  }
+  body.interior-page .tf-story-intro {
+    padding-top: 30px !important;
+  }
+}
