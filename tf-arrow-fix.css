@@ -1,0 +1,80 @@
+/* Einheitliche Pfeil-Icons für alle Geräte.
+   Ersetzt problematische Text-/Emoji-Pfeile durch CSS-gezeichnete Icons,
+   damit sie auf iPhone, iPad und Desktop sauber angezeigt werden. */
+
+.tf-arrow-icon,
+.tf-arrow-right {
+  display:inline-block;
+  position:relative;
+  width:0.95em;
+  height:0.95em;
+  margin-left:0.4em;
+  vertical-align:middle;
+  color:currentColor;
+  flex:0 0 auto;
+}
+
+.tf-arrow-icon::before,
+.tf-arrow-right::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  box-sizing:border-box;
+}
+
+/* Diagonaler Pfeil nach rechts oben */
+.tf-arrow-icon::before {
+  width:0.56em;
+  height:0.56em;
+  right:0.06em;
+  top:0.06em;
+  left:auto;
+  bottom:auto;
+  border-top:0.12em solid currentColor;
+  border-right:0.12em solid currentColor;
+}
+.tf-arrow-icon::after {
+  content:"";
+  position:absolute;
+  width:0.72em;
+  height:0.12em;
+  left:0.08em;
+  bottom:0.14em;
+  background:currentColor;
+  transform:rotate(-45deg);
+  transform-origin:left center;
+  border-radius:999px;
+}
+
+/* Gerader Pfeil nach rechts */
+.tf-arrow-right::before {
+  width:0.7em;
+  height:0.12em;
+  left:0.06em;
+  top:50%;
+  transform:translateY(-50%);
+  background:currentColor;
+  border-radius:999px;
+}
+.tf-arrow-right::after {
+  content:"";
+  position:absolute;
+  width:0.42em;
+  height:0.42em;
+  right:0.04em;
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+  border-top:0.12em solid currentColor;
+  border-right:0.12em solid currentColor;
+  box-sizing:border-box;
+}
+
+/* Etwas mehr Abstand in Buttons und CTA-Links */
+.btn .tf-arrow-icon,
+.btn .tf-arrow-right,
+.tf-header-cta .tf-arrow-icon,
+.tf-header-cta .tf-arrow-right,
+a .tf-arrow-icon,
+a .tf-arrow-right {
+  margin-left:0.5em;
+}
