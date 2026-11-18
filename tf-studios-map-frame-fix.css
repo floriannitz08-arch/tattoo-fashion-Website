@@ -1,0 +1,46 @@
+/* Tattoo Fashion – Kartenrahmen exakt an sichtbare Leaflet-Karte anpassen.
+   Absichtlich NACH tf-unified.css und allen anderen Studios-CSS geladen. */
+body.interior-page .finder-grid > .map-frame {
+  box-sizing: border-box !important;
+  align-self: start !important;
+  justify-self: stretch !important;
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  height: 460px !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid #9F7A34 !important;
+  background: #080808 !important;
+  border-radius: 0 !important;
+}
+body.interior-page .finder-grid > .map-frame > #map {
+  box-sizing: border-box !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+body.interior-page .finder-grid > .map-frame > .map-fallback:not([hidden]) {
+  position: absolute !important;
+  inset: 0 !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 800px) {
+  body.interior-page .finder-grid > .map-frame {
+    height: 380px !important;
+  }
+}
+@media (max-width: 480px) {
+  body.interior-page .finder-grid > .map-frame {
+    height: 330px !important;
+  }
+}
