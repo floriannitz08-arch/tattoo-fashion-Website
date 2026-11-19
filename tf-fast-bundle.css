@@ -1742,3 +1742,178 @@ body.interior-page main .tf-product-info h2 {
     transition: none !important;
   }
 }
+
+
+/* ============================================================
+   TATTOO FASHION · RUHIGER FEINSCHLIFF · 2026-11-19
+   Gemeinsame, gezielte Regeln fuer DE / EN / DA.
+   Alte, seitenbezogene Layout-/Navigationsregeln bleiben erhalten.
+   ============================================================ */
+:root {
+  --tf-polish-gold: #9F7A34;
+  --tf-polish-hairline: rgba(159,122,52,.38);
+  --tf-polish-space: clamp(24px,3vw,44px);
+}
+/* Ein feiner Rahmen nur um Haupt- und Abschnittstitel, nicht um jeden Kartentitel. */
+body.home-page main :is(.story-grid h2,.news-section > h2,.overview-grid > h2,.tf-join-family h2),
+body.interior-page main :is(.subhero h1,.inner-page-hero h1,.tf-story-main h1,.tf-story-main h2,.tf-partner-intro h1,.tf-partner-group h2,.tf-partner-join h2,.tf-shop-intro h1,.finder .results-head h2,.studio-teaser h2,.contact-wrap h2) {
+  border-color:var(--tf-polish-hairline) !important;
+  border-width:1px !important;
+  box-shadow:none !important;
+  padding:.18em .40em !important;
+  line-height:1.16 !important;
+  overflow-wrap:break-word;
+}
+body.home-page main :is(.news-card h3),
+body.interior-page main :is(.contact-note h3,.finder .panel h3,.service-content h3,.tf-product-info h2,.studio-card h3,.tf-partner-card h3) {
+  border:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  width:auto !important;
+  max-width:100% !important;
+}
+/* Optischer Rhythmus und einheitliche CTA-Gestaltung. */
+body main :is(.section,.tf-partner-intro,.tf-partner-group,.tf-partner-join,.tf-shop-intro) {
+  scroll-margin-top:24px;
+}
+body main :is(.story-grid,.news-section,.tf-partner-group,.contact-wrap) :is(h1,h2,h3) + p {
+  margin-top:clamp(12px,1.7vw,24px);
+}
+body main :is(a.btn,.tf-partner-button,.tf-product-bottom a.shop-buy) {
+  min-height:50px !important;
+  padding:13px 24px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:10px !important;
+  line-height:1.35 !important;
+  font-family:Manrope,Arial,sans-serif !important;
+  font-weight:750 !important;
+  letter-spacing:.075em !important;
+  border:1px solid var(--tf-polish-gold) !important;
+  background:rgba(5,5,5,.66) !important;
+  color:var(--tf-polish-gold) !important;
+  text-decoration:none !important;
+  text-align:center !important;
+  box-shadow:none !important;
+}
+/* Studio- und Partnerkarten: gleicher Rand, ruhiges Inneres, weniger visuelles Rauschen. */
+body.interior-page main :is(.studio-card,.tf-partner-card) {
+  box-sizing:border-box !important;
+  border:1px solid rgba(159,122,52,.46) !important;
+  background-color:rgba(5,5,5,.33) !important;
+  box-shadow:0 8px 24px rgba(0,0,0,.13) !important;
+  overflow:hidden;
+}
+body.interior-page main .studio-card .card-body {
+  padding:clamp(18px,2.1vw,26px) !important;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+body.interior-page main .studio-card .card-body :is(h3,p) {margin:0 !important;}
+body.interior-page main .studio-card .card-links {
+  width:100%;
+  margin-top:8px;
+  display:flex !important;
+  flex-flow:row wrap !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:10px 18px !important;
+}
+body.interior-page main .studio-card .card-links :is(a,button) {
+  min-height:36px !important;
+  padding:6px 3px !important;
+  font-size:clamp(11px,1.1vw,13px) !important;
+  font-weight:700 !important;
+  line-height:1.35 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word;
+}
+body.interior-page main .tf-partner-card {
+  padding:clamp(20px,2.5vw,32px) !important;
+  gap:14px;
+}
+body.interior-page main .tf-partner-card strong {
+  line-height:1.4 !important;
+  overflow-wrap:anywhere;
+}
+body.interior-page main .tf-partner-card .tf-partner-mark {
+  border:1px solid var(--tf-polish-hairline) !important;
+  box-shadow:none !important;
+}
+/* Einheitliche, barrierearm beschriftete Mail-Entwurfsformulare. */
+body.interior-page main .tf-contact-form {
+  border:1px solid var(--tf-polish-hairline);
+  background:rgba(0,0,0,.24);
+  padding:clamp(22px,3vw,38px);
+  width:100%;
+  max-width:750px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+body.interior-page main .tf-contact-form h3 {
+  font-family:Manrope,Arial,sans-serif !important;
+  font-size:clamp(19px,2.3vw,27px) !important;
+  line-height:1.3 !important;
+  text-transform:none !important;
+  border:0 !important;
+  width:auto !important;
+  padding:0 !important;
+  margin:0 0 10px !important;
+}
+body.interior-page main .tf-contact-form .tf-form-explainer {
+  font-size:14px !important;
+  line-height:1.65 !important;
+  color:#dad4ca !important;
+  margin:0 0 22px !important;
+}
+body.interior-page main .tf-form-fields {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+body.interior-page main .tf-form-field {display:flex;flex-direction:column;gap:8px;min-width:0;}
+body.interior-page main .tf-form-field.tf-full {grid-column:1/-1;}
+body.interior-page main .tf-form-field label {
+  font-size:13px;line-height:1.45;color:#ede7dd;
+  font-weight:700;letter-spacing:.02em;
+}
+body.interior-page main .tf-form-field :is(input,select,textarea) {
+  display:block;box-sizing:border-box;width:100%;min-height:48px;
+  border:1px solid rgba(159,122,52,.55);border-radius:0;
+  background:#10100f;color:#f7f4ed;font:inherit;font-size:16px;
+  padding:12px 14px;outline-offset:3px;
+}
+body.interior-page main .tf-form-field textarea {min-height:150px;resize:vertical;}
+body.interior-page main .tf-form-field :is(input,select,textarea):focus-visible {outline:2px solid #9F7A34;}
+body.interior-page main .tf-contact-form .tf-form-action {margin-top:22px;}
+body.interior-page main .tf-contact-form .tf-form-action button {
+  min-height:50px;padding:13px 22px;
+  border:1px solid #9F7A34;background:#080807;color:#9F7A34;
+  font:700 13px/1.35 Manrope,Arial,sans-serif;
+  letter-spacing:.06em;text-transform:uppercase;cursor:pointer;
+}
+body.interior-page main .tf-contact-form .tf-form-action button:hover {background:rgba(159,122,52,.12);}
+body.interior-page main .tf-contact-form .tf-form-note {
+  margin:12px 0 0 !important;color:#d0c8bc !important;
+  font-size:12px !important;line-height:1.6 !important;
+}
+body.interior-page main .tf-contact-form .tf-form-status {margin:12px 0 0 !important;font-size:14px !important;}
+@media (max-width:700px) {
+  body.interior-page main .tf-form-fields {grid-template-columns:minmax(0,1fr);gap:14px;}
+  body.interior-page main .tf-contact-form {padding:22px 16px;}
+  body.interior-page main .studio-card .card-links {gap:7px 12px !important;}
+  body.interior-page main :is(.studio-card,.tf-partner-card) {min-width:0;max-width:100%;}
+  body main :is(a.btn,.tf-partner-button,.tf-product-bottom a.shop-buy) {min-height:48px !important;padding:12px 18px !important;}
+}
+@media (hover:hover) and (pointer:fine) {
+  body.interior-page main :is(.studio-card,.tf-partner-card):hover {
+    border-color:rgba(159,122,52,.82) !important;
+    box-shadow:0 10px 28px rgba(0,0,0,.2) !important;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.interior-page main :is(.studio-card,.tf-partner-card) {transition:none !important;}
+}
