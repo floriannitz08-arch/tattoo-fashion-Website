@@ -1580,3 +1580,105 @@ img {max-width:100%;}
 /* No motion on devices requesting reduced motion. */
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
 
+/* TATTOO FASHION | Gemeinsame Ueberschriften DE/EN/DA | 2026-11-19 */
+/* Einheitliche Rollen statt globalem h2-Override: Produktnamen sind ebenfalls h2. */
+:root {
+  --tf-heading-font: 'Manrope', Arial, Helvetica, sans-serif;
+  --tf-heading-xl: clamp(2rem, 4.5vw, 3.75rem);
+  --tf-heading-lg: clamp(1.7rem, 3.3vw, 2.8rem);
+  --tf-heading-md: clamp(1.35rem, 2.3vw, 2rem);
+  --tf-heading-sm: clamp(1.05rem, 1.6vw, 1.45rem);
+}
+/* Gemeinsame Merkmale; unberuehrt bleiben Logos, Buttons und Produktnamen. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  font-family: var(--tf-heading-font) !important;
+  font-weight: 800 !important;
+  font-stretch: normal !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.16 !important;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+/* Stufe 1: Seitentitel – gleiche Groesse unabhaengig von der Sprache. */
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-partner-intro h1, .tf-shop-intro h1) {
+  font-size: var(--tf-heading-xl) !important;
+  line-height: 1.12 !important;
+}
+/* Stufe 2: Hauptabschnitte – auch fuer lange daenische Ueberschriften. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.tf-story-main h2, .tf-partner-join h2, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  font-size: var(--tf-heading-lg) !important;
+}
+/* Stufe 3: Gruppen- und Serviceueberschriften. */
+body.interior-page main :is(.tf-partner-group h2, .finder .panel h3, .service-content h3, .contact-note h3) {
+  font-family: var(--tf-heading-font) !important;
+  font-size: var(--tf-heading-md) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.02em !important;
+  line-height: 1.22 !important;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+/* Stufe 4: Kartenueberschriften und Produktnamen behalten ihre eigene Hierarchie. */
+body.home-page main .news-card h3,
+body.interior-page main :is(.tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+  font-family: var(--tf-heading-font) !important;
+  font-size: var(--tf-heading-sm) !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -.01em !important;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+/* Die Produktkarten behalten linksbuendige Produktnamen. */
+body.interior-page main .tf-product-info h2 {
+  text-align: left !important;
+  text-transform: none !important;
+}
+@media (max-width: 680px) {
+  :root {
+    --tf-heading-xl: clamp(1.85rem, 7.1vw, 2.8rem);
+    --tf-heading-lg: clamp(1.5rem, 6.2vw, 2.3rem);
+    --tf-heading-md: clamp(1.25rem, 5.1vw, 1.75rem);
+    --tf-heading-sm: clamp(1rem, 4.2vw, 1.22rem);
+  }
+  body.interior-page main :is(.tf-shop-intro h1, .tf-story-main h1, .tf-partner-intro h1) {
+    font-size: var(--tf-heading-xl) !important;
+  }
+}
+
+
+/* TATTOO FASHION | Dezente Goldrahmen fuer Ueberschriften DE/EN/DA | 2026-11-19
+   Schmaler Rahmen um den Text, statt eines breiten Kastens ueber die ganze Zeile.
+   Die Headernavigation, Logos, Buttontexte und verborgene Labels bleiben unberuehrt. */
+:root { --tf-heading-frame: rgba(159, 122, 52, .72); }
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2, .news-card h3),
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .finder .panel h3, .studio-teaser h2, .contact-wrap h2, .contact-note h3, .service-content h3, .tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  border: 1px solid var(--tf-heading-frame) !important;
+  border-radius: 0 !important;
+  padding: .22em .48em !important;
+  box-shadow: inset 0 0 12px rgba(159, 122, 52, .025) !important;
+}
+/* Grosse, zentrierte Titel bleiben zentriert. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-join h2, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Produktnamen und linksbuendige Kartentitel nicht zentrieren. */
+body.interior-page main .tf-product-info h2 {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+/* Bei sehr schmalen Displays genug Luft zum Bildschirmrand lassen. */
+@media (max-width: 680px) {
+  body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2, .news-card h3),
+  body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .finder .panel h3, .studio-teaser h2, .contact-wrap h2, .contact-note h3, .service-content h3, .tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+    padding: .20em .34em !important;
+  }
+}
