@@ -78,8 +78,47 @@ body.interior-page .tf-story-main .tf-story-kicker,
 body.interior-page .tf-story-main .tf-story-final,
 body.interior-page .tf-story-main .gold {color:#9F7A34 !important;}
 </style>
-<link rel="stylesheet" href="tf-design-einheitlich.css?v=20261118-all3"/>
-</head><body class="interior-page">
+<style id="tf-story-family-section">
+/* Nur der neue Familienbereich auf der Geschichte-Seite */
+body.interior-page .tf-story-family {
+  box-sizing: border-box;
+  width: min(calc(100% - 32px), 1050px);
+  max-width: 1050px;
+  margin: 32px auto clamp(55px, 8vw, 110px) !important;
+  padding: clamp(32px, 5vw, 66px) clamp(18px, 4vw, 58px) !important;
+  border: 1px solid #9F7A34 !important;
+  background: rgba(0,0,0,.18) !important;
+  text-align: center !important;
+}
+body.interior-page .tf-story-main .tf-story-family h2 {
+  display: block;
+  max-width: 890px;
+  margin: 0 auto 24px !important;
+  padding: 0 !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: clamp(1.5rem, 3.3vw, 2.7rem) !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+  color: #f8f5ef !important;
+  text-align: center !important;
+}
+body.interior-page .tf-story-main .tf-story-family h2 span {color:#9F7A34 !important;}
+body.interior-page .tf-story-family p {
+  max-width: 740px;
+  margin: 0 auto 16px !important;
+  font-family: Manrope, Arial, sans-serif;
+  font-size: clamp(1rem, 1.45vw, 1.15rem) !important;
+  line-height: 1.75 !important;
+  color: #e6e3de !important;
+  text-align: center !important;
+}
+body.interior-page .tf-story-family .btn {margin: 20px auto 0 !important;}
+@media (max-width: 600px) {
+  body.interior-page .tf-story-family {margin-top: 20px !important; padding: 30px 18px !important;}
+}
+</style></head><body class="interior-page">
 <header class="header tf-header"><a aria-label="Tattoo Fashion – Forside" class="tf-brand" href="index-da.html"><img alt="Tattoo Fashion Original-Logo" class="logo" decoding="async" height="181" src="assets/logo.png" width="408"/></a><nav aria-label="Hovednavigation" class="nav tf-nav" id="navigation"><a href="index-da.html">Forside</a><a aria-current="page" class="active" href="geschichte-da.html">Vores historie</a><a href="studios-da.html">Studier</a><a href="leistungen-da.html">Behandlinger</a><a href="shop-da.html">Shop</a><a href="partner-da.html">Partnere</a><a href="kontakt-da.html">Kontakt</a></nav><div aria-label="Sprache wählen / Choose language / Vælg sprog" class="tf-language-switch" role="navigation"><a aria-label="Deutsch" href="geschichte.html" hreflang="de" lang="de">DE</a><a aria-label="English" href="geschichte-en.html" hreflang="en" lang="en">EN</a><a aria-current="page" aria-label="Dansk" class="selected" href="geschichte-da.html" hreflang="da" lang="da">DA</a></div><a class="tf-header-cta" href="studios-da.html">FIND ET STUDIO <span>↗</span></a></header>
 <main class="tf-story-main" id="inhalt">
 <section class="tf-story-section tf-story-intro">
@@ -107,6 +146,13 @@ body.interior-page .tf-story-main .gold {color:#9F7A34 !important;}
 <p><strong>Det, der driver os, er passionen for det, vi gør. Det, der forbinder os, er kærligheden til kunsten. Og det, der kendetegner os, er modet til hele tiden at gå videre.</strong></p>
 <p class="tf-story-final">Vores historie begyndte i det små. Vores vision har altid været stor.</p>
 </div>
+</section>
+
+<section class="tf-story-family" id="tattoo-fashion-familie" aria-labelledby="tf-family-heading">
+<h2 id="tf-family-heading">Bliv en del af <span>Tattoo Fashion-familien</span></h2>
+<p>Er du interesseret i Tattoo Fashion og vil du gerne vide mere om, hvordan du kan åbne dit eget studie?</p>
+<p>Så kontakt os.</p>
+<a class="btn btn-outline" href="kontakt-da.html">Kontakt <span aria-hidden="true" class="tf-arrow-icon"></span></a>
 </section>
 </main>
 <footer class="footer"><span>© Tattoo Fashion · Webdesign</span><span><a href="kontakt-da.html">Kontakt</a> · <a href="studios-da.html">Studier</a> · <a href="https://tattoo-fashion-online.de">Oprindelig hjemmeside <span aria-hidden="true" class="tf-arrow-icon"></span></a></span></footer><script defer="" src="site.js?v=20261118-sprachcheck-2"></script><script defer="" src="tf-languages.js?v=20261118-1"></script></body></html>
