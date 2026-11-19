@@ -1,0 +1,20 @@
+TATTOO FASHION – 21 HTML-DATEIEN / CSS-CACHE-UPDATE
+
+Änderung: CSS-Versionskennung in allen 21 HTML-Seiten
+von tf-fast-bundle.css?v=20261119-polish1
+auf tf-fast-bundle.css?v=20261119-css-cache2.
+
+Quelle: zuletzt verfügbare lokale HTML-Dateien aus dem bisherigen Projekt.
+Die englische und dänische Shop-Seite enthalten außerdem die zuletzt
+korrigierten Übersetzungen. Footer-Vorlagenhinweise sind entfernt.
+
+WICHTIG: Die neuesten GitHub-HTML-Dateien konnten nicht als vollständige
+Dateien heruntergeladen werden. Daher kann dieses Paket zwischenzeitliche
+Änderungen in deinem GitHub-Repository überschreiben. Bitte vergleiche
+vor dem Hochladen die 21 Dateien mit GitHub oder lade einen aktuellen
+GitHub-Repository-Export hier hoch, um ein garantiert aktuelles Paket
+zu erhalten.
+
+GitHub: ZIP entpacken und nur die 21 HTML-Dateien im Hauptverzeichnis
+ersetzen, anschließend Commit changes.
+Keine CSS-, JS- oder Bilddateien im Paket.
