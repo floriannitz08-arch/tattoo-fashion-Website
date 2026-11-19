@@ -45,7 +45,52 @@ body.interior-page .tf-partner-main .tf-partner-button:is(:hover,:focus-visible)
   background:rgba(159,122,52,.1)!important;
   border-color:#9F7A34!important;
 }
-</style></head><body class="interior-page">
+</style>
+<style id="tf-partner-family-design">
+/* Familienbereich: gleicher Schwarz-Gold-Stil wie auf „Unsere Geschichte“ */
+body.interior-page .tf-partner-main .tf-partner-family {
+  box-sizing: border-box;
+  width: min(calc(100% - 32px), 1050px);
+  max-width: 1050px;
+  margin: 32px auto clamp(55px, 8vw, 110px) !important;
+  padding: clamp(32px, 5vw, 66px) clamp(18px, 4vw, 58px) !important;
+  border: 1px solid #9F7A34 !important;
+  background: rgba(0,0,0,.18) !important;
+  text-align: center !important;
+}
+body.interior-page .tf-partner-main .tf-partner-family h2 {
+  display: block;
+  max-width: 890px;
+  margin: 0 auto 24px !important;
+  padding: 0 !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: clamp(1.5rem, 3.3vw, 2.7rem) !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+  color: #f8f5ef !important;
+  text-align: center !important;
+}
+body.interior-page .tf-partner-main .tf-partner-family h2 span { color: #9F7A34 !important; }
+body.interior-page .tf-partner-main .tf-partner-family p {
+  max-width: 740px;
+  margin: 0 auto 16px !important;
+  font-family: Manrope, Arial, sans-serif;
+  font-size: clamp(1rem, 1.45vw, 1.15rem) !important;
+  line-height: 1.75 !important;
+  color: #e6e3de !important;
+  text-align: center !important;
+}
+body.interior-page .tf-partner-main .tf-partner-family .btn { margin: 20px auto 0 !important; }
+@media (max-width: 600px) {
+  body.interior-page .tf-partner-main .tf-partner-family {
+    margin-top: 20px !important;
+    padding: 30px 18px !important;
+  }
+}
+</style>
+</head><body class="interior-page">
 <header class="header tf-header"><a aria-label="Tattoo Fashion – Home" class="tf-brand" href="index-en.html"><img alt="Tattoo Fashion Original-Logo" class="logo" decoding="async" height="181" src="assets/logo.png" width="408"/></a><nav aria-label="Main navigation" class="nav tf-nav" id="navigation"><a href="index-en.html">Home</a><a href="geschichte-en.html">Our Story</a><a href="studios-en.html">Studios</a><a href="leistungen-en.html">Services</a><a href="shop-en.html">Shop</a><a aria-current="page" class="active" href="partner-en.html">Partners</a><a href="kontakt-en.html">Contact</a></nav><div aria-label="Sprache wählen / Choose language / Vælg sprog" class="tf-language-switch" role="navigation"><a aria-label="Deutsch" href="partner.html" hreflang="de" lang="de">DE</a><a aria-current="page" aria-label="English" class="selected" href="partner-en.html" hreflang="en" lang="en">EN</a><a aria-label="Dansk" href="partner-da.html" hreflang="da" lang="da">DA</a></div><a class="tf-header-cta" href="studios-en.html">FIND A STUDIO <span>↗</span></a></header>
 <main class="tf-partner-main">
 <section aria-labelledby="partner-title" class="tf-partner-intro"><h1 id="partner-title">OUR <em>PARTNERS.</em></h1><p>People, brands and businesses connected with Tattoo Fashion.</p></section>
@@ -59,6 +104,11 @@ body.interior-page .tf-partner-main .tf-partner-button:is(:hover,:focus-visible)
 <a class="tf-partner-card" href="https://www.facebook.com/K-Project-graphics-music-210285096372886/" rel="noopener noreferrer" target="_blank"><span class="tf-partner-mark">KP</span><strong>K-Project Graphics &amp; Music</strong><span class="tf-partner-action">VISIT PARTNER <span aria-hidden="true" class="tf-arrow-icon"></span></span></a>
 <a class="tf-partner-card" href="https://cheyennetattoo.com/de" rel="noopener noreferrer" target="_blank"><span class="tf-partner-mark">C</span><strong>Cheyenne Tattoo</strong><span class="tf-partner-action">VISIT PARTNER <span aria-hidden="true" class="tf-arrow-icon"></span></span></a>
 </div></section>
-<section class="tf-partner-join"><h2>TOGETHER <em>ACHIEVE MORE.</em></h2><p>Interested in working with Tattoo Fashion?</p><a class="tf-partner-button" href="kontakt-en.html">ENQUIRE ABOUT A PARTNERSHIP <span aria-hidden="true" class="tf-arrow-icon"></span></a></section>
+<section class="tf-partner-family" aria-labelledby="tf-partner-family-heading" id="tattoo-fashion-familie">
+<h2 id="tf-partner-family-heading">Become part of the <span>Tattoo Fashion family</span></h2>
+<p>Are you interested in Tattoo Fashion and want to learn more about opening your own studio?</p>
+<p>Then get in touch with us.</p>
+<a class="btn btn-outline" href="kontakt-en.html">Contact <span aria-hidden="true" class="tf-arrow-icon"></span></a>
+</section>
 </main>
 <footer class="footer"><span>© Tattoo Fashion · Website design</span><span><a href="kontakt-en.html">Contact</a> · <a href="studios-en.html">Studios</a> · <a href="https://tattoo-fashion-online.de">Original website <span aria-hidden="true" class="tf-arrow-icon"></span></a></span></footer><script defer="" src="site.js?v=20261118-sprachcheck-2"></script><script defer="" src="tf-languages.js?v=20261118-1"></script></body></html>
