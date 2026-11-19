@@ -7,6 +7,7 @@ if (document.getElementById('cards')) {
   const studios = [
   {
     "city": "Flensburg",
+    "instagram": "https://www.instagram.com/tattoofashionflensburg/",
     "country": "Deutschland",
     "lat": 54.7938,
     "lon": 9.4469,
@@ -14,6 +15,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Sønderborg",
+    "instagram": "https://www.instagram.com/tattoo_fashion_sonderborg/",
     "country": "Dänemark",
     "lat": 54.9093,
     "lon": 9.7923,
@@ -21,6 +23,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Aarhus",
+    "instagram": "https://www.instagram.com/aarhustattoofashion/",
     "country": "Dänemark",
     "lat": 56.1629,
     "lon": 10.2039,
@@ -28,6 +31,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Augsburg",
+    "instagram": "https://www.instagram.com/tattoofashion_augsburg/",
     "country": "Deutschland",
     "lat": 48.3705,
     "lon": 10.8978,
@@ -35,6 +39,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Bremerhaven",
+    "instagram": "https://www.instagram.com/tattoofashion_bremerhaven/",
     "country": "Deutschland",
     "lat": 53.5396,
     "lon": 8.5809,
@@ -42,6 +47,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Kopenhagen",
+    "instagram": "https://www.instagram.com/tattoofashioncopenhagen/",
     "country": "Dänemark",
     "lat": 55.6761,
     "lon": 12.5683,
@@ -49,6 +55,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Eckernförde",
+    "instagram": "https://www.instagram.com/tattoofashion.eck/",
     "country": "Deutschland",
     "lat": 54.4717,
     "lon": 9.838,
@@ -56,6 +63,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Hamburg",
+    "instagram": "https://www.instagram.com/tattoofashionhamburg/",
     "country": "Deutschland",
     "lat": 53.5511,
     "lon": 9.9937,
@@ -63,6 +71,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Haderslev",
+    "instagram": "https://www.instagram.com/tattoofashionhaderslev/",
     "country": "Dänemark",
     "lat": 55.2494,
     "lon": 9.4871,
@@ -70,6 +79,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Heide",
+    "instagram": "https://www.instagram.com/tattoo_fashion_heide/",
     "country": "Deutschland",
     "lat": 54.195,
     "lon": 9.101,
@@ -77,6 +87,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Helsingborg",
+    "instagram": "https://www.instagram.com/tattoofashionhgb/",
     "country": "Schweden",
     "lat": 56.0465,
     "lon": 12.6945,
@@ -84,6 +95,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Herning",
+    "instagram": "https://www.instagram.com/tattoofashionherning/",
     "country": "Dänemark",
     "lat": 56.1386,
     "lon": 8.9745,
@@ -91,6 +103,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Hobro",
+    "instagram": "https://www.instagram.com/tattoofashionhobro/",
     "country": "Dänemark",
     "lat": 56.6431,
     "lon": 9.7903,
@@ -98,6 +111,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Holzminden",
+    "instagram": "https://www.instagram.com/tattoofashionhol/",
     "country": "Deutschland",
     "lat": 51.827,
     "lon": 9.446,
@@ -105,6 +119,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Horsens",
+    "instagram": "https://www.instagram.com/tattoofashionhorsens/",
     "country": "Dänemark",
     "lat": 55.8607,
     "lon": 9.8503,
@@ -112,6 +127,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Husum",
+    "instagram": "https://www.instagram.com/tattoo.fashion.husum/",
     "country": "Deutschland",
     "lat": 54.485,
     "lon": 9.051,
@@ -126,6 +142,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Itzehoe",
+    "instagram": "https://www.instagram.com/tattoo_fashion_itzehoe/",
     "country": "Deutschland",
     "lat": 53.925,
     "lon": 9.515,
@@ -133,6 +150,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Landshut",
+    "instagram": "https://www.instagram.com/tattoofashion_landshut/",
     "country": "Deutschland",
     "lat": 48.5442,
     "lon": 12.1469,
@@ -140,6 +158,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "München",
+    "instagram": "https://www.instagram.com/tattoofashion_munich/",
     "country": "Deutschland",
     "lat": 48.1351,
     "lon": 11.582,
@@ -147,6 +166,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Neukirchen am Großvenediger",
+    "instagram": "https://www.instagram.com/tattoo_fashion_neukirchen_/",
     "country": "Österreich",
     "lat": 47.251,
     "lon": 12.273,
@@ -154,6 +174,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Osnabrück",
+    "instagram": "https://www.instagram.com/tattoofashion_osna/",
     "country": "Deutschland",
     "lat": 52.2799,
     "lon": 8.0472,
@@ -161,6 +182,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Odense",
+    "instagram": "https://www.instagram.com/tattoofashion_odense/",
     "country": "Dänemark",
     "lat": 55.4038,
     "lon": 10.4024,
@@ -168,6 +190,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Palma de Mallorca",
+    "instagram": "https://www.instagram.com/tattoofashionpalmacity/",
     "country": "Spanien",
     "lat": 39.5696,
     "lon": 2.6502,
@@ -182,6 +205,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Rødovre",
+    "instagram": "https://www.instagram.com/tattoo_fashion_roedovre/",
     "country": "Dänemark",
     "lat": 55.683,
     "lon": 12.453,
@@ -189,6 +213,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Schleswig",
+    "instagram": "https://www.instagram.com/tattoo_fashion_schleswig/",
     "country": "Deutschland",
     "lat": 54.5214,
     "lon": 9.558,
@@ -196,6 +221,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Skive",
+    "instagram": "https://www.instagram.com/tattoofashionskive/",
     "country": "Dänemark",
     "lat": 56.5667,
     "lon": 9.0271,
@@ -210,6 +236,7 @@ if (document.getElementById('cards')) {
   },
   {
     "city": "Viborg",
+    "instagram": "https://www.instagram.com/tattoo_fashion_viborg/",
     "country": "Dänemark",
     "lat": 56.4532,
     "lon": 9.402,
@@ -275,12 +302,16 @@ if (document.getElementById('cards')) {
       button.innerHTML = tfLocale('Auf Karte zeigen ','Show on map ','Vis på kort ') + arrow;
       button.addEventListener('click', () => showCity(s.city));
       const link = document.createElement('a');
-      link.href = s.url;
+      // Bei zugeordneten Studios direkt zu Instagram, sonst zur bisherigen Studioseite.
+      link.href = s.instagram || s.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       link.innerHTML = tfLocale('Studio-Details ','Studio details ','Studiedetaljer ') + arrow;
-      link.setAttribute('aria-label', tfLocale(`Original-Studioseite für ${s.city} öffnen`, `Open original studio page for ${s.city}`, `Åbn den oprindelige studieside for ${s.city}`));
+      link.setAttribute('aria-label', s.instagram
+        ? tfLocale(`Instagram-Profil von Tattoo Fashion ${s.city} öffnen`, `Open the Instagram profile of Tattoo Fashion ${s.city}`, `Åbn Instagram-profilen for Tattoo Fashion ${s.city}`)
+        : tfLocale(`Studioseite für ${s.city} öffnen`, `Open studio page for ${s.city}`, `Åbn studiesiden for ${s.city}`));
       links.append(button, link);
+
       body.append(title,country,links);
       card.append(illustration,body);
       cards.append(card);
@@ -337,7 +368,7 @@ if (document.getElementById('cards')) {
       const subtitle = document.createElement('div');
       subtitle.textContent = tfLocale(`${s.country} · ungefährer Stadtbereich`, `${({'Deutschland':'Germany','Dänemark':'Denmark','Schweden':'Sweden','Österreich':'Austria','Spanien':'Spain'})[s.country]||s.country} · approximate city area`, `${({'Deutschland':'Tyskland','Dänemark':'Danmark','Schweden':'Sverige','Österreich':'Østrig','Spanien':'Spanien'})[s.country]||s.country} · omtrentligt byområde`);
       const link = document.createElement('a');
-      link.href = s.url;
+      link.href = s.instagram || s.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       link.textContent = tfLocale('Studio-Details','Studio details','Studiedetaljer');
