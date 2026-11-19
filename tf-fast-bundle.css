@@ -1917,3 +1917,115 @@ body.interior-page main .tf-contact-form .tf-form-status {margin:12px 0 0 !impor
 @media (prefers-reduced-motion:reduce) {
   body.interior-page main :is(.studio-card,.tf-partner-card) {transition:none !important;}
 }
+
+
+/* TF_NAV_20261119_IPAD_UNIFIED */
+/* Einheitliche Menue-Typografie + Gold; nur Header, nicht Shop- oder Seitentitel. */
+body.interior-page > header.header.tf-header nav.nav a,
+body.interior-page > header.header.tf-header nav.tf-nav a,
+body.home-page .tf-film-hero .tf-mobile-home-nav a {
+  font-family: Manrope, Arial, sans-serif !important;
+  font-weight: 750 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .075em !important;
+  line-height: 1.35 !important;
+  color: #9F7A34 !important;
+  text-shadow: none !important;
+  white-space: nowrap !important;
+  border-bottom-color: transparent !important;
+}
+body.interior-page > header.header.tf-header nav.nav a.active,
+body.interior-page > header.header.tf-header nav.tf-nav a.active,
+body.home-page .tf-film-hero .tf-mobile-home-nav a.active {
+  color: #9F7A34 !important;
+  border-bottom-color: #9F7A34 !important;
+}
+@media (max-width: 1100px) {
+  /* Gleiches Muster wie Startseite: Logo -> Navigation -> Sprachauswahl. */
+  body.interior-page > header.header.tf-header {
+    position: static !important;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+    padding: 20px 18px 16px !important;
+    box-sizing: border-box !important;
+  }
+  body.interior-page > header.header.tf-header .tf-brand {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    order: 0 !important;
+    margin: 0 auto !important;
+  }
+  body.interior-page > header.header.tf-header .tf-brand img {
+    width: min(70vw, 230px) !important;
+    height: auto !important;
+    max-height: 110px !important;
+    object-fit: contain !important;
+  }
+  body.interior-page > header.header.tf-header nav.nav,
+  body.interior-page > header.header.tf-header nav.tf-nav {
+    display: flex !important;
+    position: static !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    order: 1 !important;
+    flex-flow: row wrap !important;
+    flex: 0 1 auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px clamp(11px, 1.7vw, 24px) !important;
+    width: min(100%, 1020px) !important;
+    max-width: 1020px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    inset: auto !important;
+    transform: none !important;
+    overflow: visible !important;
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  body.interior-page > header.header.tf-header nav.nav a,
+  body.interior-page > header.header.tf-header nav.tf-nav a {
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    padding: 7px 3px !important;
+    font-size: clamp(10px, 1.15vw, 13px) !important;
+    border: 0 !important;
+    border-bottom: 2px solid transparent !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+  body.interior-page > header.header.tf-header .tf-language-switch {
+    order: 2 !important;
+    margin: 4px auto 0 !important;
+    width: auto !important;
+  }
+  body.interior-page > header.header.tf-header .menu-btn,
+  body.interior-page > header.header.tf-header .tf-header-cta {
+    display: none !important;
+  }
+}
+@media (max-width: 680px) {
+  body.interior-page > header.header.tf-header { padding: 16px 12px 12px !important; gap: 9px !important; }
+  body.interior-page > header.header.tf-header nav.nav,
+  body.interior-page > header.header.tf-header nav.tf-nav {
+    width: 100% !important;
+    gap: 5px 12px !important;
+  }
+  body.interior-page > header.header.tf-header nav.nav a,
+  body.interior-page > header.header.tf-header nav.tf-nav a {
+    font-size: clamp(10px, 2.7vw, 12px) !important;
+    font-weight: 700 !important;
+    letter-spacing: .045em !important;
+    padding: 6px 2px !important;
+  }
+}
