@@ -1682,3 +1682,63 @@ body.interior-page main .tf-product-info h2 {
     padding: .20em .34em !important;
   }
 }
+
+
+/* TF MICRO MOTION 2026-11-19 | Zurueckhaltende Animationen fuer alle Sprachen.
+   Ergaenzt die bestehende .reveal/IntersectionObserver-Logik (site.js),
+   ohne sichtbaren Inhalt fuer nicht unterstuetzte Browser auszublenden. */
+@keyframes tf-gentle-entrance {
+  from { opacity: .65; transform: translateY(9px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* Sanfter erster Eindruck, nur einmal beim Laden. */
+  body.home-page .tf-film-hero .tf-film-content,
+  body.interior-page main :is(.subhero .inner, .inner-page-hero .inner) {
+    animation: tf-gentle-entrance .75s ease-out both;
+  }
+  /* Bestehende Scroll-Animation: etwas ruhiger und mit kleinerem Versatz. */
+  body main .reveal {
+    transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.2,1) !important;
+  }
+  body main .reveal:not(.visible) { transform: translateY(16px); }
+  /* Feiner Goldglanz nur beim Interagieren mit Ueberschriften. */
+  body main :is(h1,h2,h3) {
+    transition: border-color .28s ease, box-shadow .28s ease !important;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service,.tf-join-family) {
+    transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease !important;
+  }
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service,.tf-join-family):hover {
+    transform: translateY(-3px) !important;
+    border-color: rgba(159,122,52,.88) !important;
+    box-shadow: 0 7px 22px rgba(0,0,0,.18) !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy),
+  body > header :is(.nav a,.tf-nav a),
+  body.home-page .tf-mobile-home-nav a {
+    transition: transform .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy):hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 16px rgba(159,122,52,.19) !important;
+  }
+  body main :is(.news-card h3,.tf-product-info h2,.tf-partner-card h3):hover,
+  body main :is(.tf-story-main h1,.tf-story-main h2,.news-section > h2,.tf-join-family h2):hover {
+    border-color: #9F7A34 !important;
+    box-shadow: inset 0 0 14px rgba(159,122,52,.07) !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.home-page .tf-film-hero .tf-film-content,
+  body.interior-page main :is(.subhero .inner,.inner-page-hero .inner) {
+    animation: none !important;
+  }
+  body main .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
