@@ -1874,3 +1874,51 @@ body.interior-page main .tf-product-info h2 {
     clip-path: none !important;
   }
 }
+
+
+/* Tattoo Fashion | Typografie- und Goldangleichung | 20.11.2026
+   Die bestehenden Goldrahmen und Scroll-/Hover-Animationen bleiben erhalten.
+   Einheitliche Navigationsfarbe, ruhigere Startseiten-Titel, lesbare Beschreibungen. */
+:root {
+  --tf-brand-gold: #9F7A34;
+}
+
+/* Die prominente Startseiten-Ueberschrift nicht mehr im XXL-Format darstellen. */
+body.home-page main .story-grid h2 {
+  font-family: 'Manrope', Arial, Helvetica, sans-serif !important;
+  font-size: clamp(2.05rem, 5vw, 4.5rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.035em !important;
+  overflow-wrap: break-word;
+}
+@media (max-width: 680px) {
+  body.home-page main .story-grid h2 {
+    font-size: clamp(1.75rem, 6.5vw, 2.55rem) !important;
+  }
+}
+
+/* Gold als klare, identische Grundfarbe auf allen Sprach- und Seitentypen.
+   Bestehende Hover-Animationen und aktive Zustaende bleiben moeglich. */
+body.home-page > header.header nav.nav a,
+body.interior-page > header.header nav.nav a,
+body.home-page .tf-mobile-home-nav a,
+body.interior-page > header.header.tf-header nav.nav a {
+  color: var(--tf-brand-gold) !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.home-page > header.header nav.nav a:hover,
+  body.interior-page > header.header nav.nav a:hover,
+  body.home-page .tf-mobile-home-nav a:hover,
+  body.interior-page > header.header.tf-header nav.nav a:hover {
+    color: #C9A35A !important;
+  }
+}
+
+/* Bislang teils 13px kleine laengere Leistungstexte und Produktbeschreibungen. */
+body.interior-page main .service-content > p,
+body.interior-page main .service-more,
+body.interior-page main .tf-product-detail {
+  font-size: clamp(15px, 1.05vw, 16px) !important;
+  line-height: 1.7 !important;
+}
