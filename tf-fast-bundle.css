@@ -1936,3 +1936,41 @@ body.interior-page main .tf-product-detail {
     font-size: clamp(2.05rem, 4.1vw, 3.4rem) !important;
   }
 }
+
+
+/* =============================================================
+   Tattoo Fashion | Einheitlicher Seitenabschluss (DE / EN / DA)
+   Ein konsistenter Abstand zwischen dem letzten Inhalt und Footer.
+   Farben, Schriften, Rahmen, Animationen und Header bleiben unberuehrt.
+   ============================================================= */
+:root { --tf-footer-content-gap: clamp(44px, 5vw, 72px); }
+body > main {
+  padding-bottom: var(--tf-footer-content-gap) !important;
+}
+/* Die letzten Bereiche hatten bislang uneinheitliche Extra-Abstaende. */
+body > main > :last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+body > main > :last-child > :last-child {
+  margin-bottom: 0 !important;
+}
+/* Inline-Stile auf Geschichte / Partner und seitenspezifische Abschnitte. */
+body.interior-page > main.tf-story-main > .tf-story-family,
+body.interior-page > main.tf-partner-main > .tf-partner-family {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+body.interior-page > main > section.tf-shop-catalog,
+body.interior-page > main > section.studio-teaser,
+body.interior-page > main > section.service-section,
+body.home-page > main > section.overview-grid {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+body.interior-page > main > section.tf-shop-catalog > .tf-shop-footnote {
+  margin-bottom: 0 !important;
+}
+body > main + footer.footer {
+  margin-top: 0 !important;
+}
