@@ -1775,3 +1775,102 @@ body.interior-page main .tf-product-info h2 {
     transition: none !important;
   }
 }
+
+
+/* Tattoo Fashion | Extra Micro-Interactions | 20.11.2026
+   Bewusst dezente Interaktionen, keine Endlosschleifen auf Texten.
+   Schriftgroessen, Farben, Goldrahmen und Layout bleiben unveraendert. */
+@keyframes tf-modern-scroll-appear {
+  from { opacity: .78; translate: 0 12px; }
+  to   { opacity: 1; translate: 0 0; }
+}
+@keyframes tf-modern-frame-arrive {
+  from { opacity: .85; clip-path: inset(0 14% 0 14%); }
+  to   { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* Auf modernen Browsern erscheint ein Abschnitt sanft beim Hereinscrollen.
+     Kein opacity:0, damit Inhalte auch ohne JS sichtbar bleiben. */
+  @supports (animation-timeline: view()) {
+    body main :is(.story-grid,.news-section,.overview-grid,.tf-join-family,
+      .tf-story-main,.tf-partner-intro,.tf-partner-group,.tf-partner-join,
+      .tf-shop-catalog,.contact-wrap,.service-section,.studio-teaser) {
+      animation-name: tf-modern-scroll-appear;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 42%;
+    }
+    /* Nur groessere Abschnittstitel: feines Einzeichnen des Goldrahmens. */
+    body.home-page main :is(.story-grid h2,.news-section > h2,.overview-grid > h2,.tf-join-family h2),
+    body.interior-page main :is(.tf-story-main h2,.tf-partner-group h2,.tf-partner-join h2) {
+      animation-name: tf-modern-frame-arrive;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: view();
+      animation-range: entry 0% entry 48%;
+    }
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy,.tf-shop-buy,a.button,button),
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service),
+  body main :is(.news-card img,.tf-product img,.tf-partner-card img,.studio-card img) {
+    transition-timing-function: cubic-bezier(.2,.7,.25,1) !important;
+  }
+  body main :is(.news-card img,.tf-product img,.tf-partner-card img,.studio-card img) {
+    transition-property: transform, filter !important;
+    transition-duration: .48s !important;
+  }
+  /* Einmalige Einblendung von Menueleiste / Sprachwahl; schiebt das Layout nicht. */
+  body > header.header .nav,
+  body.home-page .tf-mobile-home-nav {
+    animation: tf-gentle-entrance .64s ease-out both;
+  }
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  /* Raffinierte, aber kurze Reaktion auf Karten und Bilder. */
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service):hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 13px 30px rgba(0,0,0,.27), 0 0 0 1px rgba(159,122,52,.22) !important;
+  }
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card):hover img {
+    transform: scale(1.025);
+    filter: brightness(1.045);
+  }
+  /* Goldrahmen bleiben schmal; bei Hover nur etwas praesenter. */
+  body main :is(h1,h2,h3):hover {
+    border-color: rgba(193,154,78,.97) !important;
+    box-shadow: inset 0 0 14px rgba(159,122,52,.075), 0 0 16px rgba(159,122,52,.09) !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy,a.button,button):not(:disabled):hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 7px 18px rgba(159,122,52,.22) !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy,a.button,button):not(:disabled):active {
+    transform: translateY(0) scale(.985) !important;
+  }
+  body > header.header nav.nav a,
+  body.home-page .tf-mobile-home-nav a {
+    transition: color .22s ease, text-shadow .22s ease !important;
+  }
+  body > header.header nav.nav a:hover,
+  body.home-page .tf-mobile-home-nav a:hover {
+    text-shadow: 0 0 12px rgba(159,122,52,.4);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Bewegungsarme Systeme: alle NEUEN Interaktionen bewegungsfrei. */
+  body main :is(.story-grid,.news-section,.overview-grid,.tf-join-family,
+    .tf-story-main,.tf-partner-intro,.tf-partner-group,.tf-partner-join,
+    .tf-shop-catalog,.contact-wrap,.service-section,.studio-teaser),
+  body main :is(.story-grid h2,.news-section > h2,.overview-grid > h2,.tf-join-family h2,
+    .tf-story-main h2,.tf-partner-group h2,.tf-partner-join h2),
+  body > header.header .nav,
+  body.home-page .tf-mobile-home-nav {
+    animation: none !important;
+    opacity: 1 !important;
+    translate: none !important;
+    clip-path: none !important;
+  }
+}
