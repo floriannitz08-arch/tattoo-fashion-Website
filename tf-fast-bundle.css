@@ -1974,3 +1974,18 @@ body.interior-page > main > section.tf-shop-catalog > .tf-shop-footnote {
 body > main + footer.footer {
   margin-top: 0 !important;
 }
+
+
+/* Tattoo Fashion | Präziser Footer-Abschluss | 20.11.2026
+   Nach Abschluss der Scroll-Animationen sind die normalen Seitenabstände
+   bereits einheitlich. Nur die Kontaktformular-Seiten haben 14–16 px
+   zusätzlichen Innenabstand; diesen neutralisieren wir bei allen Sprachen.
+   Rahmen, Goldfarben, Typografie und bestehende Animationen bleiben bestehen. */
+body.interior-page > main:has(> .tf-contact-form) {
+  padding-bottom: calc(var(--tf-footer-content-gap) - 16px) !important;
+}
+@media (max-width: 600px) {
+  body.interior-page > main:has(> .tf-contact-form) {
+    padding-bottom: calc(var(--tf-footer-content-gap) - 14px) !important;
+  }
+}
