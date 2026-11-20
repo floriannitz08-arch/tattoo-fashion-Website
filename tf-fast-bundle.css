@@ -1610,3 +1610,168 @@ body.interior-page > header.header.tf-header nav.nav a {
     justify-content: center !important;
   }
 }
+
+
+/* Tattoo Fashion – Wiederherstellung goldene Titelrahmen, Animation, kompakte Überschriften 20.11.2026 */
+/* TATTOO FASHION | Gemeinsame Ueberschriften DE/EN/DA | 2026-11-19 */
+/* Einheitliche Rollen statt globalem h2-Override: Produktnamen sind ebenfalls h2. */
+:root {
+  --tf-heading-font: 'Manrope', Arial, Helvetica, sans-serif;
+  --tf-heading-xl: clamp(1.85rem, 3.7vw, 3.1rem);
+  --tf-heading-lg: clamp(1.5rem, 2.8vw, 2.25rem);
+  --tf-heading-md: clamp(1.2rem, 2vw, 1.7rem);
+  --tf-heading-sm: clamp(1rem, 1.45vw, 1.25rem);
+}
+/* Gemeinsame Merkmale; unberuehrt bleiben Logos, Buttons und Produktnamen. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  font-family: var(--tf-heading-font) !important;
+  font-weight: 800 !important;
+  font-stretch: normal !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.16 !important;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+/* Stufe 1: Seitentitel – gleiche Groesse unabhaengig von der Sprache. */
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-partner-intro h1, .tf-shop-intro h1) {
+  font-size: var(--tf-heading-xl) !important;
+  line-height: 1.12 !important;
+}
+/* Stufe 2: Hauptabschnitte – auch fuer lange daenische Ueberschriften. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.tf-story-main h2, .tf-partner-join h2, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  font-size: var(--tf-heading-lg) !important;
+}
+/* Stufe 3: Gruppen- und Serviceueberschriften. */
+body.interior-page main :is(.tf-partner-group h2, .finder .panel h3, .service-content h3, .contact-note h3) {
+  font-family: var(--tf-heading-font) !important;
+  font-size: var(--tf-heading-md) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.02em !important;
+  line-height: 1.22 !important;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+/* Stufe 4: Kartenueberschriften und Produktnamen behalten ihre eigene Hierarchie. */
+body.home-page main .news-card h3,
+body.interior-page main :is(.tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+  font-family: var(--tf-heading-font) !important;
+  font-size: var(--tf-heading-sm) !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -.01em !important;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+/* Die Produktkarten behalten linksbuendige Produktnamen. */
+body.interior-page main .tf-product-info h2 {
+  text-align: left !important;
+  text-transform: none !important;
+}
+@media (max-width: 680px) {
+  :root {
+    --tf-heading-xl: clamp(1.65rem, 6.1vw, 2.35rem);
+    --tf-heading-lg: clamp(1.35rem, 5.2vw, 1.95rem);
+    --tf-heading-md: clamp(1.12rem, 4.5vw, 1.5rem);
+    --tf-heading-sm: clamp(.96rem, 3.8vw, 1.13rem);
+  }
+  body.interior-page main :is(.tf-shop-intro h1, .tf-story-main h1, .tf-partner-intro h1) {
+    font-size: var(--tf-heading-xl) !important;
+  }
+}
+
+
+/* TATTOO FASHION | Dezente Goldrahmen fuer Ueberschriften DE/EN/DA | 2026-11-19
+   Schmaler Rahmen um den Text, statt eines breiten Kastens ueber die ganze Zeile.
+   Die Headernavigation, Logos, Buttontexte und verborgene Labels bleiben unberuehrt. */
+:root { --tf-heading-frame: rgba(159, 122, 52, .72); }
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2, .news-card h3),
+body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .finder .panel h3, .studio-teaser h2, .contact-wrap h2, .contact-note h3, .service-content h3, .tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  border: 1px solid var(--tf-heading-frame) !important;
+  border-radius: 0 !important;
+  padding: .22em .48em !important;
+  box-shadow: inset 0 0 12px rgba(159, 122, 52, .025) !important;
+}
+/* Grosse, zentrierte Titel bleiben zentriert. */
+body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2),
+body.interior-page main :is(.tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-join h2, .finder .results-head h2, .studio-teaser h2, .contact-wrap h2) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Produktnamen und linksbuendige Kartentitel nicht zentrieren. */
+body.interior-page main .tf-product-info h2 {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+/* Bei sehr schmalen Displays genug Luft zum Bildschirmrand lassen. */
+@media (max-width: 680px) {
+  body.home-page main :is(.story-grid h2, .news-section > h2, .overview-grid > h2, .tf-join-family h2, .news-card h3),
+  body.interior-page main :is(.subhero h1, .inner-page-hero h1, .tf-story-main h1, .tf-story-main h2, .tf-partner-intro h1, .tf-partner-group h2, .tf-partner-join h2, .tf-shop-intro h1, .finder .results-head h2, .finder .panel h3, .studio-teaser h2, .contact-wrap h2, .contact-note h3, .service-content h3, .tf-product-info h2, .studio-card h3, .tf-partner-card h3) {
+    padding: .20em .34em !important;
+  }
+}
+
+
+/* TF MICRO MOTION 2026-11-19 | Zurueckhaltende Animationen fuer alle Sprachen.
+   Ergaenzt die bestehende .reveal/IntersectionObserver-Logik (site.js),
+   ohne sichtbaren Inhalt fuer nicht unterstuetzte Browser auszublenden. */
+@keyframes tf-gentle-entrance {
+  from { opacity: .65; transform: translateY(9px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* Sanfter erster Eindruck, nur einmal beim Laden. */
+  body.home-page .tf-film-hero .tf-film-content,
+  body.interior-page main :is(.subhero .inner, .inner-page-hero .inner) {
+    animation: tf-gentle-entrance .75s ease-out both;
+  }
+  /* Bestehende Scroll-Animation: etwas ruhiger und mit kleinerem Versatz. */
+  body main .reveal {
+    transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.2,1) !important;
+  }
+  body main .reveal:not(.visible) { transform: translateY(16px); }
+  /* Feiner Goldglanz nur beim Interagieren mit Ueberschriften. */
+  body main :is(h1,h2,h3) {
+    transition: border-color .28s ease, box-shadow .28s ease !important;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service,.tf-join-family) {
+    transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease !important;
+  }
+  body main :is(.news-card,.tf-product,.tf-partner-card,.studio-card,.service-feature,.service,.tf-join-family):hover {
+    transform: translateY(-3px) !important;
+    border-color: rgba(159,122,52,.88) !important;
+    box-shadow: 0 7px 22px rgba(0,0,0,.18) !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy),
+  body > header :is(.nav a,.tf-nav a),
+  body.home-page .tf-mobile-home-nav a {
+    transition: transform .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease !important;
+  }
+  body main :is(.btn,.tf-film-cta,.shop-buy):hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 16px rgba(159,122,52,.19) !important;
+  }
+  body main :is(.news-card h3,.tf-product-info h2,.tf-partner-card h3):hover,
+  body main :is(.tf-story-main h1,.tf-story-main h2,.news-section > h2,.tf-join-family h2):hover {
+    border-color: #9F7A34 !important;
+    box-shadow: inset 0 0 14px rgba(159,122,52,.07) !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.home-page .tf-film-hero .tf-film-content,
+  body.interior-page main :is(.subhero .inner,.inner-page-hero .inner) {
+    animation: none !important;
+  }
+  body main .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
