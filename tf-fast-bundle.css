@@ -1922,3 +1922,17 @@ body.interior-page main .tf-product-detail {
   font-size: clamp(15px, 1.05vw, 16px) !important;
   line-height: 1.7 !important;
 }
+
+
+/* Tattoo Fashion | Natuerliche Titelzeilen ab Tablet/Desktop | 20.11.2026
+   Manuell gesetzte Zeilenumbrueche nur auf kleinen Bildschirmen verwenden.
+   Goldrahmen, Typografie und Animationen bleiben unveraendert. */
+@media (min-width: 769px) {
+  body main :is(h1, h2) br.tf-responsive-break {
+    display: none !important;
+  }
+  /* Fuer die Startseite genug Raum fuer einen einzeiligen Titel bieten. */
+  body.home-page main .story-grid h2 {
+    font-size: clamp(2.05rem, 4.1vw, 3.4rem) !important;
+  }
+}
